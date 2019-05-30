@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("font-awesome.min.css");
+
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+    background-size: cover;
+    color: rgb(60, 60, 60);
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active
+{
+    color: rgb(60, 60, 60);
+}
+
+.hero {
+    height: 400px;
+    background-color: #FF6F61;
+    color: #FFF;
+}
+
+.title {
+    font-size: 80px;
+    padding-top: 150px;
+}
+
+.cards {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.card {
+    margin: 30px 20px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 14px;
+    line-height: 1.5;
+    height: 200px;
+    padding: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: double 4px rgb(60,60,60);
+    border-radius: 3px;
+    transition: .4s;
+    font-size: 2rem;
+    width: auto;
+}
+
+footer {
+    padding: 50px;
+    background-color: rgb(60,60,60);
+    color: #FFF;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active{
+    text-decoration-line: none;
+    color: #FFF;
+    font-size: 20px;
+    margin: 20px 20px;
+}
