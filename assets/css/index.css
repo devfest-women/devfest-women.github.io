@@ -22,11 +22,11 @@ ul {
     list-style: none;
 }
 
-a {
-    text-decoration-line: none;
-}
-
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover
+a:active
+{
     color: rgb(60, 60, 60);
 }
 
@@ -102,6 +102,7 @@ footer a:link,
 footer a:visited,
 footer a:hover,
 footer a:active{
+    text-decoration-line: none;
     color: #FFF;
     font-size: 20px;
     margin: 20px 20px;
