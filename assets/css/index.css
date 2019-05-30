@@ -24,7 +24,7 @@ ul {
 
 a:link,
 a:visited,
-a:hover
+a:hover,
 a:active
 {
     color: rgb(60, 60, 60);
@@ -90,6 +90,18 @@ a:active
 
 .icon > .label {
     display: none;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: double 4px rgb(60,60,60);
+    border-radius: 3px;
+    transition: .4s;
+    font-size: 2rem;
+    width: auto;
 }
 
 footer {
