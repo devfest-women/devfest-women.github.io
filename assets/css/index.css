@@ -22,10 +22,7 @@ ul {
     list-style: none;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
+a:hover {
     color: rgb(60, 60, 60);
 }
 
@@ -100,11 +97,17 @@ a:active {
     margin-top: 50px;
     padding: 0.5em 1em;
     text-decoration: none;
-    border: double 4px rgb(60, 60, 60);
+    border: solid 2px #FFF;
     border-radius: 3px;
     transition: .4s;
     font-size: 2rem;
     width: auto;
+    color: #FFF;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #FF6F61;
 }
 
 footer {
