@@ -10,9 +10,9 @@ html {
 }
 
 body {
-    background-color: #FFF;
+    background-color: rgb(245,242,240);
     background-size: cover;
-    color: rgb(60, 60, 60);
+    color: rgb(66, 66, 66);
     text-align: center;
     font-size: 1.4rem;
     font-family: 'Noto Sans JP', sans-serif;
@@ -108,6 +108,11 @@ a:hover {
 .button:hover {
     background-color: #FFFFFF;
     color: #FF6F61;
+}
+
+.sponsor img {
+    width: 50%;
+    margin: 0px 25%;
 }
 
 footer {
