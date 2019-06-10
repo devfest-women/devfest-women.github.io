@@ -1,2 +1,2 @@
 # devfest-women.github.io
-Web Page for DevFest Women
+DevFest Womenのティザーサイトに関わるリポジトリです
