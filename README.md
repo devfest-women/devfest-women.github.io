@@ -1,2 +1,2 @@
 # devfest-women.github.io
-Web Page for DevFest Women
+Web Page for DevFest Women Tokyo
