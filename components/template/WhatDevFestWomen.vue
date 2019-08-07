@@ -1,11 +1,13 @@
 <template>
-  <p>{{ name }}</p>
+  <div>
+    <p>{{ name }}</p>
+  </div>
 </template>
 <script>
   export default {
     data() {
       return {
-        name: 'What Dev Fest Women'
+        name: 'What Dev Fest Women とは'
       }
     }
   }</script>

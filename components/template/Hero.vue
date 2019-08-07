@@ -1,5 +1,7 @@
 <template>
-  <p>{{ name }}</p>
+  <div>
+    <p>{{ name }}</p>
+  </div>
 </template>
 <script>
   export default {
