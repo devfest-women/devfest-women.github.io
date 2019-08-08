@@ -1,5 +1,5 @@
 <template>
-    <v-content>
+    <v-content class="default-setting">
       <v-container>
         <nuxt />
       </v-container>
@@ -34,4 +34,7 @@ export default {
 }
 </script>
 <style>
+  .default-setting {
+    color: #ffffff;
+  }
 </style>
