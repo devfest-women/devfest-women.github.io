@@ -49,18 +49,22 @@ export default {
 
 
 <style scoped>
-.bg {
+.bg_black {
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-}
-.bg_black {
   background-color: #100e17;
 }
 .bg_gradient {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background-image: linear-gradient(to left, #da297b, #ff6f61);
 }
 </style>
