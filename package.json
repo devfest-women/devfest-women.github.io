@@ -14,7 +14,8 @@
     "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/vuetify": "1.0.1",
-    "nuxt": "^2.8.1"
+    "nuxt": "^2.8.1",
+    "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
     "stylus": "^0.54.5",

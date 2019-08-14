@@ -11,6 +11,7 @@
       md6
     >
     <div class="text-xs-center">
+<<<<<<< HEAD
       <Hero class="bg_layout"></Hero>
       <WhatDevFestWomen class="bg bg_black"></WhatDevFestWomen>
       <About class="bg bg_black"></About>
@@ -18,6 +19,16 @@
       <Sponsor class="bg bg_black"></Sponsor>
       <!-- <Staff class="bg bg_black"></Staff> -->
       <Footer class="bg bg_gradient"></Footer>
+=======
+      <Header></Header>
+      <Hero class="bg_gradient"></Hero>
+      <WhatDevFestWomen class="bg_black"></WhatDevFestWomen>
+      <About class="bg_black"></About>
+      <Schedule class="bg_gradient"></Schedule>
+      <Sponsor class="bg_black"></Sponsor>
+      <Staff class="bg_black"></Staff>
+      <Footer class="bg_gradient"></Footer>
+>>>>>>> wip header
     </div>
     </v-flex>
   </v-layout>
@@ -53,6 +64,7 @@ export default {
 }
 .bg_black {
   width: 100vw;
+  height: 600px;
   position: relative;
   left: 50%;
   right: 50%;
@@ -62,6 +74,7 @@ export default {
 }
 .bg_gradient {
   width: 100vw;
+  height: 600px;
   position: relative;
   left: 50%;
   right: 50%;
