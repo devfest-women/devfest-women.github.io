@@ -1,12 +1,7 @@
 <template>
   <div class="about">
     <div class="about-container">
-      <div class="page-title">
-        <h1 class="title">
-            DevFest Womenとは
-        </h1>
-        <div class="line"></div>
-      </div>
+      <SessionTitle text="DevFest Womenとは"></SessionTitle>
       <div class="content">
         DevFest WomenはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。
         エンジニア、デザイナー、ディレクター、プロダクトマネージャーなど様々な職種の方にとって、自分のなりたい像がみつかったり、自分の知っていることやできることを増やして明日からの自信につなげるイベントを目指しています。
@@ -20,7 +15,12 @@
 </template>
 
 <script>
+import SessionTitle from '~/components/module/SessionTitle.vue'
+
   export default {
+    components: {
+      SessionTitle
+    },
     data() {
       return {
         name: 'About'
@@ -38,20 +38,7 @@
     justify-content: center;
     align-items: center;
   }
-  .page-title {
-    margin: 0px 0px 25px 0px;
-    .title {
-      font-family: Avenir, HiraginoSans-W6;
-      font-size: 34px;
-      font-weight: 900;
-      color: #ffffff;
-    }
-    .line {
-      width: 298px;
-      height: 3px;
-      background-image: linear-gradient(to left, #100e17, #da297b 35%, #ff6f61 71%, #100e17);
-    }
-  }
+
   .content{
     font-family: HiraginoSans-W3;
     font-size: 16px;
