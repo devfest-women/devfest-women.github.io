@@ -22,6 +22,42 @@
               </v-col>
             </v-row>
           </v-container>
+
+          <div id="map" class="map"/>
+
+          <script type="application/javascript">
+            function initMap() {
+              const latlng = new google.maps.LatLng(35.698700, 139.766438);
+              const map = new google.maps.Map(document.getElementById('map'), {
+                center: latlng,
+                zoom: 16
+              });
+              const marker = new google.maps.Marker({
+                position: latlng,
+                map: map,
+                title: '御茶ノ水ソラシティカンファレンスセンター'
+              });
+              marker.setMap(map);
+            }
+          </script>
+          <!-- eslint-enable vue/html-indent -->
+
+          <script
+                  type="application/javascript"
+                  :src=" `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&callback=initMap` "
+                  async
+                  defer
+          />
+
+          <p class="notice">
+            <a
+                    href="https://goo.gl/maps/dbuicaxHic1nTk438"
+                    target="_blank"
+                    rel="noopener"
+            >
+              Google マップを開く
+            </a>
+          </p>
         </v-col>
       </v-row>
     </v-container>>
@@ -40,6 +76,7 @@
     data() {
       return {
         name: '開催概要',
+        googleMapsApiKey: 'AIzaSyAeVWtU00lTzsYyUv6XPLscA5KD1DJi0y4', //TODO: 環境変数で入れれるようにする
         item: 1,
         items: [
           { title: '日時', description: '2019年10月14日（月・祝日)<br>10:30開始 （10:00受付開始）<br>17:00 終了予定' },
@@ -55,7 +92,7 @@
 
 <style lang="scss" scoped>
   .about-container{
-    padding: 45px 0px 45px 0px;
+    padding: 45px 0px 90px 0px;
     color: #ffffff;
   }
 
@@ -80,6 +117,21 @@
   }
   .conference-info{
     margin: 48px 0px 0px 0px;
+  }
+  .map{
+    height: 360px;
+    color: #100e17;
+  }
+  .notice{
+    text-align: right;
+    margin: 15px 0px 0px 0px;
+      a{
+        text-decoration: none;
+        font-family: GillSans;
+        font-size: 16px;
+        color: #7a7a8c;
+        text-align: right;
+      }
   }
 </style>
 
