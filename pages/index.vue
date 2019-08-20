@@ -1,4 +1,5 @@
 <template>
+  <v-app>
   <v-layout
     column
     justify-center
@@ -21,6 +22,7 @@
     </div>
     </v-flex>
   </v-layout>
+  </v-app>
 </template>
 
 <script>
