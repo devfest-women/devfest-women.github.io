@@ -3,7 +3,7 @@
     <v-container class="about-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
         <v-col lg="6">
-          <SessionTitle text="スポンサー"></SessionTitle>
+          <TitleBlack text="スポンサー"></TitleBlack>
           <div class="content">
             DevFest Women Tokyo 2019 をよりよいイベントにするため、スポンサーを募集しています。 ご希望の企業様は、以下よりお申し込みください。ご応募の締め切りは、2019年9月30日です。
           </div>
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-  import SessionTitle from '~/components/module/SessionTitle.vue'
+  import TitleBlack from '~/components/module/TitleBlack.vue'
   import Button from '~/components/module/Button.vue'
 
   export default {
     components: {
-      SessionTitle,
+      TitleBlack,
       Button
     },
     data() {

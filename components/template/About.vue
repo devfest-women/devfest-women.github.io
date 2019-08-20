@@ -3,7 +3,7 @@
     <v-container class="about-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
         <v-col lg="6">
-          <SessionTitle text="開催概要"></SessionTitle>
+          <TitleBlack text="開催概要"></TitleBlack>
           <div class="content">
             DevFest Womenは、Diversity（多様性）とInclusion（仲間はずれにしない）ことを強調したテクノロジーカンファレンスです。本カンファレンスの登壇者は女性アイデンティティの方に限定しています。昨今のカンファレンスでは登壇者の多くが男性ですが、IT業界で活躍している女性やLGBTQの方も数多く存在しています。
             DevFest Womenでは、そんな彼女たちにスポットライトを当てます。そして彼女たちの知的好奇心をくすぐる発表を通して、次の日からの自信につなげられるようなカンファレンスを目指しています。
@@ -65,12 +65,12 @@
 </template>
 
 <script>
-  import SessionTitle from '~/components/module/SessionTitle.vue'
+  import TitleBlack from '~/components/module/TitleBlack.vue'
   import Button from '~/components/module/Button.vue'
 
   export default {
     components: {
-      SessionTitle,
+      TitleBlack,
       Button
     },
     data() {

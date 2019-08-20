@@ -3,7 +3,7 @@
     <v-container class="about-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
         <v-col lg="6">
-          <SessionTitle text="DevFest Womenとは"></SessionTitle>
+          <TitleBlack text="DevFest Womenとは"></TitleBlack>
           <div class="content">
             DevFest WomenはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。
             エンジニア、デザイナー、ディレクター、プロダクトマネージャーなど様々な職種の方にとって、自分のなりたい像がみつかったり、自分の知っていることやできることを増やして明日からの自信につなげるイベントを目指しています。
@@ -19,11 +19,11 @@
 </template>
 
 <script>
-  import SessionTitle from '~/components/module/SessionTitle.vue'
+  import TitleBlack from '~/components/module/TitleBlack.vue'
 
   export default {
     components: {
-      SessionTitle
+      TitleBlack
     },
     data() {
       return {
