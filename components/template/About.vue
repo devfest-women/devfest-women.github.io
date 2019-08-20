@@ -15,11 +15,10 @@
 
           <v-container class="conference-info">
             <v-row v-for="item in items">
-              <v-col lg="2" class="info-title">
+              <v-col sm="2" class="info-title">
                 {{ item.title }}
               </v-col>
-              <v-col class="info-description">
-                {{ item.description }}
+              <v-col v-html="item.description"　class="info-content">
               </v-col>
             </v-row>
           </v-container>
@@ -43,9 +42,11 @@
         name: '開催概要',
         item: 1,
         items: [
-          { title: 'Real-Time', description: 'mdi-clock' },
-          { title: 'Audience', description: 'mdi-account' },
-          { title: 'Conversions', description: 'mdi-flag' },
+          { title: '日時', description: '2019年10月14日（月・祝日)<br>10:30開始 （10:00受付開始）<br>17:00 終了予定' },
+          { title: '対象', description: 'IT業界や関連する職種で働いている人<br>IT業界で働くことを目指している学生' },
+          { title: '参加費', description: '一般 3,000円<br>学生 無料（先着100名）' },
+          { title: '主催', description: '<img src="' + require("~/assets/img/white_logo.svg") + '"  alt="Women Techmakers Tokyo" title="Women Techmakers Tokyo">' },
+          { title: '会場', description: '御茶ノ水ソラシティカンファレンスセンター<br>（東京都千代田区神田駿河台4丁目4-6）' },
         ],
       }
     }
@@ -68,7 +69,14 @@
     font-family: HiraginoSans-W6;
     font-size: 20px;
     line-height: 1.25;
-      margin: 0px 50px 0px 0px;
+  }
+  .info-content{
+    font-family: HiraginoSans-W4;
+    font-size: 16px;
+    line-height: 1.56;
+    img{
+      width: 100%;
+    }
   }
   .conference-info{
     margin: 48px 0px 0px 0px;
