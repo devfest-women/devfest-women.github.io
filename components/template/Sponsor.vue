@@ -1,6 +1,6 @@
 <template>
   <div class="bg">
-    <v-container class="about-container d-flex flex-column justify-center align-center">
+    <v-container class="section-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
         <v-col lg="6">
           <TitleBlack text="スポンサー"></TitleBlack>
@@ -34,7 +34,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .about-container{
+  .section-container{
     padding: 45px 0px 45px 0px;
   }
 
