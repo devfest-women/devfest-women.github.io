@@ -1,6 +1,6 @@
 <template>
-    <div class="session-title">
-        <h1 class="title">
+    <div class="d-flex flex-column justify-center align-center session-title">
+        <h1 class="title-text">
             {{ text }}
         </h1>
         <div class="line"></div>
@@ -17,7 +17,7 @@ export default {
 .session-title {
     margin: 0px 0px 25px 0px;
 }
-.title {
+.title-text {
     font-family: Avenir, HiraginoSans-W6;
     font-size: 34px;
     font-weight: 900;
