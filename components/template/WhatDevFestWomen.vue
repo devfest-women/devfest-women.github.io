@@ -31,8 +31,9 @@
 
 <style lang="scss" scoped>
   .about-container{
-    max-width: 1280px;
-    margin: 0px 400px 0px 400px;
+    max-width: 1280px; //FIXME: 共通化したほうがいいかも？でもどこの階層にどう入れるのがいいかわからない
+    margin: 0px 400px 0px 400px; //FIXME: 共通化したほうがいいかも？でもどこの階層にどう入れるのがいいかわからない
+    padding: 45px 0px 45px 0px;
   }
 
   .content{
