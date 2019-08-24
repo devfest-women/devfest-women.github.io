@@ -30,7 +30,7 @@
           @DevFest Women Tokyo 2019
         </v-col>
       </v-row>
-    </v-container>>
+    </v-container>
   </div>
 </template>
 

@@ -60,7 +60,7 @@
           </p>
         </v-col>
       </v-row>
-    </v-container>>
+    </v-container>
   </div>
 </template>
 
