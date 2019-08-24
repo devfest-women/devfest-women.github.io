@@ -2,7 +2,6 @@
   <div>
       <v-app-bar
         scroll-target="#playground-example"
-        :color="transparent"
         :elevate-on-scroll="true"
         :hide-on-scroll="false"
         :fade-on-scroll="false"
@@ -13,17 +12,45 @@
         :shrink-on-scroll="false"
         :extended="false"
         :fixed="true"
-        :clipped-right="true"
+        :clipped-right="false"
       >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        <v-toolbar-items>      
-          <v-btn text><nuxt-link v-scroll-to="'#about-devfetwomen'" to>{{ text.Link1 }}</nuxt-link></v-btn>
-          <v-btn text><nuxt-link v-scroll-to="'#about'" to>{{ text.Link2 }}</nuxt-link></v-btn>
-          <v-btn text><nuxt-link v-scroll-to="'#schedule'" to>{{ text.Link3 }}</nuxt-link></v-btn>
-          <v-btn text><nuxt-link v-scroll-to="'#sponsor'" to>{{ text.Link4 }}</nuxt-link></v-btn>
-          <v-btn text><nuxt-link v-scroll-to="'#staff'" to>{{ text.Link5 }}</nuxt-link></v-btn>
-        </v-toolbar-items>
-
+      <v-container>
+       <v-row
+        :align="center"
+        :justify="center"
+        class="grey lighten-5"
+        >
+        <v-toolbar-items>
+          <v-btn
+           v-for="item in menu"
+          :key="item.title"
+           text>
+            <nuxt-link v-scroll-to="item.link" to> {{ item.title }} </nuxt-link>
+          </v-btn>
+        </v-toolbar-items> 
+      </v-row>
+      </v-container>
+      <v-container col-sm-5 col-md-6>
+        <v-menu>
+          <template v-slot:activator="{ on }">
+            <v-app-bar-nav-icon
+              v-on="on"
+              flat
+            ></v-app-bar-nav-icon>
+          </template>
+          <v-list>
+            <v-list-item
+              v-for="(item, index) in menu"
+              :key="index"
+              @click=""
+            >
+              <v-list-item-title>
+                <nuxt-link v-scroll-to="item.link" to>{{ item.title }}</nuxt-link>
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>        
+      </v-container>
       </v-app-bar>
       <v-sheet
         id="playground-example"
@@ -31,7 +58,6 @@
         max-height="600"
       >
       </v-sheet>
-
 </div>
 </template>
 <script>
@@ -43,7 +69,14 @@ export default {
         Link3 : "スケジュール",
         Link4 : "スポンサー",
         Link5 : "スタッフ"
-    }
+    },
+      menu: [
+        { title: "Dev Fest Women とは", link: "#about-devfetwomen" },
+        { title: "開催概要", link: "#about" },
+        { title: "スケジュール", link: "#schedule" },
+        { title: "スポンサー", link: "#sponsor" },
+        { title: "スタッフ", link: "#staff" }
+      ]
   })
 }
 </script>
