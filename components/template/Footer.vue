@@ -5,7 +5,7 @@
         <v-col lg="6">
           <v-row class="d-flex align-center">
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+              <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
             </v-col>
             <div class="footer-item">プライバシーポリシー</div>
             <div class="footer-item">行動規範</div>
@@ -16,13 +16,13 @@
         <v-col lg="6">
           <v-row class="d-flex align-center justify-center">
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+              <img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019">
             </v-col>
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+              <img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019">
             </v-col>
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+              <img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019">
             </v-col>
           </v-row>
         </v-col>
@@ -76,8 +76,12 @@
       font-family: Avenir;
     }
   }
-  .footer-image{
+  .footer-logo{
     width: 100%;
+  }
+  .footer-image{
+    width: 40px;
+    height: 40px;
   }
   .footer-item{
     padding: 0px 16px 0px 16px;
