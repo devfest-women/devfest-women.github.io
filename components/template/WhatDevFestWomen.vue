@@ -5,7 +5,7 @@
         <v-col lg="6">
           <TitleBlack text="DevFest Womenとは"></TitleBlack>
           <div class="content">
-            DevFest WomenはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。
+            DevFest WomenはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。<br>
             エンジニア、デザイナー、ディレクター、プロダクトマネージャーなど様々な職種の方にとって、自分のなりたい像がみつかったり、自分の知っていることやできることを増やして明日からの自信につなげるイベントを目指しています。
           </div>
           <div class="hashtag d-flex justify-center align-center">
