@@ -5,7 +5,9 @@
         <v-col lg="8">
           <v-row class="d-flex flex-column flex-md-row align-left align-md-center">
             <v-col sm="2" class="footer-item">
-              <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+              <nuxt-link to="/">
+                <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+              </nuxt-link>
             </v-col>
             <div class="footer-item"><nuxt-link to="/privacypolicy">プライバシーポリシー</nuxt-link></div>
             <div class="footer-item"><nuxt-link to="/codeofconduct">行動規範</nuxt-link></div>
@@ -19,11 +21,9 @@
             <v-col sm="2" class="footer-item">
               <a href="https://twitter.com/wtmtokyo"><img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019"></a>
             </v-col>
-            <!-- facbookページ今なさそう？
             <v-col sm="2" class="footer-item">
               <a href=""><img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019"></a>
             </v-col>
-            -->
             <v-col sm="2" class="footer-item">
               <a href="https://forms.gle/Bc1BwwpwXwTZkA1b7"><img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019"></a>
             </v-col>

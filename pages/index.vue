@@ -17,7 +17,7 @@
       <About class="bg bg_black"></About>
       <Schedule class="bg bg_gradient"></Schedule>
       <Sponsor class="bg bg_black"></Sponsor>
-      <Staff class="bg bg_black"></Staff>
+      <!-- <Staff class="bg bg_black"></Staff> -->
       <Footer class="bg bg_gradient"></Footer>
     </div>
     </v-flex>
