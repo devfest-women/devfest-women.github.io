@@ -17,13 +17,15 @@
         <v-col lg="6">
           <v-row class="d-flex align-center justify-center">
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019">
+              <a href="https://twitter.com/wtmtokyo"><img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019"></a>
             </v-col>
+            <!-- facbookページ今なさそう？
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019">
+              <a href=""><img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019"></a>
             </v-col>
+            -->
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019">
+              <a href="https://forms.gle/Bc1BwwpwXwTZkA1b7"><img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019"></a>
             </v-col>
           </v-row>
         </v-col>
