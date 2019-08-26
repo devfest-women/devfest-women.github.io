@@ -1,15 +1,97 @@
 <template>
-  <div>
-    <p>{{ name }}</p>
+  <div class="bg">
+    <v-container class="section-container d-flex justify-center align-center">
+      <v-row justify="center" align="center" class="flex-column">
+        <v-col lg="6">
+          <v-row class="d-flex align-center">
+            <v-col sm="2" class="footer-item">
+              <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+            </v-col>
+            <div class="footer-item">プライバシーポリシー</div>
+            <div class="footer-item">行動規範</div>
+            <div class="footer-item">お問い合わせ</div>
+          </v-row>
+        </v-col>
+
+        <v-col lg="6">
+          <v-row class="d-flex align-center justify-center">
+            <v-col sm="2" class="footer-item">
+              <img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019">
+            </v-col>
+            <v-col sm="2" class="footer-item">
+              <img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019">
+            </v-col>
+            <v-col sm="2" class="footer-item">
+              <img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019">
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col lg="6" class="copyright">
+          @DevFest Women Tokyo 2019
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
+
 <script>
+  import TitleBlack from '~/components/module/TitleBlack.vue'
+
   export default {
+    components: {
+      TitleBlack
+    },
     data() {
       return {
-        name: 'Footer'
+        name: 'What Dev Fest Women とは'
       }
     }
-  }</script>
-<style>
+  }
+</script>
+
+<style lang="scss" scoped>
+  .section-container{
+    padding: 45px 0px 45px 0px;
+    color: #fff;
+    font-family: HiraginoSans-W6;
+    font-size: 16px;
+  }
+
+  .content{
+    font-family: HiraginoSans-W3;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #ffffff;
+    margin: 0px 0px 30px 0px;
+  }
+  .hashtag{
+    .tag{
+      color: #7a7a8c;
+      font-family: HiraginoSans-W6;
+      margin: 0px 10px 0px 0px;
+    }
+    .link{
+      color: #ff6f61;
+      font-weight: 900;
+      font-family: Avenir;
+    }
+  }
+  .footer-logo{
+    width: 100%;
+  }
+  .footer-image{
+    width: 40px;
+    height: 40px;
+  }
+  .footer-item{
+    padding: 0px 16px 0px 16px;
+  }
+  .copyright{
+    font-family: HiraginoSans-W6;
+    font-size: 12px;
+    color: #ffffff;
+      text-align: center  ;
+  }
 </style>
+
+
