@@ -9,7 +9,7 @@
     </div>
     <div class="hero-link">
       <p class="label-text">{{ hero.button.description }}</p>
-      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link"></Button>
+      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" v-vind:buttonstyle=bgwhite></Button>
     </div>
   </div>
 </div>
