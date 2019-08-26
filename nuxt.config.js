@@ -17,7 +17,12 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://www.devfest-women.com/' },
       { hid: 'og:title', property: 'og:title', content: 'DevFest Women Tokyo 2019' },
       { hid: 'og:description', property: 'og:description', content: 'DevFest Women TokyoはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。' },
-      { hid: 'og:image', property: 'og:image', content: 'ssets/images/ogp.png' },
+      { hid: 'og:image', property: 'og:image', content: 'assets/images/ogp.png' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@wtmtokyo' },
+      { name: 'twitter:title', content: 'DevFest Women Tokyo 2019' },
+      { name: 'twitter:description', content: 'DevFest Women TokyoはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。' },
+      { name: 'twitter:image', content: 'assets/images/ogp.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
