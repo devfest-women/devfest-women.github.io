@@ -1,7 +1,7 @@
 <template>
   <div>
       <v-app-bar
-        scroll-target="#playground-example"
+        scroll-target="#playground"
         :elevate-on-scroll="true"
         :hide-on-scroll="false"
         :fade-on-scroll="false"
@@ -13,18 +13,20 @@
         :extended="false"
         :fixed="true"
         :clipped-right="false"
+        :color="transparent"
+        class="l-header pc-only"
       >
+      <div class="sp-only"></div>
       <v-container>
-       <v-row
-        :align="center"
-        :justify="center"
-        class="grey lighten-5"
-        >
+       <v-row class="text-center">
         <v-toolbar-items>
           <v-btn
+          :elevation="0"
            v-for="item in menu"
-          :key="item.title">
-            <nuxt-link v-scroll-to="item.link" to> {{ item.title }} </nuxt-link>
+          :key="item.title"
+          color="transparent"
+          >
+            <nuxt-link class="l-text" v-scroll-to="item.link" to> {{ item.title }} </nuxt-link>
           </v-btn>
         </v-toolbar-items> 
       </v-row>
@@ -51,7 +53,7 @@
       </v-container>
       </v-app-bar>
       <v-sheet
-        id="playground-example"
+        id="playground"
         class="overflow-y-auto"
         max-height="600"
       >
@@ -79,5 +81,19 @@ export default {
 }
 </script>
 <style scoped>
-.layout-header {}
+.l-header {
+  /* background-image: linear-gradient(to left, #da297b, #ff6f61); */
+  background-image: linear-gradient(to left,rgba(218,41,123,1), rgba(255,111,97,1));
+}
+.l-text {
+    color: #fff;
+    font-size: 16px;
+    font-family: Avenir,HiraginoSans-W6;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+}
+.l-transport{
+  opacity: unset;
+}
 </style>
