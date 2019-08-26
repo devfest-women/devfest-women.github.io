@@ -58,13 +58,15 @@
 <style lang="scss" scoped>
   .section-container{
     padding: 45px 0px 45px 0px;
+    @media (max-width:960px) {
+      padding: 30px 20px 0px 20px;
+    }
   }
   .content{
     font-family: HiraginoSans-W3;
     font-size: 16px;
     line-height: 1.56;
     color: #ffffff;
-    margin: 0px 0px 30px 0px;
   }
   a{
     color: #7a7a8c;

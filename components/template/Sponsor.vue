@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <v-container class="section-container d-flex flex-column justify-center align-center">
-      <v-row justify="center">
+      <v-row justify="center" class="sponcer-row">
         <v-col lg="6">
           <TitleBlack text="スポンサー"></TitleBlack>
           <div class="content">
@@ -36,6 +36,14 @@
 <style lang="scss" scoped>
   .section-container{
     padding: 45px 0px 45px 0px;
+    @media (max-width:960px) {
+      padding: 30px 20px;
+    }
+  }
+  .sponcer-row{
+    @media (max-width:960px) {
+      width: 100%;
+    }
   }
 
   .content{
