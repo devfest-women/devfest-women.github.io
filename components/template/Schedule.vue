@@ -50,13 +50,13 @@
 <style lang="scss" scoped>
   .section-container{
     padding: 45px 0px 45px 0px;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       padding: 2px 0;
     }
   }
 
   .schedule{
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       margin: 30px 20px;
     }
   }
@@ -77,7 +77,7 @@
     letter-spacing: 1.8px;
     color: #ffdedb;
     margin: 0px 25px 0px 0px;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       font-size: 16px;
     }
   }
@@ -86,7 +86,7 @@
     font-size: 18px;
     line-height: 1.39;
     color: #ffffff;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       font-size: 16px;
     }
   }

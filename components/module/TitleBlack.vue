@@ -24,7 +24,7 @@ export default {
     font-size: 34px;
     font-weight: 900;
     color: #ffffff;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
         font-size: 24px;
     }
 }
@@ -32,7 +32,7 @@ export default {
     width: 298px;
     height: 3px;
     background-image: linear-gradient(to left, #100e17, #da297b 35%, #ff6f61 71%, #100e17);
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
         width: 168px;
     }
 }

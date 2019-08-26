@@ -116,7 +116,7 @@
 <style lang="scss" scoped>
   .section-container{
     padding: 45px 0px 45px 0px;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       padding: 30px 20px 0px 20px;
     }
   }

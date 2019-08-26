@@ -58,18 +58,18 @@
     color: #fff;
     font-family: HiraginoSans-W6;
     font-size: 16px;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       padding: 10px;
     }
   }
   .footer-row{
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       margin: 0px 10px;
     }
   }
   .footer-logo{
     width: 100%;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       max-width: 72px;
       margin-bottom: 12px;
     }
@@ -80,7 +80,7 @@
   }
   .footer-item{
     padding: 0px 16px 0px 16px;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       padding: 0px 0px 8px 0px;
     }
     a {
@@ -89,7 +89,7 @@
     }
   }
   .footer-sns{
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       margin: 0 80px;
     }
   }

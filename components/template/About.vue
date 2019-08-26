@@ -96,7 +96,7 @@
   .section-container{
     padding: 45px 0px 90px 0px;
     color: #ffffff;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       padding: 30px 20px;
     }
   }
@@ -114,7 +114,7 @@
     font-family: HiraginoSans-W6;
     font-size: 20px;
     line-height: 1.25;
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       padding: 0px;
     }
   }
@@ -125,7 +125,7 @@
     img{
       width: 100%;
     }
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
       font-size: 14px;
       padding: 10px 0px 20px 0px;
     }
@@ -134,7 +134,7 @@
     margin: 48px 0px 0px 0px;
   }
   .conference-row{
-    @media (max-width: 600px) {
+    @media (max-width:960px) {
         display: flex;
         flex-direction: column;
     }
