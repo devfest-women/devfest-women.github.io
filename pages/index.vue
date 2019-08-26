@@ -53,7 +53,6 @@ export default {
 }
 .bg_black {
   width: 100vw;
-  height: 600px;
   position: relative;
   left: 50%;
   right: 50%;
@@ -63,7 +62,6 @@ export default {
 }
 .bg_gradient {
   width: 100vw;
-  height: 600px;
   position: relative;
   left: 50%;
   right: 50%;
