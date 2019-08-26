@@ -1,26 +1,26 @@
 <template>
   <div class="bg">
     <v-container class="section-container">
-      <v-row justify="center" class="d-flex flex-column align-center">
+      <v-row justify="center" class="schedule d-flex flex-column align-center">
         <v-col lg="6">
           <TitleGradient text="当日までのスケジュール"></TitleGradient>
         </v-col>
         <v-col lg="6" class="block-gradient">
-          <div class="block-content d-flex justify-center">
+          <div class="block-content d-flex flex-column flex-lg-row justify-center align-center">
             <span class="block-date">2019.8</span>
             <span class="block-description">DevFest Women 2019 サイト公開</span>
           </div>
         </v-col>
         <v-icon class="arrow" size="60" dark>arrow_drop_down</v-icon>
         <v-col lg="6" class="block-gradient">
-          <div class="block-content d-flex justify-center">
+          <div class="block-content d-flex flex-column flex-lg-row justify-center align-center">
             <span class="block-date">2019.9</span>
             <span class="block-description">参加申し込み開始予定</span>
           </div>
         </v-col>
         <v-icon class="arrow" size="60" dark>arrow_drop_down</v-icon>
         <v-col lg="6" class="block-white">
-          <div class="block-content d-flex justify-center">
+          <div class="block-content d-flex flex-column flex-lg-row justify-center align-center">
             <span class="block-white-date">2019.10.14</span>
             <span class="block-white-description">DevFest Women開催</span>
           </div>
@@ -50,6 +50,15 @@
 <style lang="scss" scoped>
   .section-container{
     padding: 45px 0px 45px 0px;
+    @media (max-width: 600px) {
+      padding: 2px 0;
+    }
+  }
+
+  .schedule{
+    @media (max-width: 600px) {
+      margin: 30px 20px;
+    }
   }
 
   .block-gradient {
@@ -68,12 +77,18 @@
     letter-spacing: 1.8px;
     color: #ffdedb;
     margin: 0px 25px 0px 0px;
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
   .block-description{
     font-family: HiraginoSans-W6;
     font-size: 18px;
     line-height: 1.39;
     color: #ffffff;
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
   .block-white-date{
     font-family: Avenir;
