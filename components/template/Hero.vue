@@ -1,6 +1,5 @@
 <template>
 <div class="bg_img">
-  <Header class="header"></Header>
   <div class="contents">
     <div class="hero-logo" justify-center="center">
       <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
@@ -9,19 +8,17 @@
     </div>
     <div class="hero-link">
       <p class="label-text">{{ hero.button.description }}</p>
-      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" v-vind:buttonstyle=bgwhite></Button>
+      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" buttonstyle="gradation"></Button>
     </div>
   </div>
 </div>
 </template>
 
 <script>
-import Header from '~/components/template/Header.vue'
 import Button from '~/components/module/Button.vue'
 
   export default {
     components: {
-      Header,
       Button
     },
     data() {
@@ -41,11 +38,6 @@ import Button from '~/components/module/Button.vue'
 <style scoped>
 .contents {
   text-align: center;
-}
-.header {
-  margin: 0;
-  position: relative;
-  z-index: 10;
 }
 .bg_img {
   background-image: url("~@/assets/img/hero.JPG");

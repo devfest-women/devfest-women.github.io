@@ -12,7 +12,7 @@
           </div>
           <!-- TODO:参加申し込みページができたら差し替え -->
           <div class="d-flex justify-center">
-            <Button text="参加申し込み" link="#"></Button>
+            <Button text="参加申し込み" link="#" v-bind:buttonstyle=gradation></Button>
           </div>
 
           <v-container class="conference-info">

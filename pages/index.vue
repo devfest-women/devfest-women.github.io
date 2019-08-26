@@ -11,6 +11,7 @@
       md6
     >
     <div class="text-xs-center">
+      <Header class="bg_layout"></Header>
       <Hero class="bg_layout"></Hero>
       <WhatDevFestWomen class="bg_black"></WhatDevFestWomen>
       <About class="bg_black"></About>
@@ -25,6 +26,7 @@
 </template>
 
 <script>
+import Header from '~/components/template/Header.vue'
 import Hero from '~/components/template/Hero.vue'
 import WhatDevFestWomen from '~/components/template/WhatDevFestWomen.vue'
 import About from '~/components/template/About.vue'
@@ -35,6 +37,7 @@ import Footer from '~/components/template/Footer.vue'
 
 export default {
   components: {
+    Header,
     Hero,
     WhatDevFestWomen,
     About,
