@@ -1,5 +1,5 @@
 <template>
-<div v-if="buttonstyle === bg_white">
+<div v-if="buttonstyle === bgwhite">
   <v-btn
     rounded
     min-width = "260px"
@@ -15,7 +15,7 @@
     </span>
   </v-btn>
 </div>
-<div v-else-if="buttonstyle === gradation">
+<div v-else-if="buttonstyle === bggradation">
   <v-btn
     rounded
     min-width = "260px"
