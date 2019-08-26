@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
-    <v-container class="section-container d-flex flex-column justify-center align-center">
-      <v-row justify="center">
+    <v-container class="section-container d-flex flex-column justify-center align-center" xs6>
+      <v-row justify="center" class="about_row">
         <v-col lg="6">
           <TitleBlack text="開催概要"></TitleBlack>
           <div class="content">
@@ -16,7 +16,7 @@
           </div>
 
           <v-container class="conference-info">
-            <v-row v-for="item in items">
+            <v-row class="conference-row" v-for="item in items">
               <v-col sm="2" class="info-title">
                 {{ item.title }}
               </v-col>
@@ -84,7 +84,7 @@
           { title: '日時', description: '2019年10月14日（月・祝日)<br>10:30開始 （10:00受付開始）<br>17:00 終了予定' },
           { title: '対象', description: 'IT業界や関連する職種で働いている人<br>IT業界で働くことを目指している学生' },
           { title: '参加費', description: '一般 3,000円<br>学生 無料（先着100名）' },
-          { title: '主催', description: '<img src="' + require("~/assets/img/wtm_logo_white.svg") + '"  alt="Women Techmakers Tokyo" title="Women Techmakers Tokyo">' },
+          { title: '主催', description: '<img style="width: 100%"src="' + require("~/assets/img/wtm_logo_white.svg") + '"  alt="Women Techmakers Tokyo" title="Women Techmakers Tokyo">' },
           { title: '会場', description: '御茶ノ水ソラシティカンファレンスセンター<br>（東京都千代田区神田駿河台4丁目4-6）' },
         ],
       }
@@ -96,6 +96,12 @@
   .section-container{
     padding: 45px 0px 90px 0px;
     color: #ffffff;
+    @media (max-width: 600px) {
+      padding: 30px 20px;
+    }
+  }
+  .about_row{
+    width: 100%;
   }
 
   .content{
@@ -108,6 +114,9 @@
     font-family: HiraginoSans-W6;
     font-size: 20px;
     line-height: 1.25;
+    @media (max-width: 600px) {
+      padding: 0px;
+    }
   }
   .info-content{
     font-family: HiraginoSans-W4;
@@ -116,9 +125,19 @@
     img{
       width: 100%;
     }
+    @media (max-width: 600px) {
+      font-size: 14px;
+      padding: 10px 0px 20px 0px;
+    }
   }
-  .conference-info{
+  .conference-info {
     margin: 48px 0px 0px 0px;
+  }
+  .conference-row{
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
   }
   .map{
     height: 360px;
