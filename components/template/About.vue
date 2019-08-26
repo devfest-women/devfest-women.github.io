@@ -20,7 +20,7 @@
               <v-col sm="2" class="info-title">
                 {{ item.title }}
               </v-col>
-              <v-col v-html="item.description"　class="info-content">
+              <v-col v-html="item.description" class="info-content">
               </v-col>
             </v-row>
           </v-container>
