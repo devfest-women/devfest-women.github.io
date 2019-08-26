@@ -1,5 +1,5 @@
 <template>
-<div class="bg_img">
+<div class="bg_img" id="hero">
   <div class="contents">
     <div class="hero-logo" justify-center="center">
       <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">

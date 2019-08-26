@@ -1,5 +1,5 @@
 <template>
-  <div class="bg">
+  <div class="bg" id="schedule">
     <v-container class="section-container">
       <v-row justify="center" class="schedule d-flex flex-column align-center">
         <v-col lg="6">

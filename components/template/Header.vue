@@ -23,8 +23,7 @@
         <v-toolbar-items>
           <v-btn
            v-for="item in menu"
-          :key="item.title"
-           text>
+          :key="item.title">
             <nuxt-link v-scroll-to="item.link" to> {{ item.title }} </nuxt-link>
           </v-btn>
         </v-toolbar-items> 
@@ -35,7 +34,6 @@
           <template v-slot:activator="{ on }">
             <v-app-bar-nav-icon
               v-on="on"
-              flat
             ></v-app-bar-nav-icon>
           </template>
           <v-list>
@@ -74,12 +72,12 @@ export default {
         { title: "Dev Fest Women とは", link: "#about-devfetwomen" },
         { title: "開催概要", link: "#about" },
         { title: "スケジュール", link: "#schedule" },
-        { title: "スポンサー", link: "#sponsor" },
-        { title: "スタッフ", link: "#staff" }
+        { title: "スポンサー", link: "#sponsor" }
+        // { title: "スタッフ", link: "#staff" }
       ]
   })
 }
 </script>
 <style scoped>
-
+.layout-header {}
 </style>
