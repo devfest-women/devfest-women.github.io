@@ -11,8 +11,7 @@
       md6
     >
     <div class="text-xs-center">
-      <Header></Header>
-      <Hero></Hero>
+      <Hero class="bg_layout"></Hero>
       <WhatDevFestWomen class="bg bg_black"></WhatDevFestWomen>
       <About class="bg bg_black"></About>
       <Schedule class="bg bg_gradient"></Schedule>
@@ -26,7 +25,6 @@
 </template>
 
 <script>
-import Header from '~/components/template/Header.vue'
 import Hero from '~/components/template/Hero.vue'
 import WhatDevFestWomen from '~/components/template/WhatDevFestWomen.vue'
 import About from '~/components/template/About.vue'
@@ -37,7 +35,6 @@ import Footer from '~/components/template/Footer.vue'
 
 export default {
   components: {
-    Header,
     Hero,
     WhatDevFestWomen,
     About,
@@ -51,6 +48,9 @@ export default {
 
 
 <style scoped>
+.bg_layout {
+  margin-top: -10px;
+}
 .bg_black {
   width: 100vw;
   position: relative;
