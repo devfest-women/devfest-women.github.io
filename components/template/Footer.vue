@@ -2,27 +2,30 @@
   <div class="bg">
     <v-container class="section-container d-flex justify-center align-center">
       <v-row justify="center" align="center" class="flex-column">
-        <v-col lg="6">
+        <v-col lg="8">
           <v-row class="d-flex align-center">
             <v-col sm="2" class="footer-item">
               <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
             </v-col>
-            <div class="footer-item">プライバシーポリシー</div>
-            <div class="footer-item">行動規範</div>
-            <div class="footer-item">お問い合わせ</div>
+            <div class="footer-item"><nuxt-link to="/privacypolicy">プライバシーポリシー</nuxt-link></div>
+            <div class="footer-item"><nuxt-link to="/codeofconduct">行動規範</nuxt-link></div>
+            <div class="footer-item"><nuxt-link to="/antiharassmentpolicy">アンチハラスメントポリシー</nuxt-link></div>
+            <div class="footer-item"><a target="_blank" href="https://forms.gle/Bc1BwwpwXwTZkA1b7">お問い合わせ</a></div>
           </v-row>
         </v-col>
 
         <v-col lg="6">
           <v-row class="d-flex align-center justify-center">
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019">
+              <a href="https://twitter.com/wtmtokyo"><img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019"></a>
             </v-col>
+            <!-- facbookページ今なさそう？
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019">
+              <a href=""><img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019"></a>
             </v-col>
+            -->
             <v-col sm="2" class="footer-item">
-              <img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019">
+              <a href="https://forms.gle/Bc1BwwpwXwTZkA1b7"><img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019"></a>
             </v-col>
           </v-row>
         </v-col>
@@ -85,6 +88,10 @@
   }
   .footer-item{
     padding: 0px 16px 0px 16px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
   .copyright{
     font-family: HiraginoSans-W6;
