@@ -8,7 +8,7 @@
         <v-col lg="6" class="block-gradient">
           <div class="block-content d-flex flex-column flex-lg-row justify-center align-center">
             <span class="block-date">2019.8</span>
-            <span class="block-description">DevFest Women 2019 サイト公開</span>
+            <span class="block-description">DevFest Women Tokyo 2019 サイト公開</span>
           </div>
         </v-col>
         <v-icon class="arrow" size="60" dark>arrow_drop_down</v-icon>
@@ -22,7 +22,7 @@
         <v-col lg="6" class="block-white">
           <div class="block-content d-flex flex-column flex-lg-row justify-center align-center">
             <span class="block-white-date">2019.10.14</span>
-            <span class="block-white-description">DevFest Women開催</span>
+            <span class="block-white-description">DevFest Women Tokyo開催</span>
           </div>
         </v-col>
       </v-row>

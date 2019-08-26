@@ -3,14 +3,14 @@
     <v-container class="section-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
         <v-col lg="6">
-          <TitleBlack text="DevFest Womenとは"></TitleBlack>
+          <TitleBlack text="DevFest Women Tokyoとは"></TitleBlack>
           <div class="content">
-            DevFest WomenはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。<br>
+            DevFest Women TokyoはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。<br>
             エンジニア、デザイナー、ディレクター、プロダクトマネージャーなど様々な職種の方にとって、自分のなりたい像がみつかったり、自分の知っていることやできることを増やして明日からの自信につなげるイベントを目指しています。
           </div>
           <div class="hashtag d-flex justify-lg-center align-center">
             <span class="tag">ハッシュタグ</span>
-            <a href="https://twitter.com/search?q=%23DevFestWomen" class="link">#DevFestWomen</a>
+            <a href="https://twitter.com/search?q=%23DevFestWomenTokyo" class="link">#DevFestWomenTokyo</a>
           </div>
         </v-col>
       </v-row>
