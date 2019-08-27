@@ -14,11 +14,10 @@
         :fixed="true"
         :clipped-right="false"
         :color="transparent"
-        class="l-header pc-only"
-      >
-      <div class="sp-only"></div>
-      <v-container>
-       <v-row class="text-center">
+        class="l-header">
+      
+      <v-container class="d-sm-none d-md-flex">
+       <v-row class="d-flex space-between justify-center">
         <v-toolbar-items v-if="pages === 'top'">
           <v-btn
           :elevation="0"
@@ -42,21 +41,23 @@
 
       </v-row>
       </v-container>
-      <v-container col-sm-5 col-md-6>
+      <v-container class="d-none d-sm-flex d-md-none">
         <v-menu>
           <template v-slot:activator="{ on }">
             <v-app-bar-nav-icon
+              color="white"
               v-on="on"
             ></v-app-bar-nav-icon>
           </template>
           <v-list v-if="pages === 'top'">
             <v-list-item
+              class="menu-line"
               v-for="(item, index) in menu"
               :key="index"
               @click=""
             >
               <v-list-item-title>
-                <nuxt-link v-scroll-to="item.link" to>{{ item.title }}</nuxt-link>
+                <nuxt-link class="menu-text" v-scroll-to="item.link" to>{{ item.title }}</nuxt-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
@@ -67,7 +68,7 @@
               @click=""
             >
               <v-list-item-title>
-                <nuxt-link v-bind:to="item.link">{{ item.title }}</nuxt-link>
+                <nuxt-link class="menu-text" v-bind:to="item.link">{{ item.title }}</nuxt-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
@@ -120,5 +121,15 @@ export default {
 }
 .l-transport{
   opacity: unset;
+}
+.menu-line{
+ border-bottom: solid #ff6f61;
+ }
+.menu-text {
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 900;
+  color: #ff6f61;  
+  text-decoration: none;
 }
 </style>
