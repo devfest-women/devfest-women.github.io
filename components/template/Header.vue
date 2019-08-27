@@ -9,7 +9,7 @@
         <v-list-item class="menu-line menu-head">
           <v-list-item-title>
             <nuxt-link class="l-text" to="/">
-            Dev Fest Women Tokyo 2019
+            DevFest Women Tokyo 2019
             </nuxt-link>
             
           </v-list-item-title>
@@ -28,7 +28,7 @@
     <v-list v-else>
         <v-list-item class="menu-line menu-head">
           <v-list-item-title>
-            <nuxt-link class="l-text" to="/">Dev Fest Women Tokyo 2019
+            <nuxt-link class="l-text" to="/">DevFest Women Tokyo 2019
             </nuxt-link>
           </v-list-item-title>
         </v-list-item>
@@ -99,7 +99,7 @@ export default {
   data: () => ({
       drawer:null,
       menu: [
-        { title: "Dev Fest Women とは", link: "#aboutdevfestwomen" },
+        { title: "DevFest Women とは", link: "#aboutdevfestwomen" },
         { title: "開催概要", link: "#about" },
         { title: "スケジュール", link: "#schedule" },
         { title: "スポンサー", link: "#sponsor" }
@@ -107,7 +107,7 @@ export default {
       ],
       menu2 : [
         { title: "TOP", link: "/" },
-        { title: "Dev Fest Women とは", link: "/#aboutdevfestwomen" },
+        { title: "DevFest Women とは", link: "/#aboutdevfestwomen" },
         { title: "開催概要", link: "/#about" },
         { title: "スケジュール", link: "/#schedule" },
         { title: "スポンサー", link: "/#sponsor" }
