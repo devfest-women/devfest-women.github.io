@@ -23,7 +23,7 @@ export default {
       { name: 'twitter:site', content: '@wtmtokyo' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
 ,
       {
         rel: 'stylesheet',

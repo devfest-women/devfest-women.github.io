@@ -4,17 +4,17 @@
       v-model="drawer"
       app
       right
-      temporary
       touchless
+      hide-overlay
+      temporary
     >
       <v-list v-if="pages === 'top'">
         <v-list-item class="menu-line menu-head">
-          <v-list-item-title>
-            <nuxt-link class="l-text" to="/">
-            DevFest Women Tokyo 2019
-            </nuxt-link>
-            
-          </v-list-item-title>
+          <nuxt-link class="l-text" to="/">
+            <v-list-item-title>
+              DevFest Women Tokyo 2019
+            </v-list-item-title>
+          </nuxt-link>
         </v-list-item>
         <v-list-item
           class="menu-line"
@@ -22,29 +22,36 @@
           :key="index"
           @click=""
         >
+        <nuxt-link class="menu-text" v-scroll-to="item.link" to>
           <v-list-item-title>
-            <nuxt-link class="menu-text" v-scroll-to="item.link" to>{{ item.title }}</nuxt-link>
+             {{ item.title }}
           </v-list-item-title>
-        </v-list-item>
+        </nuxt-link>          
+      </v-list-item>
     </v-list>
+
     <v-list v-else>
         <v-list-item class="menu-line menu-head">
-          <v-list-item-title>
-            <nuxt-link class="l-text" to="/">DevFest Women Tokyo 2019
-            </nuxt-link>
-          </v-list-item-title>
+          <nuxt-link class="l-text" to="/">
+            <v-list-item-title>
+              DevFest Women Tokyo 2019
+            </v-list-item-title>
+          </nuxt-link>
         </v-list-item>
       <v-list-item
         v-for="(item, index) in menu2"
         :key="index"
         @click=""
       >
+      <nuxt-link class="menu-text" v-bind:to="item.link">
         <v-list-item-title>
-          <nuxt-link class="menu-text" v-bind:to="item.link">{{ item.title }}</nuxt-link>
+          {{ item.title }}
         </v-list-item-title>
-      </v-list-item>
+        </nuxt-link>
+    </v-list-item>
     </v-list>
     </v-navigation-drawer>
+
       <v-app-bar
         scroll-target="#playground"
         :elevate-on-scroll="true"
@@ -101,7 +108,7 @@ export default {
       drawer:null,
       menu: [
         { title: "DevFest Women とは", link: "#aboutdevfestwomen" },
-        { title: "開催概要", link: "#about" },
+        { title: "開催概要", link: "#aboutevent" },
         { title: "スケジュール", link: "#schedule" },
         { title: "スポンサー", link: "#sponsor" }
         // { title: "スタッフ", link: "#staff" }
@@ -109,7 +116,7 @@ export default {
       menu2 : [
         { title: "TOP", link: "/" },
         { title: "DevFest Women とは", link: "/#aboutdevfestwomen" },
-        { title: "開催概要", link: "/#about" },
+        { title: "開催概要", link: "/#aboutevent" },
         { title: "スケジュール", link: "/#schedule" },
         { title: "スポンサー", link: "/#sponsor" }
         // { title: "スタッフ", link: "#staff" }
