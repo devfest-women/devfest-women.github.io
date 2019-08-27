@@ -36,5 +36,6 @@ export default {
 <style>
   .default-setting {
     color: #ffffff;
+    padding:0;
   }
 </style>
