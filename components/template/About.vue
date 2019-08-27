@@ -10,13 +10,12 @@
             昨今のカンファレンスでは登壇者の多くが男性ですが、IT業界で活躍している女性やLGBTQの方も数多く存在しています。<br>
             DevFest Women Tokyoでは、そんな彼女たちにスポットライトを当てます。そして彼女たちの知的好奇心をくすぐる発表を通して、次の日からの自信につなげられるようなカンファレンスを目指しています。
           </div>
-          <!-- TODO:参加申し込みページができたら差し替え -->
           <div class="d-flex justify-center">
-            <Button text="参加申し込み" link="#" buttonstyle="gradation"></Button>
+            <Button text="参加申し込み" link="https://wtm-tokyo.peatix.com" buttonstyle="gradation"></Button>
           </div>
 
           <v-container class="conference-info">
-            <v-row class="conference-row" v-for="item in items">
+            <v-row class="conference-row" v-for="item in items" :key="item.title">
               <v-col sm="2" class="info-title">
                 {{ item.title }}
               </v-col>
