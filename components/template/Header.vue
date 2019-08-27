@@ -56,7 +56,6 @@
         :extended="false"
         :fixed="true"
         :clipped-right="false"
-        :color="transparent"
         class="l-header">
       
       <v-container class="d-sm-none d-md-flex">
