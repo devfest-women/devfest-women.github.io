@@ -10,7 +10,10 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "heroku-postbuild": "npm run build",
-    "web": "nuxt start"
+    "web": "nuxt start",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
@@ -20,8 +23,9 @@
     "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
+    "nodemon": "^1.19.1",
+    "push-dir": "^0.4.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "nodemon": "^1.19.1"
+    "stylus-loader": "^3.0.2"
   }
 }
