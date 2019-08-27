@@ -1,14 +1,31 @@
 <template>
-<div>
+<div v-if="buttonstyle === 'white'">
   <v-btn
     rounded
-    min-width = "370px"
+    min-width = "260px"
+    max-widht = "370px"
     min-height = "54px"
     color = "#fff"
     href = "https://google.com"
     target="_blank"
+    class="white"
    >
-    <span class="button-text">
+    <span class="button-text color-pink">
+      {{ text }}
+    </span>
+  </v-btn>
+</div>
+<div v-else-if="buttonstyle === 'gradation'">
+  <v-btn
+    rounded
+    min-width = "260px"
+    max-widht = "370px"
+    min-height = "54px"
+    href = "https://google.com"
+    target="_blank"
+    class="button-gradesion"
+   >
+    <span class="button-text color-white">
       {{ text }}
     </span>
   </v-btn>
@@ -16,15 +33,22 @@
 </template>
 <script>
 export default {
-  props: ['text','link']
-  
+  props: ['text','link','buttonstyle']
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+.button-gradesion{
+  background-image: linear-gradient(to left, #da297b, #ff6f61);
+}
 .button-text {
   font-family: HiraginoSans-W7;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-pink {
   color: #ff6f61;
 }
 </style>
