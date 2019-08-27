@@ -11,14 +11,14 @@
       md6
     >
     <div class="text-xs-center">
-      <Header class="bg_layout" pages="top"></Header>
+      <Header class="" pages="top"></Header>
       <Hero class="bg_layout"></Hero>
       <WhatDevFestWomen class="bg_black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
       <About class="bg_black anchor" id="about"></About>
       <Schedule class="bg_gradient anchor" id="schedule"></Schedule>
       <Sponsor class="bg_black anchor" id="sponsor"></Sponsor>
       <!-- <Staff class="bg bg_black"></Staff> -->
-      <Footer class="bg_gradient anchor"></Footer>
+      <Footer class="bg_gradient"></Footer>
     </div>
     </v-flex>
   </v-layout>
@@ -68,6 +68,9 @@ export default {
   margin-left: -50vw;
   margin-right: -50vw;
   background-image: linear-gradient(to left, #da297b, #ff6f61);
+}
+.bg_layout{
+  margin-bottom: -12px;
 }
 .anchor{
   display: block;
