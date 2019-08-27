@@ -5,7 +5,7 @@
       app
       right
     >
-      <v-list v-if="pages === 'top'" dense>
+      <v-list v-if="pages === 'top'">
         <v-list-item class="menu-line menu-head">
           <v-list-item-title>
             <nuxt-link class="l-text" to="/">
