@@ -29,7 +29,7 @@ import Button from '~/components/module/Button.vue'
           button:{
             description:'スポンサーを募集中です！',
             text:'スポンサー申し込み',
-            link:'https://googlle.com'
+            link:'https://docs.google.com/forms/d/e/1FAIpQLSfwIrV6HXRztZF0L6Z0aBj4zdmV5AWtbyVWg77i0Ho25LANVA/viewform'
           },
         }
       }
@@ -101,7 +101,7 @@ import Button from '~/components/module/Button.vue'
   margin: 0;
   padding-top: 31px;
   position: relative;
-  top: 123px;
+  top: 112px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.2);
 }

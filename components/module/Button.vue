@@ -6,7 +6,7 @@
     max-widht = "370px"
     min-height = "54px"
     color = "#fff"
-    href = "https://google.com"
+    :href = "link"
     target="_blank"
     class="white"
    >
@@ -21,7 +21,7 @@
     min-width = "260px"
     max-widht = "370px"
     min-height = "54px"
-    href = "https://google.com"
+    :href = "link"
     target="_blank"
     class="button-gradesion"
    >
