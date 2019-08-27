@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+const BASE_URL = 'https://devfestwomen2019.herokuapp.com/'
 
 export default {
   mode: 'universal',
@@ -11,7 +12,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'DevFest Women TokyoはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'DevFest Women Tokyo 2019' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: BASE_URL },
+      { hid: 'og:title', property: 'og:title', content: 'DevFest Women Tokyo 2019' },
+      { hid: 'og:description', property: 'og:description', content: 'DevFest Women TokyoはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。' },
+      { hid: 'og:image', property: 'og:image', content: BASE_URL + '/img/ogp.jpg' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@wtmtokyo' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
