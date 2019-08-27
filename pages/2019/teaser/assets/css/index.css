@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("font-awesome.min.css");
+
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245,242,240);
+    background-size: cover;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: rgb(60, 60, 60);
+}
+
+.hero {
+    height: 400px;
+    background-color: #FF6F61;
+    color: #FFF;
+}
+
+.about {
+    display: block;
+}
+
+.title {
+    font-size: 80px;
+    padding-top: 150px;
+}
+
+.cards {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.card {
+    margin: 30px 20px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 14px;
+    line-height: 1.5;
+    height: 200px;
+    padding: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: solid 2px #FFF;
+    border-radius: 3px;
+    transition: .4s;
+    font-size: 2rem;
+    width: auto;
+    color: #FFF;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #FF6F61;
+}
+
+.sponsor img {
+    width: 50%;
+    margin: 0px 25%;
+}
+
+footer {
+    padding: 50px;
+    background-color: rgb(60, 60, 60);
+    color: #FFF;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    text-decoration-line: none;
+    color: #FFF;
+    font-size: 20px;
+    margin: 20px 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .title {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .description {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .cards {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .copyright {
+        padding-top: 30px;
+    }
+
+    .button {
+        display: block;
+        width: 80%;
+        margin: 20px 10%;
+        font-size: 1.5rem;
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .title {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .description {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .cards {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .copyright {
+        padding-top: 30px;
+    }
+
+    .button {
+        display: block;
+        width: 80%;
+        margin: 20px 10%;
+        font-size: 1.5rem;
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor img {
+        width: 100%;
+        margin: 0;
+    }
+}
