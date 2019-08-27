@@ -1,5 +1,5 @@
 <template>
-  <div class="bg" id="about">
+  <div class="bg">
     <v-container class="section-container d-flex flex-column justify-center align-center" xs6>
       <v-row justify="center" class="about_row">
         <v-col lg="6">

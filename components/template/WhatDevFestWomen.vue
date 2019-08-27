@@ -1,5 +1,5 @@
 <template>
-  <div class="bg" id="about-devfetwomen">
+  <div class="bg">
     <v-container class="section-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
         <v-col lg="6">

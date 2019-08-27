@@ -19,7 +19,7 @@
       <div class="sp-only"></div>
       <v-container>
        <v-row class="text-center">
-        <v-toolbar-items>
+        <v-toolbar-items v-if="pages === 'top'">
           <v-btn
           :elevation="0"
            v-for="item in menu"
@@ -29,6 +29,17 @@
             <nuxt-link class="l-text" v-scroll-to="item.link" to> {{ item.title }} </nuxt-link>
           </v-btn>
         </v-toolbar-items> 
+        <v-toolbar-items v-else>
+          <v-btn
+          :elevation="0"
+           v-for="item in menu2"
+          :key="item.title"
+          color="transparent"
+          >
+            <nuxt-link class="l-text" vind:to="item.link"> {{ item.title }} </nuxt-link>
+          </v-btn>
+        </v-toolbar-items> 
+
       </v-row>
       </v-container>
       <v-container col-sm-5 col-md-6>
@@ -38,7 +49,7 @@
               v-on="on"
             ></v-app-bar-nav-icon>
           </template>
-          <v-list>
+          <v-list v-if="pages === 'top'">
             <v-list-item
               v-for="(item, index) in menu"
               :key="index"
@@ -46,6 +57,17 @@
             >
               <v-list-item-title>
                 <nuxt-link v-scroll-to="item.link" to>{{ item.title }}</nuxt-link>
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+          <v-list v-else>
+            <v-list-item
+              v-for="(item, index) in menu2"
+              :key="index"
+              @click=""
+            >
+              <v-list-item-title>
+                <nuxt-link v-bind:to="item.link">{{ item.title }}</nuxt-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
@@ -62,22 +84,25 @@
 </template>
 <script>
 export default {
+  props: ['pages'],
   data: () => ({
-      text : {
-        Link1 : "Dev Fest Women とは",
-        Link2 : "開催概要",
-        Link3 : "スケジュール",
-        Link4 : "スポンサー",
-        Link5 : "スタッフ"
-    },
       menu: [
-        { title: "Dev Fest Women とは", link: "#about-devfetwomen" },
+        { title: "Dev Fest Women とは", link: "#aboutdevfestwomen" },
         { title: "開催概要", link: "#about" },
         { title: "スケジュール", link: "#schedule" },
         { title: "スポンサー", link: "#sponsor" }
         // { title: "スタッフ", link: "#staff" }
-      ]
-  })
+      ],
+      menu2 : [
+        { title: "TOP", link: "/" },
+        { title: "Dev Fest Women とは", link: "/#aboutdevfestwomen" },
+        { title: "開催概要", link: "/#about" },
+        { title: "スケジュール", link: "/#schedule" },
+        { title: "スポンサー", link: "/#sponsor" }
+        // { title: "スタッフ", link: "#staff" }
+    ],
+
+})
 }
 </script>
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg" id="sponsor">
+  <div class="bg">
     <v-container class="section-container d-flex flex-column justify-center align-center">
       <v-row justify="center" class="sponcer-row">
         <v-col lg="6">

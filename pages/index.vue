@@ -11,14 +11,14 @@
       md6
     >
     <div class="text-xs-center">
-      <Header class="bg_layout"></Header>
+      <Header class="bg_layout" pages="top"></Header>
       <Hero class="bg_layout"></Hero>
-      <WhatDevFestWomen class="bg_black"></WhatDevFestWomen>
-      <About class="bg_black"></About>
-      <Schedule class="bg_gradient"></Schedule>
-      <Sponsor class="bg_black"></Sponsor>
+      <WhatDevFestWomen class="bg_black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
+      <About class="bg_black anchor" id="about"></About>
+      <Schedule class="bg_gradient anchor" id="schedule"></Schedule>
+      <Sponsor class="bg_black anchor" id="sponsor"></Sponsor>
       <!-- <Staff class="bg bg_black"></Staff> -->
-      <Footer class="bg_gradient"></Footer>
+      <Footer class="bg_gradient anchor"></Footer>
     </div>
     </v-flex>
   </v-layout>
@@ -51,9 +51,6 @@ export default {
 
 
 <style scoped>
-.bg_layout {
-  margin-top: -10px;
-}
 .bg_black {
   width: 100vw;
   position: relative;
@@ -71,5 +68,10 @@ export default {
   margin-left: -50vw;
   margin-right: -50vw;
   background-image: linear-gradient(to left, #da297b, #ff6f61);
+}
+.anchor{
+  display: block;
+  padding-top: 10px;
+  margin-top: -10px;
 }
 </style>
