@@ -46,7 +46,7 @@
     },
     data() {
       return {
-        name: 'What Dev Fest Women とは'
+        name: 'What DevFest Women とは'
       }
     }
   }

@@ -1,27 +1,24 @@
 <template>
-<div class="bg_img">
-  <Header class="header"></Header>
+<div class="bg_img" id="hero">
   <div class="contents">
     <div class="hero-logo" justify-center="center">
-      <img src="~/assets/img/wtm_logo_white.svg">
+      <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
       <p class="hero-days">{{ hero.days }}</p>   
-      <p >{{ hero.place }}</p>
+      <p class="hero-place">{{ hero.place }}</p>
     </div>
     <div class="hero-link">
       <p class="label-text">{{ hero.button.description }}</p>
-      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link"></Button>
+      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" buttonstyle="white"></Button>
     </div>
   </div>
 </div>
 </template>
 
 <script>
-import Header from '~/components/template/Header.vue'
 import Button from '~/components/module/Button.vue'
 
   export default {
     components: {
-      Header,
       Button
     },
     data() {
@@ -41,11 +38,6 @@ import Button from '~/components/module/Button.vue'
 <style scoped>
 .contents {
   text-align: center;
-}
-.header {
-  margin: 0;
-  position: relative;
-  z-index: 10;
 }
 .bg_img {
   background-image: url("~@/assets/img/hero.JPG");
@@ -98,6 +90,7 @@ import Button from '~/components/module/Button.vue'
   color: #ffffff;
 }
 .hero-place {
+  margin-top: -15px;
   font-family: HiraginoSans-W3;
   font-size: 15px;
   color: #ffffff;
@@ -108,7 +101,7 @@ import Button from '~/components/module/Button.vue'
   margin: 0;
   padding-top: 31px;
   position: relative;
-  top: 118px;
+  top: 123px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.2);
 }

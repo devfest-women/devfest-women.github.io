@@ -8,7 +8,7 @@
             DevFest Women Tokyo 2019 をよりよいイベントにするため、スポンサーを募集しています。 ご希望の企業様は、以下よりお申し込みください。ご応募の締め切りは、2019年9月30日です。
           </div>
           <div class="d-flex justify-center">
-            <Button text="スポンサー申し込み" link="https://docs.google.com/forms/d/e/1FAIpQLSfwIrV6HXRztZF0L6Z0aBj4zdmV5AWtbyVWg77i0Ho25LANVA/viewform"></Button>
+            <Button text="スポンサー申し込み" link="https://docs.google.com/forms/d/e/1FAIpQLSfwIrV6HXRztZF0L6Z0aBj4zdmV5AWtbyVWg77i0Ho25LANVA/viewform" buttonstyle="gradation"></Button>
           </div>
         </v-col>
       </v-row>
