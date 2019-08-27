@@ -44,7 +44,7 @@ import Button from '~/components/module/Button.vue'
   background-color: #da297b;
   background-size: 1024px auto;
   background-position: center top;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 600px;
   position: relative;
