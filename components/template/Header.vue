@@ -4,6 +4,8 @@
       v-model="drawer"
       app
       right
+      temporary
+      touchless
     >
       <v-list v-if="pages === 'top'">
         <v-list-item class="menu-line menu-head">
