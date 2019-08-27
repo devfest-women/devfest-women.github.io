@@ -14,7 +14,7 @@
       <Header class="" pages="top"></Header>
       <Hero class="bg_layout"></Hero>
       <WhatDevFestWomen class="bg_black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
-      <About class="bg_black anchor" id="about"></About>
+      <About class="bg_black anchor" id="aboutevent"></About>
       <Schedule class="bg_gradient anchor" id="schedule"></Schedule>
       <Sponsor class="bg_black anchor" id="sponsor"></Sponsor>
       <!-- <Staff class="bg bg_black"></Staff> -->
