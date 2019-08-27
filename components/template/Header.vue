@@ -5,7 +5,7 @@
       app
       right
     >
-      <v-list v-if="pages === 'top'" dense>
+      <v-list v-if="pages === 'top'">
         <v-list-item class="menu-line menu-head">
           <v-list-item-title>
             <nuxt-link class="l-text" to="/">
@@ -58,7 +58,7 @@
         :clipped-right="false"
         class="l-header">
       
-      <v-container class="d-sm-none d-md-flex">
+      <v-container class="d-none d-sm-flex">
        <v-row class="d-flex space-between justify-center">
         <v-toolbar-items v-if="pages === 'top'">
           <v-btn
@@ -84,7 +84,7 @@
       </v-row>
       </v-container>
 
-      <v-container class="d-none d-sm-flex d-md-none">
+      <v-container class="d-flex d-sm-none">
         <v-row class="justify-end">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white"></v-app-bar-nav-icon>
       </v-row>    
