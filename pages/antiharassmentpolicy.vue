@@ -1,6 +1,6 @@
 <template>
   <div class="text-xs-center">
-    <AntiHarassmentPolicy class="bg bg-black"></AntiHarassmentPolicy>
+    <AntiHarassmentPolicy class="bg-black"></AntiHarassmentPolicy>
   </div>
 </template>
 

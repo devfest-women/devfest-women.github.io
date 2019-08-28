@@ -18,6 +18,9 @@ import Sponsor from '~/components/template/Sponsor.vue'
 import Staff from '~/components/template/Staff.vue'
 
 export default {
+  layout (context) {
+    return 'top'
+  },
   components: {
     Hero,
     WhatDevFestWomen,
