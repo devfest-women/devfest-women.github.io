@@ -1,23 +1,7 @@
 <template>
-  <v-app>
-    <v-layout
-      column
-      justify-center
-      align-center
-    >
-      <v-flex
-        xs12
-        sm8
-        md6
-      >
-      <div class="text-xs-center">
-        <Header></Header>
-        <PrivacyPolicy class="bg bg_black"></PrivacyPolicy>
-        <Footer class="bg bg_gradient"></Footer>
-      </div>
-      </v-flex>
-    </v-layout>
-  </v-app>
+<div class="text-xs-center">
+  <PrivacyPolicy class="bg bg_black"></PrivacyPolicy>
+ </div>
 </template>
 
 <script>
