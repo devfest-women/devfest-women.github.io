@@ -39,6 +39,7 @@
           </nuxt-link>
         </v-list-item>
       <v-list-item
+        class="menu-line"
         v-for="(item, index) in menu2"
         :key="index"
         @click=""
@@ -47,7 +48,7 @@
         <v-list-item-title>
           {{ item.title }}
         </v-list-item-title>
-        </nuxt-link>
+      </nuxt-link>
     </v-list-item>
     </v-list>
     </v-navigation-drawer>
@@ -71,6 +72,7 @@
        <v-row class="d-flex space-between justify-center">
         <v-toolbar-items v-if="pages === 'top'">
           <v-btn
+          min-height="60"
           :elevation="0"
            v-for="item in menu"
           :key="item.title"
@@ -81,12 +83,13 @@
         </v-toolbar-items> 
         <v-toolbar-items v-else>
           <v-btn
+          min-height="60"
           :elevation="0"
            v-for="item in menu2"
           :key="item.title"
           color="transparent"
           >
-            <nuxt-link class="l-text" vind:to="item.link"> {{ item.title }} </nuxt-link>
+            <nuxt-link class="l-text" v-bind:to="item.link"> {{ item.title }} </nuxt-link>
           </v-btn>
         </v-toolbar-items> 
 
@@ -107,7 +110,7 @@ export default {
   data: () => ({
       drawer:null,
       menu: [
-        { title: "DevFest Women とは", link: "#aboutdevfestwomen" },
+        { title: "DevFest Women Tokyo とは", link: "#aboutdevfestwomen" },
         { title: "開催概要", link: "#aboutevent" },
         { title: "スケジュール", link: "#schedule" },
         { title: "スポンサー", link: "#sponsor" }
@@ -115,7 +118,7 @@ export default {
       ],
       menu2 : [
         { title: "TOP", link: "/" },
-        { title: "DevFest Women とは", link: "/#aboutdevfestwomen" },
+        { title: "DevFest Women Tokyo とは", link: "/#aboutdevfestwomen" },
         { title: "開催概要", link: "/#aboutevent" },
         { title: "スケジュール", link: "/#schedule" },
         { title: "スポンサー", link: "/#sponsor" }
@@ -139,15 +142,16 @@ export default {
 .l-transport{
   opacity: unset;
 }
-.menu-line{
+.menu-line {
  border-bottom: solid 0.5px #ff6f61;
  }
 .menu-text {
   font-family: Avenir;
   font-size: 18px;
   font-weight: 900;
-  color: #ff6f61;  
+  color: #ff6f61;
   text-decoration: none;
+  padding-right: 200px;
 }
 .menu-head {
   background-image: linear-gradient(to left, #da297b, #ff6f61);

@@ -10,7 +10,7 @@
           </div>
           <div class="hashtag d-flex justify-lg-center align-center">
             <span class="tag">ハッシュタグ</span>
-            <a href="https://twitter.com/search?q=%23DevFestWomenTokyo" class="link">#DevFestWomenTokyo</a>
+            <a href="https://twitter.com/search?q=%23DevFestWomen" class="link">#DevFestWomen</a>
           </div>
         </v-col>
       </v-row>

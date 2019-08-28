@@ -11,7 +11,7 @@
           sm8
           md6
         >
-        <Header pages=""></Header>
+        <Header pages="top"></Header>
           <v-container class="default-setting">
             <nuxt />
           </v-container>
@@ -27,35 +27,12 @@ import Header from '~/components/template/Header.vue'
 import Footer from '~/components/template/Footer.vue'
 
 export default {
-    components: {
-    Header,
-    Footer
+  layout: 'top',
+  components: {
+      Header,
+      Footer
   }
 }
 </script>
 <style>
-.default-setting {
-  margin-top: 40px;
-}
-.bg-black {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  background-color: #100e17;
-}
-.bg-gradient {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  background-image: linear-gradient(to left, #da297b, #ff6f61);
-}
-.l-footer{
-  margin-top: -12px;
-}
 </style>

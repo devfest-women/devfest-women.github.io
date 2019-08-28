@@ -5,12 +5,12 @@
         <v-col lg="6">
           <TitleBlack text="開催概要"></TitleBlack>
           <div class="content">
-            DevFest Women Tokyoは、Diversity（多様性）とInclusion（仲間はずれにしない）ことを強調したテクノロジーカンファレンスです。<br>
+            DevFest Women Tokyoは、Diversity（多様性）とInclusion（認知と尊重）を強調したテクノロジーカンファレンスです。<br>
             本カンファレンスの登壇者は女性アイデンティティの方に限定しています。<br>
-            DevFest Women Tokyoでは、IT業界で活躍している女性やLGBTQの方にスポットライトを当て、彼女たちの知的好奇心くすぐる発表を通して、次の日からの自信につなげられるようなカンファレンスを目指しています。
+            DevFest Women Tokyoでは、IT業界で活躍している女性やLGBTQの方にスポットライトを当て、彼女たちの知的好奇心をそそる発表を通して、次の日からの自信につなげられるようなカンファレンスを目指しています。
           </div>
           <div class="d-flex justify-center">
-            <Button text="参加申し込み" link="https://wtm-tokyo.peatix.com" buttonstyle="gradation"></Button>
+            <Button text="参加申し込み" link="https://devfestwomen2019.peatix.com/view" buttonstyle="gradation"></Button>
           </div>
 
           <v-container class="conference-info">
