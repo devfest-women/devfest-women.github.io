@@ -12,7 +12,7 @@
           md6
         >
         <Header pages="top"></Header>
-          <v-container>
+          <v-container class="default-setting">
             <nuxt />
           </v-container>
         <Footer class="bg-gradient l-footer"></Footer>
@@ -35,7 +35,7 @@ export default {
 </script>
 <style>
 .default-setting {
-  color: #ffffff;
+margin-top: 40px;
 }
 .bg-black {
   width: 100vw;
