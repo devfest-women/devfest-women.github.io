@@ -14,8 +14,8 @@
         <v-icon class="arrow" size="60" dark>arrow_drop_down</v-icon>
         <v-col lg="6" class="block-gradient">
           <div class="block-content d-flex flex-column flex-lg-row justify-center align-center">
-            <span class="block-date">2019.9</span>
-            <span class="block-description">参加申し込み開始予定</span>
+            <span class="block-date">2019.8</span>
+            <span class="block-description">参加申し込み開始</span>
           </div>
         </v-col>
         <v-icon class="arrow" size="60" dark>arrow_drop_down</v-icon>
