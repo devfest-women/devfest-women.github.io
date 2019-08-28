@@ -23,9 +23,6 @@
               <a href="https://twitter.com/wtmtokyo"><img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019"></a>
             </v-col>
             <v-col sm="2" class="footer-item">
-              <a href=""><img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019"></a>
-            </v-col>
-            <v-col sm="2" class="footer-item">
               <a href="https://forms.gle/Bc1BwwpwXwTZkA1b7"><img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019"></a>
             </v-col>
           </v-row>
