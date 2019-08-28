@@ -19,7 +19,7 @@
         </v-flex>
       </v-layout>
     </v-app>
-  </v-content>    
+  </v-content> 
 </template>
 
 <script>
