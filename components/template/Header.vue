@@ -107,7 +107,7 @@ export default {
   data: () => ({
       drawer:null,
       menu: [
-        { title: "DevFest Women とは", link: "#aboutdevfestwomen" },
+        { title: "DevFest Women Tokyo とは", link: "#aboutdevfestwomen" },
         { title: "開催概要", link: "#aboutevent" },
         { title: "スケジュール", link: "#schedule" },
         { title: "スポンサー", link: "#sponsor" }
@@ -115,7 +115,7 @@ export default {
       ],
       menu2 : [
         { title: "TOP", link: "/" },
-        { title: "DevFest Women とは", link: "/#aboutdevfestwomen" },
+        { title: "DevFest Women Tokyo とは", link: "/#aboutdevfestwomen" },
         { title: "開催概要", link: "/#aboutevent" },
         { title: "スケジュール", link: "/#schedule" },
         { title: "スポンサー", link: "/#sponsor" }

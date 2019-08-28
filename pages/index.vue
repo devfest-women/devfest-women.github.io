@@ -11,7 +11,6 @@
       md6
     >
     <div class="text-xs-center">
-      <Header class="" pages="top"></Header>
       <Hero class="bg_layout"></Hero>
       <WhatDevFestWomen class="bg_black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
       <About class="bg_black anchor" id="aboutevent"></About>
