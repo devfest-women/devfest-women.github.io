@@ -6,63 +6,13 @@
           <TitleBlack text="登壇者"></TitleBlack>
           <div class="content">
               <div class="speaker-box">
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-                <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-              </div>
-              <div class="speaker-box">
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
-                  </div>
-                  <div class="item">
-                        <a href="#"><img src="http://marunuki.tools-base.biz/wp-content/uploads/2014/10/marunuki036.png"
-                                                                         alt="test"
-                                                                         title="test"></a>
-                        <p class="name">foo bar</p>
-                        <p class="account">@foobar</p>
+                  <div class="item" v-for="item in items" :key="item.name">
+                        <a href="#"><img :src=item.img_src
+                                         :alt=item.name
+                        ></a>
+                        <p class="name">{{item.name}}</p>
+                        <!-- TODO: SNSへのリンクにする -->
+                        <p class="account">{{item.account}}</p>
                   </div>
               </div>
           </div>
@@ -77,11 +27,13 @@
 
   export default {
     components: {
-      TitleBlack,
+      TitleBlack
     },
     data() {
       return {
-        name: '登壇者',
+        items: [
+            { name: 'hoge', account: 'hoge', img_src: require("~/assets/img/speaker/emma.jpg") },
+        ],
       }
     }
   }
@@ -107,16 +59,15 @@
 
   .speaker-box {
       display: flex;
-  }
+      .item{
+          padding: 10px;
+          display: inline-block;
+          text-align: center;
+      }
 
-  .speaker-box .item{
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .speaker-box .item img {
-      height: 200px;
+      .item img {
+          height: 200px;
+      }
   }
 </style>
 
