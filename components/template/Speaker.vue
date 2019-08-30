@@ -32,8 +32,12 @@
     data() {
       return {
         items: [
-            { name: 'hoge', account: 'hoge', img_src: require("~/assets/img/speaker/emma.jpg") },
-        ],
+            { name: '岩尾 エマ はるか', account: '@Yuryu', , account_link: 'https://twitter.com/Yuryu', description: 'Developer Advocate', img_src: require("~/assets/img/speaker/emma.jpg") },
+            { name: '鳥井雪', account: '@yotii23', , account_link: 'https://twitter.com/yotii23', description: '株式会社万葉のプログラマー', img_src: require("~/assets/img/speaker/yuki_torii.jpg") },
+            { name: '福田恵里', account: '@eri_razapii', , account_link: 'https://twitter.com/eri_razapii', description: 'SHE株式会社 Co-founder/CCO', img_src: require("~/assets/img/speaker/eri_fukuda.jpg") },
+            { name: 'Kinuko Yasuda (安田絹子)', account: '@kinu', , account_link: 'https://twitter.com/kinu', description: 'ソフトウェア・エンジニア／エンジニアリングマネジャ', img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg") },
+            { name: '千代田まどか (ちょまど)', account: '@chomdo', , account_link: 'https://twitter.com/chomado', description: 'Microsoft', img_src: require("~/assets/img/speaker/madoka_chiyoda.jpg") }
+    ],
       }
     }
   }
