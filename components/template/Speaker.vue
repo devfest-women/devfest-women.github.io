@@ -5,15 +5,14 @@
         <v-col lg="6">
           <TitleBlack text="登壇者"></TitleBlack>
           <v-container class="content">
-              <v-row class="speaker-box d-flex">
+              <v-row class="speaker-box d-flex justify-center">
                   <v-col class="item" v-for="item in items" :key="item.name">
-                        <a href="#"><img :src=item.img_src
+                        <a :href=item.account_link target="_blank"><img :src=item.img_src
                                          :alt=item.name
-                        ></a>
+                        >
                         <p class="name">{{item.name}}</p>
                         <p class="post">{{item.post}}</p>
-                      <!-- TODO: SNSへのリンクにする -->
-                        <p class="account">{{item.account}}</p>
+                        <p class="account">{{item.account}}</p></a>
                   </v-col>
               </v-row>
           </v-container>
@@ -70,6 +69,9 @@
           @media (max-width:960px) {
               max-width: 100px;
           }
+          a{
+              text-decoration: none;
+          }
           .name{
               font-family: HiraginoSans-W7;
               font-size: 16px;
@@ -94,6 +96,7 @@
 
       .item img {
           max-width: 100%;
+          border-radius: 50%;
       }
   }
 </style>
