@@ -1,5 +1,5 @@
 <template>
-<div class="bg_img" id="hero">
+<div class="bg-img" id="hero">
   <div class="contents">
     <div class="hero-logo" justify-center="center">
       <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
@@ -39,10 +39,10 @@ import Button from '~/components/module/Button.vue'
 .contents {
   text-align: center;
 }
-.bg_img {
+.bg-img {
   background-image: url("~@/assets/img/hero.JPG");
   background-color: #da297b;
-  background-size: 1024px auto;
+  background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
   width: 100vw;
@@ -54,7 +54,12 @@ import Button from '~/components/module/Button.vue'
   margin-right: -50vw;
   z-index: 0;
 }
-.bg_img::after{
+@media screen and (max-width:1024px) { 
+  .bg-img {
+    background-size: 1024px auto;
+  }
+}
+.bg-img::after{
   content: '';
   background-image: linear-gradient(to left, #da297b, #ff6f61);
   position: absolute;
