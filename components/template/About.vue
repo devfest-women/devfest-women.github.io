@@ -10,7 +10,10 @@
             DevFest Women Tokyoでは、IT業界で活躍している女性やLGBTQの方にスポットライトを当て、彼女たちの知的好奇心をそそる発表を通して、次の日からの自信につなげられるようなカンファレンスを目指しています。
           </div>
           <div class="d-flex justify-center">
-            <Button text="参加申し込み" link="https://devfestwomen2019.peatix.com/view" buttonstyle="gradation"></Button>
+            <Button
+             text="参加申し込み"
+             link="https://devfestwomen2019.peatix.com/view"
+             buttonstyle="gradation"></Button>
           </div>
 
           <v-container class="conference-info">
