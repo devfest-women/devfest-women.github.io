@@ -5,14 +5,18 @@
         <v-col lg="6">
           <TitleBlack text="登壇者"></TitleBlack>
           <v-container class="content">
-              <v-row class="speaker-box d-flex justify-center">
-                  <v-col class="item" v-for="item in items" :key="item.name">
-                        <a :href=item.account_link target="_blank"><img :src=item.img_src
-                                         :alt=item.name
-                        >
-                        <p class="name">{{item.name}}</p>
-                        <p class="post">{{item.post}}</p>
-                        <p class="account">{{item.account}}</p></a>
+              <v-row class="speaker-box d-flex flex-xs-column">
+                  <v-col xs="4" sm="6" class="item" v-for="item in items" :key="item.name">
+                        <a :href=item.account_link target="_blank" class="d-flex justify-left">
+                            <div xs="2" md="2" class="item-left">
+                                <img :src=item.img_src :alt=item.name >
+                            </div>
+                            <div xs="2" sm="6" class="item-right">
+                                <p class="name">{{item.name}}</p>
+                                <p class="post">{{item.post}}</p>
+                                <p class="account">{{item.account}}</p>
+                            </div>
+                        </a>
                   </v-col>
               </v-row>
           </v-container>
@@ -63,14 +67,14 @@
 
   .speaker-box {
       .item{
-          padding: 10px;
+          padding: 10px 0px 30px 0;
           display: inline-block;
-          text-align: center;
           @media (max-width:960px) {
               max-width: 100px;
           }
           a{
               text-decoration: none;
+              max-width: 100%;
           }
           .name{
               font-family: HiraginoSans-W7;
@@ -89,13 +93,16 @@
               line-height: 1.43;
               color: #ffffff;
           }
+          .item-right{
+              margin: 0px 10px;
+          }
           p{
-              margin-bottom: 8px;
+              margin-bottom: 4px;
           }
       }
 
       .item img {
-          max-width: 100%;
+          max-width: 100px;
           border-radius: 50%;
       }
   }
