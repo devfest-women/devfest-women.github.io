@@ -2,7 +2,7 @@
 <div class="bg-img" id="hero">
   <div class="contents">
     <div class="hero-logo" justify-center="center">
-      <img class="footer-logo" src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
+      <img src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
       <p class="hero-days">{{ hero.days }}</p>   
       <p class="hero-place">{{ hero.place }}</p>
     </div>
@@ -77,7 +77,7 @@ import Button from '~/components/module/Button.vue'
 }
 .hero-logo {
   width: auto;
-  margin: 0;
+  margin: 0 auto 0 27px;
   top: 100px;
   position: relative;
   z-index: 10;
