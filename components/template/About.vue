@@ -13,7 +13,8 @@
             <Button
              text="参加申し込み"
              link="https://devfestwomen2019.peatix.com/view"
-             buttonstyle="gradation"></Button>
+             buttonstyle="join"
+            ></Button>
           </div>
 
           <v-container class="conference-info">

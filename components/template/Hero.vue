@@ -5,14 +5,33 @@
       <img src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
       <p class="hero-days">{{ hero.days }}</p>   
       <p class="hero-place">{{ hero.place }}</p>
+      <div>
+        <Button 
+          v-bind:text='hero.join.text'
+          v-bind:link='hero.join.link'
+          buttonstyle="join"></Button>
+      </div>
     </div>
+    <div class="l-"></div>
     <div class="hero-link">
-      <p class="label-text">{{ hero.button.description }}</p>
-      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" textcolor="text-sponsor" buttonstyle="white"></Button>
-    </div>
-    <div class="hero-link">
-      <p class="label-text">{{ hero.button.description }}</p>
-      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" textcolor="text-staff" buttonstyle="white"></Button>
+      <div class="l-sponsor">
+        <p class="label-text">{{ hero.sponsor.description }}</p>
+        <Button
+          v-bind:text='hero.sponsor.text'
+          v-bind:link='hero.sponsor.link'
+          textcolor='text-sponsor'
+          buttonstyle="nomal">
+        </Button>
+      </div>
+      <div class="l-staff">
+        <p class="label-text">{{ hero.staff.description }}</p>
+        <Button
+          v-bind:text='hero.staff.text'
+          v-bind:link='hero.staff.link'
+          textcolor='text-staff'
+          buttonstyle="nomal">
+        </Button>
+      </div>
     </div>
   </div>
 </div>
@@ -30,16 +49,27 @@ import Button from '~/components/module/Button.vue'
         hero: {
           days:'2019.10.14 (Mon.)',
           place:'@御茶ノ水ソラシティカンファレンスセンター',
-          button:{
+          join:{       
+             text:"参加申し込み",
+             link:"https://devfestwomen2019.peatix.com/view"
+          },
+          sponsor:{            
             description:'スポンサーを募集中です！',
             text:'スポンサー申し込み',
             link:'https://docs.google.com/forms/d/e/1FAIpQLSfwIrV6HXRztZF0L6Z0aBj4zdmV5AWtbyVWg77i0Ho25LANVA/viewform'
           },
+          staff:{            
+            description:'当日スタッフを募集中です！',
+            text:'当日スタッフに応募',
+            link:'https://docs.google.com/forms/d/e/1FAIpQLSd3w2qG43B7RjYEyCb0d_HUI-9i2jkEeUcSm6jTMWxpTuCuow/viewform'
+          },
         }
       }
     }
-  }</script>
-<style scoped>
+  }
+</script>
+
+<style lang="scss" scoped>
 .contents {
   text-align: center;
 }
@@ -50,7 +80,7 @@ import Button from '~/components/module/Button.vue'
   background-position: center top;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 600px;
+  height: 780px;
   position: relative;
   left: 50%;
   right: 50%;
@@ -58,9 +88,9 @@ import Button from '~/components/module/Button.vue'
   margin-right: -50vw;
   z-index: 0;
 }
-@media screen and (max-width:1024px) { 
+@media screen and (max-width:1200px) { 
   .bg-img {
-    background-size: 1024px auto;
+    background-size:1200px auto;
   }
 }
 .bg-img::after{
@@ -74,11 +104,7 @@ import Button from '~/components/module/Button.vue'
   opacity: 0.85;
   z-index: 1;
 }
-.label-text {
-  margin-bottom: 21px;
-  font-family: HiraginoSans-W7;
-  color: #ffdedb;
-}
+
 .hero-logo {
   width: auto;
   margin: 0 auto 0 27px;
@@ -104,14 +130,45 @@ import Button from '~/components/module/Button.vue'
   font-size: 15px;
   color: #ffffff;
 }
+.label-text {
+  margin-bottom: 21px;
+  font-family: HiraginoSans-W7;
+  color: #ffdedb;
+}
+
 .hero-link {
   width: auto;
-  height: 154px;
+  height: 250px;
+  top: 145px;
   margin: 0;
-  padding-top: 31px;
   position: relative;
-  top: 112px;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.2);
+}
+.l-sponsor {
+  padding-top: 15px;
+}
+.l-staff
+{
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 600px), print {
+  .bg-img{
+    height: 680px;
+  }
+  .hero-link{
+    height: 600px;
+    overflow: hidden;
+    height: 154px;
+  }
+  .l-sponsor {
+    width: 50%;
+    float: left;
+  }
+  .l-staff {
+    width: 50%;
+    float: right;
+  }
 }
 </style>

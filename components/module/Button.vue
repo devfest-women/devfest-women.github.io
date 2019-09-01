@@ -1,5 +1,5 @@
 <template>
-<div v-if="buttonstyle === 'white'">
+<div v-if="buttonstyle === 'nomal'">
   <v-btn
     rounded
     height="50px"
@@ -12,7 +12,7 @@
     </span>
   </v-btn>
 </div>
-<div v-else-if="buttonstyle === 'gradation'">
+<div v-else-if="buttonstyle === 'join'">
   <v-btn
     rounded
     height="50px"
@@ -56,7 +56,7 @@ export default {
 .button-join {
   background-image: linear-gradient(to left, #da297b, #ff6f61);
   color:#ffffff;
-  font-size: 21px;
+  font-size: 20px;
   border: solid 4px #ffffff;
 }
 </style>
