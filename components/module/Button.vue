@@ -1,31 +1,26 @@
 <template>
-<div v-if="buttonstyle === 'white'">
+<div v-if="buttonstyle === 'nomal'">
   <v-btn
     rounded
-    min-width = "260px"
-    max-widht = "370px"
-    min-height = "54px"
-    color = "#fff"
+    height="50px"
     :href = "link"
     target="_blank"
-    class="white"
+    class="button-layout button-normal"
    >
-    <span class="button-text color-pink">
+    <span :class="textcolor">
       {{ text }}
     </span>
   </v-btn>
 </div>
-<div v-else-if="buttonstyle === 'gradation'">
+<div v-else-if="buttonstyle === 'join'">
   <v-btn
     rounded
-    min-width = "260px"
-    max-widht = "370px"
-    min-height = "54px"
+    height="50px"
     :href = "link"
     target="_blank"
-    class="button-gradesion"
+    class="button-layout button-join"
    >
-    <span class="button-text color-white">
+    <span class="button-text">
       {{ text }}
     </span>
   </v-btn>
@@ -33,22 +28,35 @@
 </template>
 <script>
 export default {
-  props: ['text','link','buttonstyle']
+  props: ['text','link','textcolor','buttonstyle']
 }
 </script>
 <style lang="scss" scoped>
-.button-gradesion{
-  background-image: linear-gradient(to left, #da297b, #ff6f61);
-}
-.button-text {
+.button-layout {
   font-family: HiraginoSans-W7;
   font-size: 16px;
   text-align: center;
+  width: 260px;
 }
-.color-white {
+@media screen and (max-width:600px) {
+.button-layout {
+  width: 360px;
+  font-size: 18px;
+  }
+}
+.button-normal {
   color: #ffffff;
+  .text-sponsor {
+    color: #ff6f61; // #salmon
+  }
+  .text-staff {
+    color: #ea4770; // #darkish-pink
+   }  
 }
-.color-pink {
-  color: #ff6f61;
+.button-join {
+  background-image: linear-gradient(to left, #da297b, #ff6f61);
+  color:#ffffff;
+  font-size: 20px;
+  border: solid 4px #ffffff;
 }
 </style>
