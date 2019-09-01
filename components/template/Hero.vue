@@ -10,6 +10,10 @@
       <p class="label-text">{{ hero.button.description }}</p>
       <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" textcolor="text-sponsor" buttonstyle="white"></Button>
     </div>
+    <div class="hero-link">
+      <p class="label-text">{{ hero.button.description }}</p>
+      <Button v-bind:text='hero.button.text' v-bind:link="hero.button.link" textcolor="text-staff" buttonstyle="white"></Button>
+    </div>
   </div>
 </div>
 </template>

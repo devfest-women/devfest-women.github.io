@@ -18,7 +18,7 @@
     height="50px"
     :href = "link"
     target="_blank"
-    class="button-layout button-gradesion"
+    class="button-layout button-join"
    >
     <span class="button-text">
       {{ text }}
@@ -38,9 +38,10 @@ export default {
   text-align: center;
   width: 260px;
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:600px) {
 .button-layout {
   width: 360px;
+  font-size: 18px;
   }
 }
 .button-normal {
@@ -52,9 +53,10 @@ export default {
     color: #ea4770; // #darkish-pink
    }  
 }
-.button-gradesion{
+.button-join {
   background-image: linear-gradient(to left, #da297b, #ff6f61);
   color:#ffffff;
+  font-size: 21px;
   border: solid 4px #ffffff;
 }
 </style>
