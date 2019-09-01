@@ -5,13 +5,13 @@
         <v-col lg="6">
           <TitleBlack text="登壇者"></TitleBlack>
           <v-container class="content">
-              <v-row class="speaker-box d-flex flex-xs-column">
-                  <v-col xs="4" sm="6" class="item" v-for="item in items" :key="item.name">
+              <v-row class="speaker-box d-flex flex-column flex-lg-row">
+                  <v-col xs="8" sm="6" class="item" v-for="item in items" :key="item.name">
                         <a :href=item.account_link target="_blank" class="d-flex justify-left">
                             <div xs="2" md="2" class="item-left">
                                 <img :src=item.img_src :alt=item.name >
                             </div>
-                            <div xs="2" sm="6" class="item-right">
+                            <div class="item-right">
                                 <p class="name">{{item.name}}</p>
                                 <p class="post">{{item.post}}</p>
                                 <p class="account">{{item.account}}</p>
@@ -69,9 +69,6 @@
       .item{
           padding: 10px 0px 30px 0;
           display: inline-block;
-          @media (max-width:960px) {
-              max-width: 100px;
-          }
           a{
               text-decoration: none;
               max-width: 100%;
