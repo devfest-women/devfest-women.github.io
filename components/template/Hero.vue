@@ -107,12 +107,13 @@ import Button from '~/components/module/Button.vue'
 
 .hero-logo {
   width: auto;
-  margin: 0 auto 0 27px;
+  margin: 0 auto 0 auto;
   top: 100px;
   position: relative;
   z-index: 10;
 }
 .hero-logo img {
+  margin: 0 auto 0 27px;
   width: 261px;
   height: auto;
 }
