@@ -60,7 +60,7 @@
           </p>
           <p class="content">
             ハラスメントを受けた場合、見かけた場合、もしくはハラスメントかどうか判断に迷った場合は、近くの運営スタッフに声をかけるか、以下のフォームからご連絡ください。<br>
-            <a href="https://forms.gle/KMBF3Wiv1p7viS9i">https://forms.gle/KMBF3Wiv1p7viS9i6</a><br>
+            <a href="https://forms.gle/KMBF3Wiv1p7viS9i6">https://forms.gle/KMBF3Wiv1p7viS9i6</a><br>
             我々運営スタッフは、ハラスメントに直面している参加者の心理的、身体的な安全を、全力で確保するように努めます。<br>
             また、ハラスメント行為をやめるように要請された参加者は、運営スタッフの指示に直ちに従ってください。
           </p>
