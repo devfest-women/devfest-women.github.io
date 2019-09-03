@@ -1,13 +1,13 @@
 <template>
-    <div class="text-xs-center">
-      <Hero class="bg-layout"></Hero>
-      <WhatDevFestWomen class="bg-black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
-      <About class="bg-black anchor" id="aboutevent"></About>
-      <Speaker class="bg-black anchor" id="speaker"></Speaker>
-      <Schedule class="bg-gradient anchor" id="schedule"></Schedule>
-      <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
-      <!-- <Staff class="bg bg-lack"></Staff> -->
-    </div>
+<div class="text-xs-center">
+  <Hero class="bg-layout"></Hero>
+  <WhatDevFestWomen class="bg-black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
+  <About class="bg-black anchor" id="aboutevent"></About>
+  <Speaker class="bg-black anchor" id="speaker"></Speaker>
+  <Schedule class="bg-gradient anchor" id="schedule"></Schedule>
+  <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
+  <!-- <Staff class="bg bg-lack"></Staff> -->
+</div>
 </template>
 
 <script>
