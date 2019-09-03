@@ -54,7 +54,6 @@
     </v-navigation-drawer>
 
       <v-app-bar
-        scroll-target="#playground"
         :elevate-on-scroll="true"
         :hide-on-scroll="false"
         :fade-on-scroll="false"
