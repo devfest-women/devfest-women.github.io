@@ -54,5 +54,6 @@
   }
   a{
     color: #7a7a8c;
+    text-decoration: none;
   }
 </style>
