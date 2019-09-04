@@ -13,6 +13,7 @@
             <div class="footer-item"><nuxt-link to="/privacypolicy">プライバシーポリシー</nuxt-link></div>
             <div class="footer-item"><nuxt-link to="/codeofconduct">行動規範</nuxt-link></div>
             <div class="footer-item"><nuxt-link to="/antiharassmentpolicy">アンチハラスメントポリシー</nuxt-link></div>
+            <div class="footer-item"><nuxt-link to="/faq">よくある質問</nuxt-link></div>
             <div class="footer-item"><a target="_blank" href="https://forms.gle/Bc1BwwpwXwTZkA1b7">お問い合わせ</a></div>
           </v-row>
         </v-col>
