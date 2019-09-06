@@ -25,6 +25,19 @@
     </span>
   </v-btn>
 </div>
+<div v-else-if="buttonstyle === 'gradation'">
+    <v-btn
+            rounded
+            height="50px"
+            :href = "link"
+            target="_blank"
+            class="button-layout button-gradation"
+    >
+<span class="button-text">
+  {{ text }}
+</span>
+    </v-btn>
+</div>
 </template>
 <script>
 export default {
@@ -58,5 +71,10 @@ export default {
   color:#ffffff;
   font-size: 20px;
   border: solid 4px #ffffff;
+}
+.button-gradation {
+    background-image: linear-gradient(to left, #da297b, #ff6f61);
+    color:#ffffff;
+    font-size: 16px;
 }
 </style>
