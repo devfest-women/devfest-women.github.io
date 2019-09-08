@@ -111,6 +111,7 @@ export default {
       menu: [
         { title: "DevFest Women Tokyo とは", link: "#aboutdevfestwomen" },
         { title: "開催概要", link: "#aboutevent" },
+        { title: "セッション", link: "#session" },
         { title: "スケジュール", link: "#schedule" },
         { title: "スポンサー", link: "#sponsor" }
         // { title: "スタッフ", link: "#staff" }
@@ -119,6 +120,7 @@ export default {
         { title: "TOP", link: "/" },
         { title: "DevFest Women Tokyo とは", link: "/#aboutdevfestwomen" },
         { title: "開催概要", link: "/#aboutevent" },
+        { title: "セッション", link: "#session" },
         { title: "スケジュール", link: "/#schedule" },
         { title: "スポンサー", link: "/#sponsor" }
         // { title: "スタッフ", link: "#staff" }
