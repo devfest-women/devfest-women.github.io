@@ -15,12 +15,12 @@
             ></Button>
           </div>
           <v-container class="sponcer-logo  flex-column flex-lg-row">
+            <!--
             <v-row sm="6" class="silver d-flex justify-center align-center">
               <v-col sm="6" class="silver-logo">
                 <img src="~/assets/img/sponcer/cybozu.png" alt="Cybozu">
               </v-col>
             </v-row>
-            <!--
             <v-row class="bronze d-flex flex-column flex-lg-row">
               <v-col sm="6" md="4" class="bronze-logo">
                 <img src="~/assets/img/sponcer/dena.png" alt="Dena">
