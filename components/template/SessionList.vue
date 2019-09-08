@@ -6,8 +6,8 @@
         <TitleGradient text="タイムスケジュール"></TitleGradient>
           <div class="flexbox">
             <div class="timeline">
-              <ul class="time-section .d-sm-flex .d-md-flex">
-                <li class="start-time" v-for="item in time" :key="item.time"  v-bind:class="item.display">
+              <ul class="time-section">
+                <li class="start-time .d-sm-flex .d-md-flex" v-for="item in time" :key="item.time"  v-bind:class="item.display">
                   {{item.start}}
                 </li>
               </ul>
@@ -16,7 +16,7 @@
             <div class="hall-a">
               <div class="hall-title"><p class="text">HallA</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.name">
-                <p class="time d-flex d-sm-none">{{item.time}}</p>
+                <p class="time .d-flex .d-sm-none">{{item.time}}</p>
                 <div class="contents">
                   <p class="session-name">{{item.session}}</p>
                   <p class="title">{{item.title}}</p>
@@ -27,7 +27,7 @@
             <div class="hall-b">
               <div class="hall-title"><p class="text">HallB</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in hallb" :key="item.name">
-                <p class="time d-flex d-sm-none">{{item.time}}</p>
+                <p class="time .d-flex .d-sm-none">{{item.time}}</p>
                 <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
                   <p class="title">{{item.title}}</p>
@@ -154,6 +154,7 @@
     }
   }
   .time {
+    margin-bottom: 5px;
     font-family: Avenir;
     font-size: 18px;
     font-weight: 900;
@@ -200,6 +201,9 @@
     display: inline-block;
     position: relative;
     list-style: none;
+  }
+  @media only screen and (max-width: 900px), print {
+  display:none;
   }
 }
 
