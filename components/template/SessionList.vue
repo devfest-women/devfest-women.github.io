@@ -5,18 +5,18 @@
       <v-col lg="8">
         <TitleGradient text="タイムスケジュール"></TitleGradient>
           <div class="flexbox">
-            <div class="timeline">
-              <ul class="time-section">
-                <li class="start-time .d-sm-flex .d-md-flex" v-for="item in time" :key="item.time"  v-bind:class="item.display">
+            <div class="d-none d-sm-flex">
+              <ul class="timeline time-section">
+                <li class="start-time" v-for="item in time" :key="item.time"  v-bind:class="item.display">
                   {{item.start}}
                 </li>
+                <li class="start-time">17:30</li>
               </ul>
-              <div class="start-time">17:30</div>
             </div>
             <div class="hall-a">
               <div class="hall-title"><p class="text">HallA</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.name">
-                <p class="time .d-flex .d-sm-none">{{item.time}}</p>
+                <p class="time">{{item.time}}</p>
                 <div class="contents">
                   <p class="session-name">{{item.session}}</p>
                   <p class="title">{{item.title}}</p>
@@ -27,7 +27,7 @@
             <div class="hall-b">
               <div class="hall-title"><p class="text">HallB</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in hallb" :key="item.name">
-                <p class="time .d-flex .d-sm-none">{{item.time}}</p>
+                <p class="time">{{item.time}}</p>
                 <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
                   <p class="title">{{item.title}}</p>
@@ -154,12 +154,16 @@
     }
   }
   .time {
-    margin-bottom: 5px;
-    font-family: Avenir;
-    font-size: 18px;
-    font-weight: 900;
-    letter-spacing: 2.07px;
-    color: #ffffff;
+    display: none;
+    @media only screen and (max-width: 900px), print {
+      display: block;
+      margin-bottom: 5px;
+      font-family: Avenir;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 2.07px;
+      color: #ffffff;
+    }
   }
 
 .hall-a {
@@ -200,7 +204,7 @@
   .time-section {
     display: inline-block;
     position: relative;
-    list-style: none;
+
   }
   @media only screen and (max-width: 900px), print {
   display:none;
@@ -212,6 +216,7 @@
   height: 119px;
   line-height: 0;
   color: #fff;
+  list-style: none;
 
   ::before {
   content: '';
