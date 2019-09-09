@@ -19,7 +19,7 @@
                 <p class="time">{{item.time}}</p>
                 <div class="contents">
                   <p class="session-name">{{item.session}}</p>
-                  <p class="title">{{item.title}}</p>
+                  <!-- <p class="title">{{item.title}}</p> -->
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                 <p class="time">{{item.time}}</p>
                 <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
-                  <p class="title">{{item.title}}</p>
+                  <!-- <p class="title">{{item.title}}</p> -->
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
@@ -59,13 +59,13 @@
             { start: '10:30',display:''},
             { start: '10:50',display:'session-time'},
             { start: '11:45',display:'session-time'},
-            { start: '12:30',display:'lunch-time'},
+            { start: '12:30',display:''},
             { start: '14:00',display:''},
             { start: '14:20',display:'session-time'},
             { start: '14:55',display:'session-time'},
             { start: '15:25',display:''},
             { start: '15:40',display:'session-time'},
-            { start: '16:15',display:'sponsor-time'},
+            { start: '16:15',display:''},
             { start: '16:50',display:'session-time'},
             { start: '17:20',display:''},
         ],        
@@ -85,7 +85,7 @@
             { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' }
       ],
       hallb: [
-            { time: '14:20-14:50',session:'session1-2', title:'TBD', name: 'TBD', post: 'TBD',display:'contents'},
+            { time: '14:20-14:50',session:'session1-2', title:'TBD', name: 'TBD', post: '',display:'contents'},
             { time: '14:55-15:25',session:'session2-2', title:'TBD', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents'},
             { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '中村ひろこ', post: '' ,display:'contents'},
@@ -187,7 +187,7 @@
   }
   .hall-title {
     background-color: #db2a7b;
-    margin-bottom: 925px;
+    margin-bottom: 775px;
     @media only screen and (max-width: 900px), print {
       margin-bottom: 10px;
     }   
@@ -252,7 +252,7 @@
     }  
 }
 .session-time {
-    height: 195px;
+    height: 143px;
     ::after{
       height: 175px;
     }
