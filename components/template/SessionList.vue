@@ -35,6 +35,17 @@
                 </div>
               </div>
             </div>
+            <div class="workshop">
+              <div class="hall-title"><p class="text">Workshop</p></div>
+              <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
+                <p class="time">{{item.time}}</p>
+                <div class="contents">
+                  <p class="session-name">{{item.session}}</p>
+                  <p class="title">{{item.title}}</p>
+                  <p class="person">{{item.post}}<br>{{item.name}}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -92,7 +103,12 @@
             { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: '', post: 'TBD' ,display:'contents'},
             { time: '16:50-17:20',session:'session5-2', title:'TBD', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
       ],
-        dialog: false
+      workshop: [
+            { time: '13:00-14:40',session:'Workshop1', title:'Actions on Google', name: '', post: ''},
+            { time: '14:40-15:00',session:'休憩', title:'', name: '', post: '' },
+            { time: '15:00-16:40',session:'Workshop2', title:'Python', name: '', post: ''},
+      ],
+      dialog: false
       }
     }
   }
@@ -197,6 +213,24 @@
     }
   }
 
+.workshop {
+
+  @media only screen and (min-width: 900px), print {
+    display: none;
+  }
+  
+  margin: 0 auto 10px auto;
+
+  .hall-title {
+    background-color: #ff6f61;
+  }
+  .contents {
+    .session-name{
+    color: #ff6f61;
+    }
+  }
+}
+
 .timeline{
   margin-top:80px;
   margin-right:-5px;
@@ -259,7 +293,8 @@
 }
 .start-time,
 .hall-a,
-.hall-b {
+.hall-b,
+.workshop {
   padding: 2%;
 }
 
