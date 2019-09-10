@@ -91,22 +91,24 @@
             { time: '14:55-15:25',session:'session2-1', title:'TBD' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' },
             { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉のプログラマー' },
-            { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: '', post: 'TBD' },
-            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '千代田まどか (ちょまど)', post: 'Microsoft' },
+            { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: 'TBD', post: '' },
+            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UPプロデューサー' },
             { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' }
       ],
       hallb: [
             { time: '14:20-14:50',session:'session1-2', title:'TBD', name: 'TBD', post: '',display:'contents'},
             { time: '14:55-15:25',session:'session2-2', title:'TBD', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents'},
-            { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '中村ひろこ', post: '' ,display:'contents'},
-            { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: '', post: 'TBD' ,display:'contents'},
+            { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '千代田まどか (ちょまど)', post: 'Microsoft UPプロデューサー' ,display:'contents'},
+            { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: 'TBD', post: '' ,display:'contents'},
             { time: '16:50-17:20',session:'session5-2', title:'TBD', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
       ],
       workshop: [
-            { time: '13:00-14:40',session:'Workshop1', title:'Actions on Google', name: '', post: ''},
-            { time: '14:40-15:00',session:'休憩', title:'', name: '', post: '' },
-            { time: '15:00-16:40',session:'Workshop2', title:'Python', name: '', post: ''},
+            { time: '13:00-14:20',session:'Workshop1', title:'Actions on Google', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)'},
+            { time: '14:20-14:30',session:'休憩', title:'', name: '', post: '' },
+            { time: '14:30-15:50',session:'Workshop2', title:'Python', name: '講師：中村 真由美', post: ''},
+            { time: '15:50-16:00',session:'休憩', title:'', name: '', post: '' },
+            { time: '16:00-17:00',session:'Workshop3', title:'Android', name: '講師：あんざいゆき', post: '' },
       ],
       dialog: false
       }
