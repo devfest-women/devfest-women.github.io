@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <v-container class="section-container d-flex flex-column justify-center align-center">
-      <v-row justify="center" class="sponcer-row">
+      <v-row justify="center" class="sponsor-row">
         <v-col sm="6">
           <TitleBlack text="スポンサー"></TitleBlack>
           <div class="content">
@@ -14,30 +14,48 @@
                     buttonstyle="gradation"
             ></Button>
           </div>
-          <v-container class="sponcer-logo  flex-column flex-lg-row">
-            <!--
+          <v-container class="sponsor-logo  flex-column flex-lg-row">
             <v-row sm="6" class="silver d-flex justify-center align-center">
               <v-col sm="6" class="silver-logo">
-                <img src="~/assets/img/sponcer/cybozu.png" alt="Cybozu">
+                <img src="~/assets/img/sponsor/cybozu.png" alt="Cybozu">
               </v-col>
             </v-row>
             <v-row class="bronze d-flex flex-column flex-lg-row">
               <v-col sm="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponcer/dena.png" alt="Dena">
+                <img src="~/assets/img/sponsor/dena.png" alt="Dena">
               </v-col>
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponcer/unity.png" alt="unity">
+                <img src="~/assets/img/sponsor/unity.png" alt="unity">
               </v-col>
             </v-row>
             <v-row class="bronze d-flex flex-column flex-lg-row">
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponcer/sketch.png" alt="sketch">
+                <img src="~/assets/img/sponsor/peatix.png" alt="peatix">
               </v-col>
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponcer/peatix.png" alt="peatix">
+                <img src="~/assets/img/sponsor/sketch.png" alt="sketch">
+              </v-col>
+              <v-col xs="6" md="4" class="bronze-logo">
+                <img src="~/assets/img/sponsor/styliste.png" alt="STYLISTE">
+              </v-col>
+              <v-col xs="6" md="4" class="bronze-logo">
+                <img src="~/assets/img/sponsor/github.png" alt="github">
               </v-col>
             </v-row>
-            -->
+            <v-row class="personal d-flex flex-column flex-lg-row">
+              <v-col xs="4" md="2" class="personal-logo">
+                <img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一">
+              </v-col>
+              <v-col xs="4" md="2" class="personal-logo">
+                <img src="~/assets/img/sponsor/tomoharu-nagasawa.png" alt="長沢智治">
+              </v-col>
+              <v-col xs="4" md="2" class="personal-logo">
+                <img src="~/assets/img/sponsor/takayuki-fuwa.png" alt="不破崇行">
+              </v-col>
+              <v-col xs="4" md="2" class="personal-logo">
+                <img src="~/assets/img/sponsor/satoru-nakamura.png" alt="なかむらさとる">
+              </v-col>
+            </v-row>
           </v-container>
         </v-col>
       </v-row>
@@ -56,7 +74,7 @@
     },
     data() {
       return {
-        name: 'Sponcer'
+        name: 'Sponsor'
       }
     }
   }
@@ -69,12 +87,11 @@
       padding: 30px 20px;
     }
   }
-  .sponcer-row{
+  .sponsor-row{
     @media (max-width:960px) {
       width: 100%;
     }
   }
-
   .content{
     font-family: HiraginoSans-W3;
     font-size: 16px;
@@ -82,19 +99,44 @@
     color: #ffffff;
     margin: 0px 0px 30px 0px;
   }
-  .sponcer-logo{
+
+  .silver {
+    margin: 0px 0px 60px 0px;
+    @media (max-width:960px) {
+      display: inline;
+    }
+  }
+  .bronze {
+    margin: 0px 0px 60px 0px;
+    @media (max-width:960px) {
+      display: inline;
+    }
+  }
+  .personal {
+    margin: 0px 0px 60px 0px;
+    @media (max-width:960px) {
+      display: inline;
+    }
+  }
+  .sponsor-logo{
     margin: 50px 0px 0px 0px;
     .silver-logo{
-      margin: 0px 0px 60px 0px;
       width: 50%;
       img{
         width: 100%;
       }
     }
     .bronze-logo{
-      margin: 0px 0px 60px 0px;
       @media (max-width:960px) {
-        width: 50%;
+        width: 45%;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .personal-logo{
+      @media (max-width:960px) {
+        width: 45%;
       }
       img{
         width: 100%;
