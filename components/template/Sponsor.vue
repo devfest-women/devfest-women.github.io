@@ -14,6 +14,7 @@
                     buttonstyle="gradation"
             ></Button>
           </div>
+          <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他わからないことがあれば画面下部のお問い合わせまでご連絡ください。</div>
           <v-container class="sponcer-logo  flex-column flex-lg-row">
             <!--
             <v-row sm="6" class="silver d-flex justify-center align-center">
@@ -82,6 +83,12 @@
     color: #ffffff;
     margin: 0px 0px 30px 0px;
   }
+
+  .small {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+
   .sponcer-logo{
     margin: 50px 0px 0px 0px;
     .silver-logo{
