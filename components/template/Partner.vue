@@ -8,7 +8,7 @@
             <h2 class="heading">メディアパートナー</h2>
             <v-row class="media d-flex flex-column flex-lg-row">
               <v-col sm="6" md="4" class="media-logo">
-                <img src="~/assets/img/sponsor/peatix.png" alt="Peatix">
+                <img src="~/assets/img/sponsor/peatix.png" alt="Peatix Japan株式会社" title="Peatix Japan株式会社">
               </v-col>
             </v-row>
           </v-container>
