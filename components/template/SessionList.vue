@@ -17,7 +17,7 @@
               <div class="hall-title"><p class="text">HallA</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.name">
                 <p class="time">{{item.time}}</p>
-                <div class="contents">
+                <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
                   <!-- <p class="title">{{item.title}}</p> -->
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
@@ -76,29 +76,29 @@
             { start: '14:55',display:'session-time'},
             { start: '15:25',display:''},
             { start: '15:40',display:'session-time'},
-            { start: '16:15',display:''},
+            { start: '16:15',display:'session-time'},
             { start: '16:50',display:'session-time'},
             { start: '17:20',display:''},
         ],        
         halla: [
-            { time: '10:00-10:30',session:'受付', title:'', name: '', post: '' },
-            { time: '10:30-10:45',session:'オープンニング', title:'', name: '', post: '' },
-            { time: '10:50-11:35' ,session:'Keynote1', title:'TBD', name: '岩尾 エマ はるか', post: 'Developer Advocate' },
-            { time: '11:45-12:30',session:'Keynote2', title:'TBD' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate'},
-            { time: '12:30-14:00',session:'ランチ懇親会', title:'パネルディスカッション' , name: '', post: ''},
-            { time: '14:00-14:20',session:'休憩', title:'', name: '', post: '' },
-            { time: '14:20-14:50',session:'session1-1',title:'TBD', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' },
-            { time: '14:55-15:25',session:'session2-1', title:'TBD' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' },
-            { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' },
-            { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉のプログラマー' },
-            { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: 'TBD', post: '' },
-            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UPプロデューサー' },
-            { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' }
+            { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
+            { time: '10:30-10:45',session:'オープンニング', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '10:50-11:35' ,session:'Keynote1', title:'TBD', name: '岩尾 エマ はるか', post: 'Developer Advocate',display: 'contents' },
+            { time: '11:45-12:30',session:'Keynote2', title:'TBD' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
+            { time: '12:30-14:00',session:'ランチ懇親会', title:'パネルディスカッション' , name: '', post: '',display: 'contents-other-session' },
+            { time: '14:00-14:20',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
+            { time: '14:20-14:50',session:'session1-1',title:'TBD', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
+            { time: '14:55-15:25',session:'session2-1', title:'TBD' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
+            { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉のプログラマー' ,display:'contents'},
+            { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: 'TBD', post: '',display:'contents' },
+            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UPプロデューサー' ,display:'contents'},
+            { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' ,display:'contents-other-session'}
       ],
       hallb: [
             { time: '14:20-14:50',session:'session1-2', title:'TBD', name: 'TBD', post: '',display:'contents'},
             { time: '14:55-15:25',session:'session2-2', title:'TBD', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
-            { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents'},
+            { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '千代田まどか (ちょまど)', post: 'Microsoft UPプロデューサー' ,display:'contents'},
             { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: 'TBD', post: '' ,display:'contents'},
             { time: '16:50-17:20',session:'session5-2', title:'TBD', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
@@ -148,6 +148,32 @@
   .contents-none {
     visibility: hidden;
   }
+  .contents-other-session {
+    margin-bottom: 10px;
+    width: 380px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+
+    @media only screen and (max-width: 900px), print {
+      width: 95vw;
+    }
+  .session-name{
+    font-family: HiraginoSans-W6;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    }
+    .title,.person {
+    font-family: HiraginoSans-W7;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #100e17;    
+    }
+
+  }
+
   .contents {
     margin-bottom: 10px;
     width: 380px;
@@ -192,10 +218,8 @@
   .hall-title {
     background-color: #ff6f61;
   }
-  .contents {
-    .session-name{
-    color: #ff6f61;
-    }
+  .session-name{
+  color: #ff6f61;
   }
 }
 
@@ -205,7 +229,7 @@
   }
   .hall-title {
     background-color: #db2a7b;
-    margin-bottom: 775px;
+    margin-bottom: 537px;
     @media only screen and (max-width: 900px), print {
       margin-bottom: 10px;
     }   
@@ -249,7 +273,7 @@
 
 .start-time {
   font-size: 16px;
-  height: 119px;
+  height: 60px;
   line-height: 0;
   color: #fff;
   list-style: none;
@@ -274,21 +298,10 @@
     margin: auto;
     background-color: #fff;
   }
-}
-.lunch-time {
-    height: 165px;
-    ::after{
-      height: 145px;
-    }  
-}
-.sponsor-time {
-    height: 160px;
-    ::after{
-      height: 145px;
-    }  
-}
+}  
+
 .session-time {
-    height: 143px;
+    height: 142px;
     ::after{
       height: 175px;
     }
