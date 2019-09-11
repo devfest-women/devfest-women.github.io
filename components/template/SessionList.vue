@@ -91,16 +91,16 @@
             { time: '14:55-15:25',session:'session2-1', title:'TBD' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉のプログラマー' ,display:'contents'},
-            { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: 'TBD', post: '',display:'contents' },
+            { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: '調整中', post: '',display:'contents' },
             { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UPプロデューサー' ,display:'contents'},
             { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' ,display:'contents-other-session'}
       ],
       hallb: [
-            { time: '14:20-14:50',session:'session1-2', title:'TBD', name: 'TBD', post: '',display:'contents'},
+            { time: '14:20-14:50',session:'session1-2', title:'TBD', name: '調整中', post: '',display:'contents'},
             { time: '14:55-15:25',session:'session2-2', title:'TBD', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '千代田まどか (ちょまど)', post: 'Microsoft UPプロデューサー' ,display:'contents'},
-            { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: 'TBD', post: '' ,display:'contents'},
+            { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: '調整中', post: '' ,display:'contents'},
             { time: '16:50-17:20',session:'session5-2', title:'TBD', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
       ],
       workshop: [
