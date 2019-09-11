@@ -35,7 +35,7 @@
                 </div>
               </div>
             </div>
-            <div class="workshop">
+            <!-- <div class="workshop">
               <div class="hall-title"><p class="text">Workshop</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
                 <p class="time">{{item.time}}</p>
@@ -45,7 +45,7 @@
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </v-col>
       </v-row>
