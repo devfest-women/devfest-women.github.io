@@ -30,9 +30,6 @@
             </v-row>
             <v-row class="bronze d-flex flex-column flex-lg-row">
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponsor/peatix.png" alt="peatix">
-              </v-col>
-              <v-col xs="6" md="4" class="bronze-logo">
                 <img src="~/assets/img/sponsor/sketch.png" alt="sketch">
               </v-col>
               <v-col xs="6" md="4" class="bronze-logo">

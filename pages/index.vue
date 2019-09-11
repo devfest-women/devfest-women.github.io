@@ -6,6 +6,7 @@
   <Speaker class="bg-black anchor" id="speaker"></Speaker>
   <Schedule class="bg-gradient anchor" id="schedule"></Schedule>
   <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
+  <Partner class="bg-black anchor" id="partner"></Partner>
   <!-- <Staff class="bg bg-lack"></Staff> -->
 </div>
 </template>
@@ -18,6 +19,7 @@ import Speaker from '~/components/template/Speaker.vue'
 import Schedule from '~/components/template/Schedule.vue'
 import Sponsor from '~/components/template/Sponsor.vue'
 import Staff from '~/components/template/Staff.vue'
+import Partner from '~/components/template/Partner.vue'
 
 export default {
   layout (context) {
@@ -30,6 +32,7 @@ export default {
     Speaker,
     Schedule,
     Sponsor,
+    Partner,
     Staff,
   }
 }
