@@ -18,7 +18,7 @@
             <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他わからないことがあれば画面下部のお問い合わせまでご連絡ください。</div>
             <v-row sm="6" class="silver d-flex justify-center align-center">
               <v-col sm="6" class="silver-logo">
-                <img src="~/assets/img/sponsor/cybozu.png" alt="サイボウズ株式会社" title="サイボウズ株式会社">
+                <a href="https://cybozu.co.jp/"><img src="~/assets/img/sponsor/cybozu.png" alt="サイボウズ株式会社" title="サイボウズ株式会社"></a>
               </v-col>
               <!-- <v-col sm="6" class="silver-logo">
                 <img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社">
@@ -37,13 +37,13 @@
             <!-- </v-row> -->
             <v-row class="bronze d-flex flex-column flex-lg-row">
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponsor/sketch.png" alt="Sketch" title="Sketch">
+                <a href="https://www.sketch.com/"><img src="~/assets/img/sponsor/sketch.png" alt="Sketch" title="Sketch"></a>
               </v-col>
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社">
+                <a href="https://www.styliste.com"><img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社"></a>
               </v-col>
               <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponsor/github.png" alt="ギットハブ・ジャパン合同会社" title="ギットハブ・ジャパン合同会社">
+                <a href="https://github.com/"><img src="~/assets/img/sponsor/github.png" alt="ギットハブ・ジャパン合同会社" title="ギットハブ・ジャパン合同会社"></a>
               </v-col>
             </v-row>
             <!-- <v-row class="personal d-flex flex-column flex-lg-row">
