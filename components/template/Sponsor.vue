@@ -15,7 +15,7 @@
             ></Button>
           </div>
           <v-container class="sponsor-logo  flex-column flex-lg-row">
-          <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他わからないことがあれば画面下部のお問い合わせまでご連絡ください。</div>
+            <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他わからないことがあれば画面下部のお問い合わせまでご連絡ください。</div>
             <v-row sm="6" class="silver d-flex justify-center align-center">
               <v-col sm="6" class="silver-logo">
                 <img src="~/assets/img/sponsor/cybozu.png" alt="サイボウズ株式会社" title="サイボウズ株式会社">
@@ -46,7 +46,7 @@
                 <img src="~/assets/img/sponsor/github.png" alt="ギットハブ・ジャパン合同会社" title="ギットハブ・ジャパン合同会社">
               </v-col>
             </v-row>
-            <v-row class="personal d-flex flex-column flex-lg-row">
+            <!-- <v-row class="personal d-flex flex-column flex-lg-row">
               <v-col xs="4" md="2" class="personal-logo">
                 <img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一" title="谷上雄一">
               </v-col>
