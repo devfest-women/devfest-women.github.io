@@ -12,7 +12,6 @@
           buttonstyle="join"></Button>
       </div>
     </div>
-    <div class="l-"></div>
     <div class="hero-link">
       <div class="l-sponsor">
         <p class="label-text">{{ hero.sponsor.description }}</p>
@@ -154,7 +153,7 @@ import Button from '~/components/module/Button.vue'
   padding-top: 15px;
 }
 
-@media only screen and (min-width: 600px), print {
+@media only screen and (min-width: 900px), print {
   .bg-img{
     height: 680px;
   }
@@ -164,11 +163,13 @@ import Button from '~/components/module/Button.vue'
     height: 154px;
   }
   .l-sponsor {
-    width: 50%;
+    width: 30%;
+    margin-left:20vw;
     float: left;
   }
   .l-staff {
-    width: 50%;
+    width: 30%;
+    margin-right:20vw;
     float: right;
   }
 }

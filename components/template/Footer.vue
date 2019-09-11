@@ -2,8 +2,7 @@
   <div>
     <v-container class="section-container d-flex justify-center align-center">
       <v-row justify="center" align="center" class="flex-column footer-row">
-
-        <v-col lg="6">
+        <v-col xl="6" lg="10">
           <v-row class="d-flex flex-column flex-md-row align-left align-md-center">
             <v-col sm="2" class="footer-item">
               <nuxt-link to="/">
