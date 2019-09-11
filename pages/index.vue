@@ -5,7 +5,6 @@
   <About class="bg-black anchor" id="aboutevent"></About>
   <Speaker class="bg-black anchor" id="speaker"></Speaker>
   <SessionList class="bg-gradient anchor" id="session"></SessionList>  
-  <Schedule class="bg-gradient anchor" id="schedule"></Schedule>
   <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
   <Partner class="bg-black anchor" id="partner"></Partner>
   <!-- <Staff class="bg bg-lack"></Staff> -->
@@ -18,7 +17,6 @@ import WhatDevFestWomen from '~/components/template/WhatDevFestWomen.vue'
 import About from '~/components/template/About.vue'
 import Speaker from '~/components/template/Speaker.vue'
 import SessionList from '~/components/template/SessionList.vue'
-import Schedule from '~/components/template/Schedule.vue'
 import Sponsor from '~/components/template/Sponsor.vue'
 import Staff from '~/components/template/Staff.vue'
 import Partner from '~/components/template/Partner.vue'
@@ -33,7 +31,6 @@ export default {
     About,
     Speaker,
     SessionList,
-    Schedule,
     Sponsor,
     Partner,
     Staff,
