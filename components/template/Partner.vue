@@ -10,6 +10,9 @@
               <v-col sm="6" md="4" class="media-logo">
                 <a href="http://peatix.com/"><img src="~/assets/img/sponsor/peatix.png" alt="Peatix Japan株式会社" title="Peatix Japan株式会社"></a>
               </v-col>
+              <v-col sm="6" md="4" class="media-logo">
+                <a href="https://codezine.jp/"><img src="~/assets/img/sponsor/codezine.png" alt="CodeZine" title="CodeZine"></a>
+              </v-col>
             </v-row>
           </v-container>
         </v-col>
