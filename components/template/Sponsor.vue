@@ -25,9 +25,9 @@
               </v-col>
             </v-row>
             <v-row class="bronze d-flex flex-column flex-lg-row">
-              <!-- <v-col xs="6" md="4" class="bronze-logo">
-                <img src="~/assets/img/sponsor/unity.png" alt="ユニティ・テクノロジーズ・ジャパン合同会社" title="ユニティ・テクノロジーズ・ジャパン合同会社">
-              </v-col> -->
+              <v-col xs="6" md="4" class="bronze-logo">
+                <a href="https://unity.com/ja"><img src="~/assets/img/sponsor/unity.png" alt="ユニティ・テクノロジーズ・ジャパン合同会社" title="ユニティ・テクノロジーズ・ジャパン合同会社"></a>
+              </v-col>
               <!-- <v-col sm="6" md="4" class="bronze-logo">
                 <a href=""><img src="~/assets/img/sponsor/dena.png" alt="株式会社ディー・エヌ・エー" title="株式会社ディー・エヌ・エー"></a>
               </v-col> -->
