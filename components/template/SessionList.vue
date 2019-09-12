@@ -90,9 +90,9 @@
             { time: '14:20-14:50',session:'session1-1',title:'TBD', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
             { time: '14:55-15:25',session:'session2-1', title:'TBD' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉のプログラマー' ,display:'contents'},
+            { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
             { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: '調整中', post: '',display:'contents' },
-            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UPプロデューサー' ,display:'contents'},
+            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UP プロデューサー' ,display:'contents'},
             { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' ,display:'contents-other-session'}
       ],
       hallb: [
