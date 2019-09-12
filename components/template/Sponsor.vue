@@ -20,9 +20,9 @@
               <v-col sm="6" class="silver-logo">
                 <a href="https://cybozu.co.jp/"><img src="~/assets/img/sponsor/cybozu.png" alt="サイボウズ株式会社" title="サイボウズ株式会社"></a>
               </v-col>
-              <!-- <v-col sm="6" class="silver-logo">
-                <a href=""><img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社"></a>
-              </v-col> -->
+              <v-col sm="6" class="silver-logo">
+                <a href="https://jp.corp-sansan.com/"><img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社"></a>
+              </v-col>
             </v-row>
             <v-row class="bronze d-flex flex-column flex-lg-row">
               <!-- <v-col xs="6" md="4" class="bronze-logo">
