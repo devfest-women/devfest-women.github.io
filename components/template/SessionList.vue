@@ -100,7 +100,7 @@
             { time: '14:55-15:25',session:'session2-2', title:'TBD', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
-            { time: '16:15-16:45',session:'session4-2', title:'スポンサーセッション', name: '調整中', post: '' ,display:'contents'},
+            { time: '16:15-16:45',session:'session4-2', title:'TBD', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
             { time: '16:50-17:20',session:'session5-2', title:'TBD', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
       ],
       workshop: [
