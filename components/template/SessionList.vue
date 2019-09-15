@@ -18,9 +18,12 @@
               <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.name">
                 <p class="time">{{item.time}}</p>
                 <div v-bind:class="item.display">
-                  <p class="session-name">{{item.session}}</p>
-                  <!-- <p class="title">{{item.title}}</p> -->
-                  <p class="person">{{item.post}}<br>{{item.name}}</p>
+                    <div class="session-container">
+                      <p class="session-name">{{item.session}}</p>
+                      <!-- #TODO セッションタイトルのcss直す -->
+                      <p class="session-title">{{item.title}}</p>
+                      <p class="person">{{item.post}}<br>{{item.name}}</p>
+                    </div>
                 </div>
               </div>
             </div>
@@ -30,7 +33,8 @@
                 <p class="time">{{item.time}}</p>
                 <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
-                  <!-- <p class="title">{{item.title}}</p> -->
+                  <!-- #TODO セッションタイトルのcss直す -->
+                  <p class="session-title">{{item.title}}</p>
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
@@ -79,29 +83,29 @@
             { start: '16:15',display:'session-time'},
             { start: '16:50',display:'session-time'},
             { start: '17:20',display:''},
-        ],        
+        ],
         halla: [
             { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
             { time: '10:30-10:45',session:'オープンニング', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '10:50-11:35' ,session:'Keynote1', title:'TBD', name: '岩尾 エマ はるか', post: 'Developer Advocate',display: 'contents' },
-            { time: '11:45-12:30',session:'Keynote2', title:'TBD' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
-            { time: '12:30-14:00',session:'ランチ懇親会', title:'パネルディスカッション' , name: '', post: '',display: 'contents-other-session' },
+            { time: '10:50-11:35' ,session:'Keynote1', title:'調整中', name: '岩尾 エマ はるか', post: 'Developer Advocate',display: 'contents' },
+            { time: '11:45-12:30',session:'Keynote2', title:'調整中' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
+            { time: '12:30-14:00',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
             { time: '14:00-14:20',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
-            { time: '14:20-14:50',session:'session1-1',title:'TBD', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
-            { time: '14:55-15:25',session:'session2-1', title:'TBD' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
+            { time: '14:20-14:50',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
+            { time: '14:55-15:25',session:'session2-1', title:'調整中' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:40-16:10',session:'session3-1',title:'TBD', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
+            { time: '15:40-16:10',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
             { time: '16:15-16:45',session:'session4-1',title:'スポンサーセッション', name: '調整中', post: '',display:'contents' },
-            { time: '16:50-17:20',session:'session5-1',title:'TBD', name: '中村寛子', post: 'MASHING UP プロデューサー' ,display:'contents'},
+            { time: '16:50-17:20',session:'session5-1',title:'調整中', name: '中村寛子', post: 'MASHING UP プロデューサー' ,display:'contents'},
             { session:'クロージング', time:'17:20-17:30', title:'', name: '', post: '' ,display:'contents-other-session'}
       ],
       hallb: [
-            { time: '14:20-14:50',session:'session1-2', title:'TBD', name: '調整中', post: '',display:'contents'},
-            { time: '14:55-15:25',session:'session2-2', title:'TBD', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
+            { time: '14:20-14:50',session:'session1-2', title:'', name: '調整中', post: '',display:'contents'},
+            { time: '14:55-15:25',session:'session2-2', title:'調整中', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:40-16:10',session:'session3-2', title:'TBD', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
-            { time: '16:15-16:45',session:'session4-2', title:'TBD', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
-            { time: '16:50-17:20',session:'session5-2', title:'TBD', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
+            { time: '15:40-16:10',session:'session3-2', title:'調整中', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
+            { time: '16:15-16:45',session:'session4-2', title:'調整中', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
+            { time: '16:50-17:20',session:'session5-2', title:'調整中', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
       ],
       workshop: [
             { time: '13:00-14:20',session:'Workshop1', title:'Actions on Google', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)'},
@@ -134,7 +138,6 @@
     @media only screen and (max-width: 900px), print {
       width: 95vw;
     }
-
     .text {
         font-family: Avenir;
         font-size: 16px;
@@ -165,7 +168,11 @@
     line-height: 1.39;
     text-align: center;
     }
-    .title,.person {
+
+    .session-title{
+      height: 50px;
+    }
+    .session-title,.person {
     font-family: HiraginoSans-W7;
     font-size: 14px;
     line-height: 1.71;
@@ -177,6 +184,7 @@
   .contents {
     margin-bottom: 10px;
     width: 380px;
+    height: 190px;
     border-radius: 10px;
     background-color: #ffffff;
     padding: 15px;
@@ -186,11 +194,16 @@
     }
   .session-name{
     font-family: HiraginoSans-W6;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.39;
     text-align: center;
     }
-    .title,.person {
+
+    .session-title{
+      height: 50px;
+    }
+
+    .session-title,.person {
     font-family: HiraginoSans-W7;
     font-size: 14px;
     line-height: 1.71;
@@ -229,7 +242,7 @@
   }
   .hall-title {
     background-color: #db2a7b;
-    margin-bottom: 537px;
+    margin-bottom: 650px;
     @media only screen and (max-width: 900px), print {
       margin-bottom: 10px;
     }   
@@ -258,7 +271,7 @@
 }
 
 .timeline{
-  margin-top:80px;
+  margin-top:70px;
   margin-right:-5px;
 
   .time-section {
@@ -273,7 +286,7 @@
 
 .start-time {
   font-size: 16px;
-  height: 60px;
+  height: 57px;
   line-height: 0;
   color: #fff;
   list-style: none;
@@ -301,7 +314,7 @@
 }  
 
 .session-time {
-    height: 142px;
+    height: 200px;
     ::after{
       height: 175px;
     }
@@ -326,5 +339,9 @@
     -webkit-flex: 1;
     flex: 1;
   }
+}
+.session-container {
+  display: inline-block;
+  width: 100%;
 }
 </style>
