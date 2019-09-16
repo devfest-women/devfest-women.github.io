@@ -7,7 +7,7 @@
   <SessionList class="bg-gradient anchor" id="session"></SessionList>  
   <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
   <Partner class="bg-black anchor" id="partner"></Partner>
-  <!-- <Staff class="bg bg-lack"></Staff> -->
+  <Staff class="bg bg-black" id="staff"></Staff>
 </div>
 </template>
 
