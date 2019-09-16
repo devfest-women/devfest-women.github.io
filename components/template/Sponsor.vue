@@ -50,9 +50,9 @@
               <!-- <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一" title="谷上雄一"></a>
               </v-col> -->
-              <!-- <v-col xs="4" md="2" class="personal-logo">
+              <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/tomoharu-nagasawa.png" alt="長沢智治" title="長沢智治"></a>
-              </v-col> -->
+              </v-col>
               <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/takayuki-fuwa.png" alt="不破崇行" title="不破崇行"></a>
               </v-col>
