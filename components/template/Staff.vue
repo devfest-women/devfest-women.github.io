@@ -6,13 +6,11 @@
           <TitleBlack text="運営スタッフ"></TitleBlack>
           <v-container class="content">
             <v-row class="staff-box d-flex">
-              <v-col xs="8" sm="6" class="item" v-for="item in items" :key="item.name">
+              <v-col xs="2" sm="2" class="item" v-for="item in items" :key="item.name">
                 <a :href=item.account_link target="_blank" class="d-flex justify-center">
-                  <div xs="2" md="2" class="item-left">
+                  <div class="staff-item-box d-flex flex-column justify-center align-center">
                     <img :src=item.img_src :alt=item.name >
-                  </div>
-                  <div class="item-right">
-                    <p class="name">{{item.name}}</p>
+                    <!--<p class="name">{{item.name}}</p> -->
                     <p class="account">{{item.account}}</p>
                   </div>
                 </a>
@@ -71,6 +69,7 @@
     .item{
       padding: 10px 0px 30px 0;
       display: inline-block;
+      margin: 0px 10px;
       a{
         text-decoration: none;
         max-width: 100%;
@@ -82,6 +81,7 @@
         color: #ffffff;
       }
       .account{
+        margin-top: 5px;
         font-family: GillSans;
         font-size: 16px;
         color: #7a7a8c;
@@ -92,16 +92,13 @@
         line-height: 1.43;
         color: #ffffff;
       }
-      .item-right{
-        margin: 0px 10px;
-      }
       p{
         margin-bottom: 4px;
       }
     }
 
     .item img {
-      max-width: 100px;
+      max-width: 92px;
       border-radius: 50%;
     }
   }
