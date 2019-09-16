@@ -53,14 +53,17 @@
               <!-- <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/tomoharu-nagasawa.png" alt="長沢智治" title="長沢智治"></a>
               </v-col> -->
-              <!-- <v-col xs="4" md="2" class="personal-logo">
+              <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/takayuki-fuwa.png" alt="不破崇行" title="不破崇行"></a>
-              </v-col> -->
+              </v-col>
               <!-- <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/satoru-nakamura.png" alt="なかむらさとる" title="なかむらさとる"></a>
               </v-col> -->
               <!-- <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/toshihisa-osawa.png" alt="大澤敏久" title="大澤敏久"></a>
+              </v-col> -->
+              <!-- <v-col xs="4" md="2" class="personal-logo">
+                <a href=""><img src="~/assets/img/sponsor/takahiro-ikeuchi.jpg" alt="池内孝啓" title="池内孝啓"></a>
               </v-col> -->
             </v-row>
           </v-container>
