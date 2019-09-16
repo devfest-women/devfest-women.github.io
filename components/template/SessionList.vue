@@ -43,9 +43,9 @@
               <div class="hall-title"><p class="text">Workshop</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
                 <p class="time">{{item.time}}</p>
-                <div class="contents">
+                <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
-                  <p class="title">{{item.title}}</p>
+                  <p class="session-title">{{item.title}}</p>
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
@@ -108,11 +108,11 @@
             { time: '16:50-17:20',session:'session5-2', title:'調整中', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
       ],
       workshop: [
-            { time: '13:00-14:20',session:'Workshop1', title:'Actions on Google', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)'},
-            { time: '14:20-14:30',session:'休憩', title:'', name: '', post: '' },
-            { time: '14:30-15:50',session:'Workshop2', title:'Python', name: '講師：中村 真由美', post: ''},
-            { time: '15:50-16:00',session:'休憩', title:'', name: '', post: '' },
-            { time: '16:00-17:00',session:'Workshop3', title:'Android', name: '講師：あんざいゆき', post: '' },
+            { time: '13:00-14:20',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents'},
+            { time: '14:20-14:30',session:'休憩', title:'', name: '', post: '', display:'contents-other-session' },
+            { time: '14:30-15:50',session:'Workshop2', title:'Google Colaboratory ではじめる Python 入門', name: '講師：中村 真由美', post: '',display:'contents' },
+            { time: '15:50-16:00',session:'休憩', title:'', name: '', post: '', display:'contents-other-session' },
+            { time: '16:00-17:00',session:'Workshop3', title:'Kotlin Koans で Kotlin にチャンレンジ！', name: '講師：あんざいゆき', post: '',display:'contents' },
       ],
       dialog: false
       }
@@ -265,6 +265,9 @@
     .session-name{
     color: #ff6f61;
     }
+  }
+  .session-name{
+    color: #ff6f61;
   }
 }
 
