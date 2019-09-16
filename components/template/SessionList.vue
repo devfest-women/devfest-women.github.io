@@ -2,7 +2,7 @@
   <div>
     <v-container class="section-container">
     <v-row align="center" justify="center">
-      <v-col lg="8">
+      <v-col lg="20">
         <TitleGradient text="タイムテーブル"></TitleGradient>
           <div class="flexbox">
             <div class="d-none d-sm-flex">
@@ -39,7 +39,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="workshop">
+            <div class="workshop">
               <div class="hall-title"><p class="text">Workshop</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
                 <p class="time">{{item.time}}</p>
@@ -49,7 +49,7 @@
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -123,6 +123,7 @@
 <style lang="scss" scoped>
 .section-container{
   padding: 45px 0px 45px 0px;
+  margin: 0px 40px;
 
   @media (max-width:960px) {
     padding: 2px 0;
@@ -254,14 +255,11 @@
 
 .workshop {
 
-  @media only screen and (min-width: 900px), print {
-    display: none;
-  }
-  
   margin: 0 auto 10px auto;
 
   .hall-title {
     background-color: #ff6f61;
+    margin-bottom: 650px;
   }
   .contents {
     .session-name{
