@@ -40,7 +40,7 @@
           { name: 'あいかちゃん', account: '@aicayamazaki', account_link: 'https://twitter.com/aicayamazaki', img_src: require("~/assets/img/staff/aicayamazaki.png") },
           { name: 'しょーこ', account: '@satoshoco', account_link: 'https://twitter.com/satoshoco', img_src: require("~/assets/img/staff/satoshoco.png") },
           { name: 'まっつん', account: '@mtmn0784', account_link: 'https://twitter.com/mtmn07384', img_src: require("~/assets/img/staff/mtmn0784.png") },
-          { name: 'まいまい', account: '@maimai', account_link: 'https://www.facebook.com/maimai800', img_src: require("~/assets/img/staff/maimai800.png") },
+          { name: 'まいまい', account: '@maimai', account_link: 'https://twitter.com/maimai628', img_src: require("~/assets/img/staff/maimai800.png") },
         ],
       }
     }
