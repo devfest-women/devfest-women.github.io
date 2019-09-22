@@ -4,6 +4,36 @@
         <v-row align="center" justify="center">
           <v-col lg="8">
             <TitleGradient text="セッション内容"></TitleGradient>
+              <div class="hall-rectangle"><p class="text">Keynote</p></div>
+              <div class="session-detail-box" v-for="item in keynote" :key="item.session_number">
+                  <div class="header d-flex align-center">
+                      <div class="session-number">
+                          {{item.session_number}}
+                      </div>
+                      <div class="session-time">
+                          {{item.time}}
+                      </div>
+                  </div>
+                  <div class="session-detail-box-header">
+                      <div class="session-title">
+                          {{item.title}}
+                      </div>
+                      <div class="session-description">
+                          <p>{{item.description}}</p>
+                      </div>
+                      <div class="session-speaker">
+                          <a :href=item.account_link target="_blank" class="d-flex justify-left">
+                              <div xs="2" md="2" class="left">
+                                  <img :src=item.img_src :alt=item.speaker >
+                              </div>
+                              <div class="right">
+                                  <p class="name">{{item.speaker}}</p>
+                                  <p class="post">{{item.post}}</p>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
               <div class="hall-rectangle"><p class="text">HallA</p></div>
               <div class="session-detail-box" v-for="item in halla" :key="item.session_number">
                 <div class="header d-flex align-center">
@@ -52,9 +82,19 @@
         data() {
           return {
             name: 'Session',
+            keynote: [
+                {
+                    session_number:'Keynote',
+                    speaker: '戸倉 彩',
+                    title:'私の行動宣言 #BeEqual',
+                    description:'女性活躍推進法の施行から約4年。職場におけるジェンダーやフェミニズムの平等を求める動きは社会現象となっています。給料や待遇の格差に関するメディア報道にはじまり、管理職に女性を登用する動きも強まっています。しかし、国内のIT業界では未だに女性エンジニアの比率はさほど変化しておらず、依然として男女間の格差が大きいことがうかがえます。今回は、私自身の経験談を交えながら、皆さんと一緒に「ダイバーシティ&インクルージョン」について考え、今後、女性を取り巻く未来の環境の変化に備えるためにできることについてご紹介いたします。',
+                    account_link: 'https://twitter.com/ayatokura',
+                    post: 'IBM Sr. Developer Advocate',
+                    img_src: require("~/assets/img/speaker/aya_tokura.png")
+                }
+            ],
             halla: [
                 { session_number:'Session1-1',
-                  time: '14:20-14:50',
                   speaker: '福田 恵里',
                   title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法',
                   description:'仕事か、家庭か。女性にとってこの二元論で考えられることがまだまだ多い世の中。出産を期に仕事を辞める女性は、働く女性の47%にも及ぶんです。\n' +
@@ -66,7 +106,6 @@
                   img_src: require("~/assets/img/speaker/eri_fukuda.jpg")
                 },
                 { session_number:'Session1-3',
-                    time: '15:40-16:10',
                     speaker: '鳥井 雪',
                     title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜',
                     description: '‪プログラマー歴10年と少し、その間にカンファレンスに登壇したり託児所制度を導入したり、Rails Girls の日本でのコミュニティ化をがんばったりプログラミング絵本を翻訳したり子どもを2人目産んだりしました。‬\n' +
