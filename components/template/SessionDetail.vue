@@ -69,6 +69,38 @@
             </div>
           </div>
           </div>
+          <div class="session">
+              <div class="hall-rectangle"><p class="text">Workshop</p></div>
+              <div class="session-detail-box" v-for="item in workshop" :key="item.session_number">
+                  <div class="header d-flex align-center">
+                      <div class="session-number">
+                          {{item.session_number}}
+                      </div>
+                      <div class="session-time">
+                          {{item.time}}
+                      </div>
+                  </div>
+                  <div class="session-detail-box-header">
+                      <div class="session-title">
+                          {{item.title}}
+                      </div>
+                      <div class="session-description">
+                          <p>{{item.description}}</p>
+                      </div>
+                      <div class="session-speaker">
+                          <a :href=item.account_link target="_blank" class="d-flex justify-left">
+                              <div xs="2" md="2" class="left">
+                                  <img :src=item.img_src :alt=item.speaker >
+                              </div>
+                              <div class="right">
+                                  <p class="name">{{item.speaker}}</p>
+                                  <p class="post">{{item.post}}</p>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
         </v-col>
       </v-row>
@@ -120,7 +152,37 @@
                 post: '株式会社万葉 プログラマー',
                 img_src: require("~/assets/img/speaker/yuki_torii.jpg")
             },
-        ]
+        ],
+        workshop: [
+            {
+                session_number:'Workshop',
+                speaker: '田中 洋一郎',
+                title:'初めてのGoogleアシスタント向けアクションの開発',
+                description:'Googleアシスタントに声をかけることで呼び出しができて会話が可能なアクションの開発を実際に行います。ウェブブラウザのみで試すことができます。',
+                account_link: 'https://twitter.com/yoichiro',
+                post: 'Google Developers Expert (Assistant, Web Technology)',
+                img_src: require("~/assets/img/speaker/yoichiro_tanaka.png")
+            },
+            {
+                session_number:'Workshop',
+                speaker: '中村 真由美',
+                title:'Google Colaboratory ではじめる Python 入門',
+                description:'実際に触りながら学ぶ Python 初学者向けハンズオンセッションです。Python の基本的な文法や特徴から、データ分析などでの活用イメージまでご紹介します。Google ドライブ上で動く開発環境 Colaboratory を使うので、Gmail アカウントがあれば事前準備の必要なく参加できます。学習を始めるきっかけを探していた方、ご活用ください！',
+                account_link: 'https://www.facebook.com/mayumi.park.7',
+                post: '',
+                img_src: require("~/assets/img/speaker/mayumi_nakamura.png")
+            },
+            {
+                session_number:'Workshop',
+                speaker: 'あんざいゆき',
+                title:'Kotlin Koans で Kotlin にチャンレンジ！',
+                description:'Kotlin のコードを書いて問題を解いていく Kotlin Koans に実際にチャレンジするハンズオンです。Kotlin Koans はブラウザ上で試せます。\n' +
+                    '問題を解きながら Kotlin の文法や標準ライブラリの使い方を学んでいきましょう。',
+                account_link: 'https://twitter.com/yanzm',
+                post: '株式会社ウフィカ代表取締役',
+                img_src: require("~/assets/img/speaker/yuki_anzai.png")
+            },
+        ],
       }
     }
   }
@@ -136,7 +198,7 @@
 }
 .session {
     margin-bottom: 20px;
-    
+
     .hall-rectangle {
         background-color: rgba(255, 255, 255, 0.2);
         text-align: center;
