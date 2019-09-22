@@ -53,7 +53,7 @@
           return {
             name: 'Session',
             halla: [
-                { session_number:'SessionA-1',
+                { session_number:'Session1-1',
                   time: '14:20-14:50',
                   speaker: '福田 恵里',
                   title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法',
@@ -65,7 +65,17 @@
                   post: 'SHE株式会社 Co-founder/CCO',
                   img_src: require("~/assets/img/speaker/eri_fukuda.jpg")
                 },
-                ]
+                { session_number:'Session1-3',
+                    time: '15:40-16:10',
+                    speaker: '鳥井 雪',
+                    title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜',
+                    description: '‪プログラマー歴10年と少し、その間にカンファレンスに登壇したり託児所制度を導入したり、Rails Girls の日本でのコミュニティ化をがんばったりプログラミング絵本を翻訳したり子どもを2人目産んだりしました。‬\n' +
+                                '‪その都度、「プログラマーとしての生き方」なんて立派なことはさっぱり考えずに「わたしが好きな場所で好きなことをして成長もして、ついでにその場所をより良い場所にするにはどうすればいいんだろう？」と自分勝手にやってきた、そのわたしの好きなITの世界の良さと可能性、そこに「あなた」があなたの都合で加わることの大切さをお話しできたらいいなと思っています。‬',
+                    account_link: 'https://twitter.com/yotii23',
+                    post: '株式会社万葉 プログラマー',
+                    img_src: require("~/assets/img/speaker/yuki_torii.jpg")
+                },
+            ]
           }
         }
       }
