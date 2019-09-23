@@ -70,6 +70,38 @@
           </div>
           </div>
           <div class="session">
+              <div class="hall-rectangle"><p class="text">HallB</p></div>
+              <div class="session-detail-box" v-for="item in hallb" :key="item.session_number">
+                  <div class="header d-flex align-center">
+                      <div class="session-number">
+                          {{item.session_number}}
+                      </div>
+                      <div class="session-time">
+                          {{item.time}}
+                      </div>
+                  </div>
+                  <div class="session-detail-box-header">
+                      <div class="session-title">
+                          {{item.title}}
+                      </div>
+                      <div class="session-description">
+                          <p>{{item.description}}</p>
+                      </div>
+                      <div class="session-speaker">
+                          <a :href=item.account_link target="_blank" class="d-flex justify-left">
+                              <div xs="2" md="2" class="left">
+                                  <img :src=item.img_src :alt=item.speaker >
+                              </div>
+                              <div class="right">
+                                  <p class="name">{{item.speaker}}</p>
+                                  <p class="post">{{item.post}}</p>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="session">
               <div class="hall-rectangle"><p class="text">Workshop</p></div>
               <div class="session-detail-box" v-for="item in workshop" :key="item.session_number">
                   <div class="header d-flex align-center">
@@ -153,6 +185,15 @@
                 img_src: require("~/assets/img/speaker/yuki_torii.jpg")
             },
         ],
+        hallb: [
+            { session_number:'Session4-2',
+                speaker: '鈴木 順子',
+                title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜',
+                description:'',
+                post: 'GitHub / Enterprise Support Engineer',
+                img_src: require("~/assets/img/speaker/junko-suzuki.jpg")
+            }
+        ],
         workshop: [
             {
                 session_number:'Workshop',
@@ -175,7 +216,7 @@
             {
                 session_number:'Workshop',
                 speaker: 'あんざいゆき',
-                title:'Kotlin Koans で Kotlin にチャンレンジ！',
+                title:'Kotlin Koans で Kotlin にチャレンジ！',
                 description:'Kotlin のコードを書いて問題を解いていく Kotlin Koans に実際にチャレンジするハンズオンです。Kotlin Koans はブラウザ上で試せます。\n' +
                     '問題を解きながら Kotlin の文法や標準ライブラリの使い方を学んでいきましょう。',
                 account_link: 'https://twitter.com/yanzm',
