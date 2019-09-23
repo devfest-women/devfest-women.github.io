@@ -166,8 +166,8 @@
             {
                 session_number:'Workshop',
                 speaker: '中村 真由美',
-                title:'Google Colaboratory ではじめる Python 入門',
-                description:'実際に触りながら学ぶ Python 初学者向けハンズオンセッションです。Python の基本的な文法や特徴から、データ分析などでの活用イメージまでご紹介します。Google ドライブ上で動く開発環境 Colaboratory を使うので、Gmail アカウントがあれば事前準備の必要なく参加できます。学習を始めるきっかけを探していた方、ご活用ください！',
+                title:'Google Colaboratory で Python をはじめてみよう',
+                description:'Colaboratory をご存知ですか？Google が機械学習の学習・研究用途に無償で提供する、ブラウザだけで動くオンラインの Python 実行環境です。Python の基本的な文法や特徴から、データ分析での活用イメージまで、実際に触ってみながら Python 入門しちゃいましょう！',
                 account_link: 'https://www.facebook.com/mayumi.park.7',
                 post: '',
                 img_src: require("~/assets/img/speaker/mayumi_nakamura.png")
