@@ -19,10 +19,13 @@
 
         <v-col lg="6" class="text-center">
           <v-row class="footer-sns d-flex align-center justify-center">
-            <v-col sm="2" class="footer-item">
+            <v-col sm="2" class="footer-item-sns">
               <a href="https://twitter.com/wtmtokyo"><img class="footer-image" src="~/assets/img/sns/twitter.svg" alt="DevFest Women2019"></a>
             </v-col>
-            <v-col sm="2" class="footer-item">
+            <v-col sm="2" class="footer-item-sns">
+              <a href="https://www.facebook.com/wtmtokyo/"><img class="footer-image" src="~/assets/img/sns/facebook.png" alt="DevFest Women2019"></a>
+            </v-col>
+            <v-col sm="2" class="footer-item-sns">
               <a href="https://forms.gle/Bc1BwwpwXwTZkA1b7"><img class="footer-image" src="~/assets/img/sns/mail.svg" alt="DevFest Women2019"></a>
             </v-col>
           </v-row>
@@ -85,10 +88,15 @@
       text-decoration: none;
       color: #ffffff;
     }
-  }
-  .footer-sns{
-    @media (max-width:960px) {
+ }
+  .footer-sns {
+    @media (max-width: 960px) {
       margin: 0 80px;
+    }
+
+    .footer-item-sns {
+      margin: 0px;
+      padding: 0px;
     }
   }
   .copyright{

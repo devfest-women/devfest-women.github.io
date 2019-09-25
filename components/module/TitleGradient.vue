@@ -15,7 +15,7 @@ export default {
 <style scoped>
 .title-text {
     font-family: HiraginoSans-W6;
-    font-size: 26px;
+    font-size: 34px;
     text-align: center;
     color: #ffffff;
 }
