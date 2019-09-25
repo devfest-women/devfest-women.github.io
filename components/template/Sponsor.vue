@@ -46,6 +46,13 @@
                 <a href="https://www.styliste.com"><img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社"></a>
               </v-col>
             </v-row>
+            <h2 class="heading">託児所スポンサー</h2>
+            <v-row class="bronze d-flex flex-column flex-lg-row">
+              <v-col xs="6" md="4" class="bronze-logo">
+                <a href="https://ciandt.co.jp"><img src="~/assets/img/sponsor/ci-t.png" alt="CI＆T株式会社" title="CI＆T株式会社"></a>
+              </v-col>
+            </v-row>
+            <h2 class="heading">個人スポンサー</h2>
             <v-row class="personal d-flex flex-column flex-lg-row">
               <!-- <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一" title="谷上雄一"></a>
@@ -109,7 +116,10 @@
     color: #ffffff;
     margin: 0px 0px 30px 0px;
   }
-
+  .heading {
+    text-align: center;
+    color: #ffffff;
+  }
   .silver {
     margin: 0px 0px 60px 0px;
     @media (max-width:960px) {
