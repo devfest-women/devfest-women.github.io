@@ -69,9 +69,9 @@
               <!-- <v-col xs="4" md="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/toshihisa-osawa.png" alt="大澤敏久" title="大澤敏久"></a>
               </v-col> -->
-              <!-- <v-col xs="4" md="2" class="personal-logo">
-                <a href=""><img src="~/assets/img/sponsor/takahiro-ikeuchi.jpg" alt="池内孝啓" title="池内孝啓"></a>
-              </v-col> -->
+              <v-col xs="4" md="2" class="personal-logo">
+                <a href="https://twitter.com/iktakahiro"><img src="~/assets/img/sponsor/takahiro-ikeuchi.jpg" alt="池内孝啓" title="池内孝啓"></a>
+              </v-col>
             </v-row>
           </v-container>
         </v-col>
