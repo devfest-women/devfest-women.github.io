@@ -41,6 +41,8 @@
           { name: 'しょーこ', account: '@satoshoco', account_link: 'https://twitter.com/satoshoco', img_src: require("~/assets/img/staff/satoshoco.png") },
           { name: 'まっつん', account: '@mtmn0784', account_link: 'https://twitter.com/mtmn07384', img_src: require("~/assets/img/staff/mtmn0784.png") },
           { name: 'まいまい', account: '@maimai', account_link: 'https://twitter.com/maimai628', img_src: require("~/assets/img/staff/maimai800.png") },
+          { name: 'かづみ', account: '@dz_', account_link: 'https://twitter.com/dz_', img_src: require("~/assets/img/staff/kazumi.png") },
+          { name: 'あきな', account: '@aaa3_25', account_link: 'https://twitter.com/aaa3_25', img_src: require("~/assets/img/staff/akina.png") },
         ],
       }
     }
