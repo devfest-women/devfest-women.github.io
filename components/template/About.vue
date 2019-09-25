@@ -85,7 +85,7 @@
         items: [
           { title: '日時', description: '2019年10月14日（月・祝日)<br>10:30開始 （10:00受付開始）<br>17:00 終了予定' },
           { title: '対象', description: 'IT業界や関連する職種で働いている人<br>IT業界で働くことを目指している学生<br>※性別不問です' },
-          { title: '参加費', description: '一般 1,000円(先着300名)<br>学生 無料（先着100名）' },
+          { title: '参加費', description: '一般 1,000円<br>学生 無料（先着100名）' },
           { title: '主催', description: '<img style="width: 330px"src="' + require("~/assets/img/wtm_logo_white.svg") + '"  alt="Women Techmakers Tokyo" title="Women Techmakers Tokyo">' },
           { title: '会場', description: '御茶ノ水ソラシティカンファレンスセンター<br>（東京都千代田区神田駿河台4丁目4-6）' },
         ],
