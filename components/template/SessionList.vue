@@ -7,7 +7,7 @@
           <div class="flexbox">
             <div class="d-none d-sm-flex">
               <ul class="timeline time-section">
-                <li class="start-time" v-for="item in time" :key="item.time"  v-bind:class="item.display">
+                <li class="start-time" v-for="item in time" :key="item.time" v-bind:class="item.display">
                   {{item.start}}
                 </li>
                 <li class="start-time">17:30</li>
@@ -39,17 +39,18 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="workshop">
+            <div class="workshop">
               <div class="hall-title"><p class="text">Workshop</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
                 <p class="time">{{item.time}}</p>
-                <div class="contents">
+                <div v-bind:class="item.display">
                   <p class="session-name">{{item.session}}</p>
-                  <p class="title">{{item.title}}</p>
+                  <!-- #TODO セッションタイトルのcss直す -->
+                  <p class="session-title">{{item.title}}</p>
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -83,6 +84,7 @@
             { start: '15:30',display:'session-time'},
             { start: '16:05',display:'session-time'},
             { start: '16:40',display:'session-time'},
+            { start: '17:10',display:''},
             { start: '17:20',display:''},
         ],
         halla: [
@@ -99,6 +101,7 @@
             { time: '15:30-16:00',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
             { time: '16:05-16:35',session:'session4-1',title:'調整中', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
             { time: '16:40-17:10',session:'session5-1',title:'調整中', name: 'クロエ', post: '' ,display:'contents'},
+            { time: '17:10-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '17:20-17:30', session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
       ],
       hallb: [
@@ -110,11 +113,11 @@
             { time: '16:40-17:10',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-other-session'},
       ],
       workshop: [
-            { time: '13:20-14:40',session:'Workshop1', title:'Actions on Google', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)'},
-            { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '' },
-            { time: '14:50-16:10',session:'Workshop2', title:'Python', name: '講師：中村 真由美', post: ''},
-            { time: '16:10-16:20',session:'休憩', title:'', name: '', post: '' },
-            { time: '16:20-17:20',session:'Workshop3', title:'Android', name: '講師：あんざいゆき', post: '' },
+            { time: '13:20-14:40',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents contents80min'},
+            { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '', display:'contents-other-session'},
+            { time: '14:50-16:10',session:'Workshop2', title:'Google Colaboratory で Python をはじめてみよう', name: '講師：中村 真由美', post: '', display:'contents contents80min'},
+            { time: '16:10-16:20',session:'休憩', title:'', name: '', post: '', display:'contents-other-session'},
+            { time: '16:20-17:20',session:'Workshop3', title:'Kotlin Koans で Kotlin にチャレンジ！', name: '講師：あんざいゆき', post: '株式会社ウフィカ代表取締役', display:'contents contents60min'},
       ],
       dialog: false
       }
@@ -123,15 +126,15 @@
 </script>
 
 <style lang="scss" scoped>
-.section-container{
-  padding: 45px 0px 45px 0px;
+  .section-container{
+    padding: 45px 0px 45px 0px;
 
-  @media (max-width:960px) {
-    padding: 2px 0;
+    @media (max-width:960px) {
+      padding: 2px 0;
+    }
   }
-}
   .hall-title {
-    width: 380px;
+    width: 240px;
     height: 40px;
     margin-bottom: 10px;
     display: table;
@@ -155,7 +158,7 @@
   }
   .contents-other-session {
     margin-bottom: 10px;
-    width: 380px;
+    width: 240px;
     height: 50px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -164,7 +167,68 @@
     @media only screen and (max-width: 900px), print {
       width: 95vw;
     }
-  .session-name{
+    .session-name {
+      font-family: HiraginoSans-W6;
+      font-size: 18px;
+      line-height: 1.39;
+      text-align: center;
+    }
+
+    .session-title{
+      height: 50px;
+    }
+    .session-title,.person {
+      font-family: HiraginoSans-W7;
+      font-size: 14px;
+      line-height: 1.71;
+      color: #100e17;
+    }
+  }
+  .contents {
+    margin-bottom: 10px;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+
+    @media only screen and (max-width: 900px), print {
+      width: 95vw;
+      height: 190px;
+    }
+    .session-name{
+      font-family: HiraginoSans-W6;
+      font-size: 14px;
+      line-height: 1.39;
+      text-align: center;
+    }
+
+    .session-title{
+      height: 50px;
+    }
+
+    .session-title,
+    .person {
+      font-family: HiraginoSans-W7;
+      font-size: 14px;
+      line-height: 1.71;
+      color: #100e17;
+    }
+  }
+
+  .contents-ask-the-speaker {
+    margin-bottom: 10px;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+
+    @media only screen and (max-width: 900px), print {
+      width: 95vw;
+      height: 50px;
+    }
+    .session-name{
     font-family: HiraginoSans-W6;
     font-size: 18px;
     line-height: 1.39;
@@ -175,41 +239,10 @@
       height: 50px;
     }
     .session-title,.person {
-    font-family: HiraginoSans-W7;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #100e17;    
-    }
-
-  }
-
-  .contents {
-    margin-bottom: 10px;
-    width: 380px;
-    height: 190px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    padding: 15px;
-
-    @media only screen and (max-width: 900px), print {
-      width: 95vw;
-    }
-  .session-name{
-    font-family: HiraginoSans-W6;
-    font-size: 14px;
-    line-height: 1.39;
-    text-align: center;
-    }
-
-    .session-title{
-      height: 50px;
-    }
-
-    .session-title,.person {
-    font-family: HiraginoSans-W7;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #100e17;    
+      font-family: HiraginoSans-W7;
+      font-size: 14px;
+      line-height: 1.71;
+      color: #100e17;
     }
   }
   .time {
@@ -225,125 +258,139 @@
     }
   }
 
-.hall-a {
-  @media only screen and (max-width: 900px), print {
-    margin: 0 auto 10px auto;
-  }
-
-  .hall-title {
-    background-color: #ff6f61;
-  }
-  .session-name{
-  color: #ff6f61;
-  }
-}
-
-.hall-b {
-  @media only screen and (max-width: 900px), print {
-    margin: 0 auto 10px auto;
-  }
-  .hall-title {
-    background-color: #db2a7b;
-    margin-bottom: 650px;
+  .hall-a {
     @media only screen and (max-width: 900px), print {
-      margin-bottom: 10px;
-    }   
+      margin: 0 auto 10px auto;
+    }
+
+    .hall-title {
+      background-color: #ff6f61;
+    }
+    .session-name{
+      color: #ff6f61;
+    }
   }
+
+  .hall-b {
+    @media only screen and (max-width: 900px), print {
+      margin: 0 auto 10px auto;
+    }
+    .hall-title {
+      background-color: #db2a7b;
+      margin-bottom: 1000px;
+
+      @media only screen and (max-width: 900px), print {
+        margin-bottom: 10px;
+      }
+    }
     .session-name{
       color: #ea4770;
     }
   }
 
-.workshop {
+  .workshop {
+    @media only screen and (max-width: 900px), print {
+      margin: 0 auto 10px auto;
+    }
+    .hall-title {
+      background-color: #ff6f61;
+      margin-bottom: 690px;
+
+      @media only screen and (max-width: 900px), print {
+        margin-bottom: 10px;
+      }
+    }
+    .session-name{
+      color: #ff6f61;
+    }
+    .contents80min {
+      height: 530px;
+
+      @media only screen and (max-width: 900px), print {
+        height: 190px;
+      }
+    }
+    .contents60min {
+      height: 470px;
+
+      @media only screen and (max-width: 900px), print {
+        height: 190px;
+      }
+    }
+  }
+
+  .timeline{
+    margin-top:70px;
+    margin-right:-5px;
+
+    .time-section {
+      display: inline-block;
+      position: relative;
+
+    }
+    @media only screen and (max-width: 900px), print {
+      display:none;
+    }
+  }
+
+  .start-time {
+    font-size: 16px;
+    height: 57px;
+    line-height: 0;
+    color: #fff;
+    list-style: none;
+
+    ::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 2px;
+      margin: auto;
+    }
+    ::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 2px;
+      height: 95px;
+      margin: auto;
+      background-color: #fff;
+    }
+  }
+<<<<<<< HEAD
+}
+=======
+>>>>>>> タイムテーブルにワークショップを追加＆デザイン修正
+
+  .session-time {
+      height: 250px;
+      ::after{
+        height: 175px;
+      }
+  }
+  .start-time,
+  .hall-a,
+  .hall-b,
+  .workshop {
+    padding: 2%;
+  }
 
   @media only screen and (min-width: 900px), print {
-    display: none;
-  }
-  
-  margin: 0 auto 10px auto;
-
-  .hall-title {
-    background-color: #ff6f61;
-  }
-  .contents {
-    .session-name{
-    color: #ff6f61;
+    .flexbox {
+      display: -webkit-flex;
+      display: flex;
+      }
+    .hall-a, .hall-b, .workshop {
+      -webkit-flex: 1;
+      flex: 1;
     }
   }
-}
-
-.timeline{
-  margin-top:70px;
-  margin-right:-5px;
-
-  .time-section {
+  .session-container {
     display: inline-block;
-    position: relative;
-
+    width: 100%;
   }
-  @media only screen and (max-width: 900px), print {
-  display:none;
-  }
-}
-
-.start-time {
-  font-size: 16px;
-  height: 57px;
-  line-height: 0;
-  color: #fff;
-  list-style: none;
-
-  ::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 2px;
-  margin: auto;
-  }
-  ::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 2px;
-    height: 95px;
-    margin: auto;
-    background-color: #fff;
-  }
-}
-
-.session-time {
-    height: 200px;
-    ::after{
-      height: 175px;
-    }
-}
-.start-time,
-.hall-a,
-.hall-b,
-.workshop {
-  padding: 2%;
-}
-
-@media only screen and (min-width: 900px), print {
-  .flexbox {
-    display: -webkit-flex;
-    display: flex;
-    }
-  .hall-a {
-    -webkit-flex: 1;
-    flex: 1;
-  }
-  .hall-b {
-    -webkit-flex: 1;
-    flex: 1;
-  }
-}
-.session-container {
-  display: inline-block;
-  width: 100%;
-}
 </style>
