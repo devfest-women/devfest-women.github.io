@@ -4,21 +4,21 @@
       <v-row justify="center" class="partner-row">
         <v-col sm="6">
           <TitleBlack text="パートナー"></TitleBlack>
-          <v-container class="partner-logo  flex-column flex-lg-row">
-            <v-row class="media d-flex flex-column flex-lg-row">
-              <v-col sm="6" md="4" class="media-logo">
+          <v-container class="partner-logo">
+            <v-row class="media d-flex" justify="center">
+              <v-col xs="8" sm="8" md="6" lg="4" class="media-logo">
                 <a href="https://developers-jp.googleblog.com/"><img src="~/assets/img/sponsor/google-developers.png" alt="Google Developers" title="Google Developers"></a>
               </v-col>
-              <v-col sm="6" md="4" class="media-logo">
+              <v-col xs="8" sm="8" md="6" lg="4" class="media-logo">
                 <a href="https://www.womentechmakers.com/"><img src="~/assets/img/sponsor/wtm.png" alt="Women Techmakers" title="Women Techmakers"></a>
               </v-col>
             </v-row>
             <h2 class="heading">メディアパートナー</h2>
-            <v-row class="media d-flex flex-column flex-lg-row">
-              <v-col sm="6" md="4" class="media-logo">
+            <v-row class="media d-flex" justify="center">
+              <v-col  xs="8" sm="8" md="6" lg="4" class="media-logo">
                 <a href="http://peatix.com/"><img src="~/assets/img/sponsor/peatix.png" alt="Peatix Japan株式会社" title="Peatix Japan株式会社"></a>
               </v-col>
-              <v-col sm="6" md="4" class="media-logo">
+              <v-col  xs="8" sm="8" md="6" lg="4" class="media-logo">
                 <a href="https://codezine.jp/"><img src="~/assets/img/sponsor/codezine.png" alt="CodeZine" title="CodeZine"></a>
               </v-col>
             </v-row>
