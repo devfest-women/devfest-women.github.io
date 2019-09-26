@@ -5,7 +5,7 @@
         <v-col lg="6">
           <TitleBlack text="登壇者"></TitleBlack>
           <v-container class="content">
-              <v-row class="speaker-box d-flex flex-column flex-lg-row">
+              <v-row class="speaker-box d-flex">
                   <v-col xs="8" sm="6" class="item" v-for="item in items" :key="item.name">
                         <a :href=item.account_link target="_blank" class="d-flex justify-left">
                             <div xs="2" md="2" class="item-left">
