@@ -196,6 +196,14 @@
             },
         ],
         hallb: [
+            { session_number:'Session4-1',
+                speaker: '清水 淳子',
+                title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー',
+                description:'グラフィックレコーディングとは、リアルタイムで話し合いを整理して記録することで、参加者の気づきを促進する手法です。近年、ビジネス会議や市民活動の場で注目を集めています。このセッションでは清水が自分のノートをグラフィックレコーダーという職業に発展させるまでの約10年間の舞台裏をご紹介します。',
+                account_link: 'https://twitter.com/4mimimizu',
+                post: 'デザインリサーチャー / グラフィックレコーダー',
+                img_src: require("~/assets/img/speaker/junko_shimizu.png")
+            },
             { session_number:'Session4-2',
                 speaker: '鈴木 順子',
                 title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜',
