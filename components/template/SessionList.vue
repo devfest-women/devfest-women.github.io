@@ -3,7 +3,7 @@
     <v-container class="section-container">
     <v-row align="center" justify="center">
       <v-col lg="8">
-        <TitleGradient text="スケジュール"></TitleGradient>
+        <TitleGradient text="タイムテーブル"></TitleGradient>
           <div class="flexbox">
             <div class="d-none d-sm-flex">
               <ul class="timeline time-section">
