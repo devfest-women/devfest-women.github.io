@@ -196,13 +196,22 @@
             },
         ],
         hallb: [
-            { session_number:'Session4-1',
+            { session_number:'Session1-2',
                 speaker: '清水 淳子',
                 title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー',
                 description:'グラフィックレコーディングとは、リアルタイムで話し合いを整理して記録することで、参加者の気づきを促進する手法です。近年、ビジネス会議や市民活動の場で注目を集めています。このセッションでは清水が自分のノートをグラフィックレコーダーという職業に発展させるまでの約10年間の舞台裏をご紹介します。',
                 account_link: 'https://twitter.com/4mimimizu',
                 post: 'デザインリサーチャー / グラフィックレコーダー',
                 img_src: require("~/assets/img/speaker/junko_shimizu.png")
+            },
+            { session_number:'Session2-2',
+                speaker: '千代田まどか',
+                title:'千代田まどかオタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜',
+                description:'物理0点取ったガチガチな文系大学生のわたしがパソコンに出会い、プログラミングにハマって独学で応用情報技術者試験に合格。SIer や スタートアップ企業での技術職を経験し、日本マイクロソフトにテクニカルエバンジェリストとして入社。数年後には、日本人は私含め2人だけの本社インターナショナルチームへ異動。‬\n' +
+                             'BLマンガ、オタク活動、プログラミング。大好きなことに没入し続けた、ちょまど流テクニカルキャリアにおける "Connecting the Dots" についてお話しさせていただきます。',
+                account_link: 'https://twitter.com/chomado',
+                post: 'Microsoft',
+                img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg")
             },
             { session_number:'Session4-2',
                 speaker: '鈴木 順子',
