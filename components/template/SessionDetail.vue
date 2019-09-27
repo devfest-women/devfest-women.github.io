@@ -233,7 +233,7 @@
         ],
         workshop: [
             {
-                session_number:'Workshop',
+                session_number:'Workshop1',
                 speaker: '田中 洋一郎',
                 title:'初めてのGoogleアシスタント向けアクションの開発',
                 description:'Googleアシスタントに声をかけることで呼び出しができて会話が可能なアクションの開発を実際に行います。ウェブブラウザのみで試すことができます。',
@@ -242,7 +242,7 @@
                 img_src: require("~/assets/img/speaker/yoichiro_tanaka.png")
             },
             {
-                session_number:'Workshop',
+                session_number:'Workshop2',
                 speaker: '中村 真由美',
                 title:'Google Colaboratory で Python をはじめてみよう',
                 description:'Colaboratory をご存知ですか？Google が機械学習の学習・研究用途に無償で提供する、ブラウザだけで動くオンラインの Python 実行環境です。Python の基本的な文法や特徴から、データ分析での活用イメージまで、実際に触ってみながら Python 入門しちゃいましょう！',
@@ -251,7 +251,7 @@
                 img_src: require("~/assets/img/speaker/mayumi_nakamura.png")
             },
             {
-                session_number:'Workshop',
+                session_number:'Workshop3',
                 speaker: 'あんざいゆき',
                 title:'Kotlin Koans で Kotlin にチャレンジ！',
                 description:'Kotlin のコードを書いて問題を解いていく Kotlin Koans に実際にチャレンジするハンズオンです。Kotlin Koans はブラウザ上で試せます。\n' +
