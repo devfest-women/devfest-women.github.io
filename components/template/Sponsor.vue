@@ -28,9 +28,9 @@
               <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href="https://unity.com/ja"><img src="~/assets/img/sponsor/unity.png" alt="ユニティ・テクノロジーズ・ジャパン合同会社" title="ユニティ・テクノロジーズ・ジャパン合同会社"></a>
               </v-col>
-              <!-- <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href=""><img src="~/assets/img/sponsor/dena.png" alt="株式会社ディー・エヌ・エー" title="株式会社ディー・エヌ・エー"></a>
-              </v-col> -->
+              </v-col>
               <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href="https://www.uphyca.com/"><img src="~/assets/img/sponsor/uphyca.png" alt="株式会社ウフィカ" title="株式会社ウフィカ"></a>
               </v-col>
