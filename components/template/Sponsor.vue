@@ -16,6 +16,7 @@
           </div>
           <v-container class="sponsor-logo flex-column">
             <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他わからないことがあれば画面下部のお問い合わせまでご連絡ください。</div>
+            <h2 class="heading">シルバースポンサー</h2>
             <v-row sm="6" class="silver d-flex" justify="center">
               <v-col sm="12" md="12" lg="6" class="silver-logo">
                 <a href="https://cybozu.co.jp/"><img src="~/assets/img/sponsor/cybozu.png" alt="サイボウズ株式会社" title="サイボウズ株式会社"></a>
@@ -24,13 +25,14 @@
                 <a href="https://jp.corp-sansan.com/"><img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社"></a>
               </v-col>
             </v-row>
+            <h2 class="heading">ブロンズスポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
               <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href="https://unity.com/ja"><img src="~/assets/img/sponsor/unity.png" alt="ユニティ・テクノロジーズ・ジャパン合同会社" title="ユニティ・テクノロジーズ・ジャパン合同会社"></a>
               </v-col>
-              <!-- <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href=""><img src="~/assets/img/sponsor/dena.png" alt="株式会社ディー・エヌ・エー" title="株式会社ディー・エヌ・エー"></a>
-              </v-col> -->
+              </v-col>
               <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href="https://www.uphyca.com/"><img src="~/assets/img/sponsor/uphyca.png" alt="株式会社ウフィカ" title="株式会社ウフィカ"></a>
               </v-col>
