@@ -15,7 +15,7 @@
             ></Button>
           </div>
           <v-container class="sponsor-logo flex-column">
-            <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他わからないことがあれば画面下部のお問い合わせまでご連絡ください。</div>
+            <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他、ご不明点等ありましたらこちらの<a href="https://forms.gle/Bc1BwwpwXwTZkA1b7">お問い合わせフォーム</a>からお気軽にお問い合わせください。</div>
             <h2 class="heading">シルバースポンサー</h2>
             <v-row sm="6" class="silver d-flex" justify="center">
               <v-col sm="12" md="12" lg="6" class="silver-logo">
