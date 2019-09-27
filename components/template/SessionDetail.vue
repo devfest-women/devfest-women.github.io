@@ -216,6 +216,7 @@
                 speaker: '鈴木 順子',
                 title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜',
                 description:'',
+                account_link: 'https://twitter.com/PNSK',
                 post: 'GitHub / Enterprise Support Engineer',
                 img_src: require("~/assets/img/speaker/junko-suzuki.jpg")
             },
@@ -225,6 +226,7 @@
                 description:'Google で Chrome というブラウザを開発することなんと約10年😲\n' +
                 'Webの標準を提案したり、たくさんコードを書いたり、国や会社を超えて仲間ができたり、インターネットを壊したり、子供を産んだり、リーダーになったり…などなどしてたらいつの間にか随分たっていました。\n' +
                 'いつまでこれをやろうかな？🤔と思ったりもしますが、私が仕事や私生活で学んだこと、世の中になにか還元できたらいいなと思ってることなどをつらつらお話しします。',
+                account_link: 'https://twitter.com/kinu',
                 post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',
                 img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg")
             }
