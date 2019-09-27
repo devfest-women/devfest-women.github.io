@@ -37,6 +37,13 @@
                 <a href="https://www.uphyca.com/"><img src="~/assets/img/sponsor/uphyca.png" alt="株式会社ウフィカ" title="株式会社ウフィカ"></a>
               </v-col>
             </v-row>
+            <h2 class="heading">託児所スポンサー</h2>
+            <v-row class="bronze d-flex" justify="center">
+              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+                <a href="https://ciandt.co.jp"><img src="~/assets/img/sponsor/ci-t.png" alt="CI＆T株式会社" title="CI＆T株式会社"></a>
+              </v-col>
+            </v-row>
+            <h2 class="heading">モノスポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
               <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://github.com/"><img src="~/assets/img/sponsor/github.png" alt="ギットハブ・ジャパン合同会社" title="ギットハブ・ジャパン合同会社"></a>
@@ -46,12 +53,6 @@
               </v-col>
               <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://www.styliste.com"><img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社"></a>
-              </v-col>
-            </v-row>
-            <h2 class="heading">託児所スポンサー</h2>
-            <v-row class="bronze d-flex" justify="center">
-              <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
-                <a href="https://ciandt.co.jp"><img src="~/assets/img/sponsor/ci-t.png" alt="CI＆T株式会社" title="CI＆T株式会社"></a>
               </v-col>
             </v-row>
             <h2 class="heading">個人スポンサー</h2>
