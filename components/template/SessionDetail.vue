@@ -204,6 +204,14 @@
                 post: 'デザインリサーチャー / グラフィックレコーダー',
                 img_src: require("~/assets/img/speaker/junko_shimizu.png")
             },
+            { session_number:'Session3-2',
+                speaker: '千代田 まどか (ちょまど)',
+                title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜',
+                description:'物理0点取ったガチガチな文系大学生のわたしがパソコンに出会い、プログラミングにハマって独学で応用情報技術者試験に合格。SIer や スタートアップ企業での技術職を経験し、日本マイクロソフトにテクニカルエバンジェリストとして入社。数年後には、日本人は私含め2人だけの本社インターナショナルチームへ異動。BLマンガ、オタク活動、プログラミング。大好きなことに没入し続けた、ちょまど流テクニカルキャリアにおける "Connecting the Dots" についてお話しさせていただきます。',
+                account_link: 'https://twitter.com/chomado',
+                post: 'Microsoft',
+                img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg")
+            },
             { session_number:'Session4-2',
                 speaker: '鈴木 順子',
                 title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜',
