@@ -113,19 +113,19 @@ export default {
         { title: "開催概要", link: "#aboutevent" },
         { title: "登壇者", link: "#speaker" },
         { title: "タイムテーブル", link: "#session" },
-        // { title: "ワークショップ", link: "#workshop" },
-        { title: "スポンサー", link: "#sponsor" }
-        // { title: "スタッフ", link: "#staff" }
+        { title: "セッション内容", link: "#session_detail" },
+        { title: "スポンサー", link: "#sponsor" },
+        { title: "スタッフ", link: "#staff" }
       ],
       menu2 : [
         { title: "TOP", link: "/" },
-        { title: "DevFest Women Tokyo とは", link: "/#aboutdevfestwomen" },
-        { title: "開催概要", link: "/#aboutevent" },
+        { title: "DevFest Women Tokyo とは", link: "#aboutdevfestwomen" },
+        { title: "開催概要", link: "#aboutevent" },
         { title: "登壇者", link: "#speaker" },
         { title: "タイムテーブル", link: "#session" },
-        // { title: "ワークショップ", link: "#workshop" },
-        { title: "スポンサー", link: "/#sponsor" }
-        // { title: "スタッフ", link: "#staff" }
+        { title: "セッション内容", link: "#session_detail" },
+        { title: "スポンサー", link: "#sponsor" },
+        { title: "スタッフ", link: "#staff" }
     ],
 })
 }
