@@ -87,7 +87,7 @@
         halla: [
             { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
             { time: '10:30-10:45',session:'オープンニング', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '10:50-11:35' ,session:'Keynote1', title:'小学生の夢から世界記録まで', name: '岩尾 エマ はるか', post: 'Developer Advocate',display: 'contents' },
+            { time: '10:50-11:35' ,session:'Keynote1', title:'小学生の夢から世界記録まで', name: '岩尾 エマ はるか', post: 'Google Developer Advocate',display: 'contents' },
             { time: '11:45-12:30',session:'Keynote2', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
             { time: '12:30-14:00',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
             { time: '14:00-14:20',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },

@@ -160,7 +160,7 @@
                 description:'2019年3月、私たちは31兆桁の円周率を、クラウドを使って計算することに成功しました。これは従前の記録を8兆桁あまり塗り替え、新しい世界記録となりました。\n' +
                     '円周率の世界記録を更新することは、実は私の小学生の頃の夢でした。そのころの夢が、どのように今回の記録更新につながったのかについてお話します。また、2019年の1月からアメリカのシアトルで働いていて、仕事で使う英語のこと、海外で働くということについて経験を伝えたいと思います。',
                 account_link: 'https://twitter.com/Yuryu',
-                post: 'Developer Advocate',
+                post: 'Google Developer Advocate',
                 img_src: require("~/assets/img/speaker/emma.jpg")
             },
             {
