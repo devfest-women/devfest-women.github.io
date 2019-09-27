@@ -105,7 +105,7 @@
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:40-16:10',session:'session3-2', title:'調整中', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
             { time: '16:15-16:45',session:'session4-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
-            { time: '16:50-17:20',session:'session5-2', title:'調整中', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'}
+            { time: '16:50-17:20',session:'session5-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'},
       ],
       workshop: [
             { time: '13:00-14:20',session:'Workshop1', title:'Actions on Google', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)'},
