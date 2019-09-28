@@ -165,7 +165,9 @@
     @media only screen and (max-width: 960px), print {
       width: 95vw;
     }
-
+    @media only screen and (min-width: 1264px), print {
+      width: 270px;
+    }
     .text {
         font-family: Avenir;
         font-size: 16px;
@@ -191,6 +193,9 @@
 
     @media only screen and (max-width: 960px), print {
       width: 95vw;
+    }
+    @media only screen and (min-width: 1264px), print {
+      width: 270px;
     }
     .session-name {
       font-family: HiraginoSans-W6;
