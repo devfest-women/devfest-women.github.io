@@ -2,11 +2,11 @@
   <div>
     <v-container class="section-container">
     <v-row align="center" justify="center">
-      <v-col lg="8">
+      <v-col lg="10">
         <TitleGradient text="タイムテーブル"></TitleGradient>
           <div class="flexbox">
             <div class="d-none d-sm-flex">
-              <ul class="timeline time-section">
+              <ul class="timeline timeline-left time-section">
                 <li class="start-time" v-for="item in time" :key="item.time" v-bind:class="item.display">
                   {{item.start}}
                 </li>
@@ -50,6 +50,14 @@
                   <p class="person">{{item.post}}<br>{{item.name}}</p>
                 </div>
               </div>
+            </div>
+            <div class="d-none d-sm-flex">
+              <ul class="timeline timeline-right time-section">
+                <li class="start-time" v-for="item in workshoptime" :key="item.time" v-bind:class="item.display">
+                  {{item.start}}
+                </li>
+                <li class="start-time">17:20</li>
+              </ul>
             </div>
           </div>
         </v-col>
@@ -118,6 +126,13 @@
             { time: '14:50-16:10',session:'Workshop2', title:'Google Colaboratory で Python をはじめてみよう', name: '講師：中村 真由美', post: '', display:'contents contents80min'},
             { time: '16:10-16:20',session:'休憩', title:'', name: '', post: '', display:'contents-other-session'},
             { time: '16:20-17:20',session:'Workshop3', title:'Kotlin Koans で Kotlin にチャレンジ！', name: '講師：あんざいゆき', post: '株式会社ウフィカ代表取締役', display:'contents contents60min'},
+      ],
+      workshoptime: [
+        { start: '13:20',display:'session-time contents80min'},
+        { start: '14:40',display:''},
+        { start: '14:50',display:'session-time contents80min'},
+        { start: '16:10',display:''},
+        { start: '16:20',display:'session-time contents60min'},
       ],
       dialog: false
       }
@@ -305,26 +320,9 @@
     .session-name{
       color: #ff6f61;
     }
-    .contents80min {
-      height: 530px;
-
-      @media only screen and (max-width: 900px), print {
-        height: 190px;
-      }
-    }
-    .contents60min {
-      height: 470px;
-
-      @media only screen and (max-width: 900px), print {
-        height: 190px;
-      }
-    }
   }
 
   .timeline{
-    margin-top:70px;
-    margin-right:-5px;
-
     .time-section {
       display: inline-block;
       position: relative;
@@ -333,6 +331,16 @@
     @media only screen and (max-width: 900px), print {
       display:none;
     }
+  }
+  .timeline-left {
+    margin-top:70px;
+    padding: 0 0 0 24px;
+    margin-right:-5px;
+  }
+  .timeline-right {
+    margin-top: 760px;
+    padding: 0 24px 0 0;
+    margin-left:-10px;
   }
 
   .start-time {
@@ -377,6 +385,20 @@
     padding: 2%;
   }
 
+  .contents80min {
+    height: 530px;
+
+    @media only screen and (max-width: 900px), print {
+      height: 190px;
+    }
+  }
+  .contents60min {
+    height: 470px;
+
+    @media only screen and (max-width: 900px), print {
+      height: 190px;
+    }
+  }
   @media only screen and (min-width: 900px), print {
     .flexbox {
       display: -webkit-flex;
