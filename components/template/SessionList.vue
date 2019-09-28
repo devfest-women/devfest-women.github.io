@@ -128,11 +128,11 @@
             { time: '16:20-17:20',session:'Workshop3', title:'Kotlin Koans で Kotlin にチャレンジ！', name: '講師：あんざいゆき', post: '株式会社ウフィカ代表取締役', display:'contents contents60min'},
       ],
       workshoptime: [
-        { start: '13:20',display:'session-time contents80min'},
+        { start: '13:20',display:'session-time session-time-80min'},
         { start: '14:40',display:''},
-        { start: '14:50',display:'session-time contents80min'},
+        { start: '14:50',display:'session-time session-time-80min'},
         { start: '16:10',display:''},
-        { start: '16:20',display:'session-time contents60min'},
+        { start: '16:20',display:'session-time session-time-60min'},
       ],
       dialog: false
       }
@@ -338,9 +338,8 @@
     margin-right:-5px;
   }
   .timeline-right {
-    margin-top: 760px;
+    margin-top: 740px;
     padding: 0 24px 0 0;
-    margin-left:-10px;
   }
 
   .start-time {
@@ -399,6 +398,16 @@
       height: 190px;
     }
   }
+
+  .session-time-80min {
+    height: 545px;
+  }
+
+  .session-time-60min {
+    height: 465px;
+  }
+
+
   @media only screen and (min-width: 900px), print {
     .flexbox {
       display: -webkit-flex;
