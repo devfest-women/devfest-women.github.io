@@ -171,10 +171,11 @@
   .contents-none {
     visibility: hidden;
   }
-  .contents-other-session {
+
+  .contents-other-session, .contents, .contents-ask-the-speaker {
     margin-bottom: 10px;
     width: 240px;
-    height: 50px;
+
     border-radius: 10px;
     background-color: #ffffff;
     padding: 15px;
@@ -184,12 +185,12 @@
     }
     .session-name {
       font-family: HiraginoSans-W6;
-      font-size: 18px;
+
       line-height: 1.39;
       text-align: center;
     }
 
-    .session-title{
+    .session-title {
       min-height: 50px;
     }
 
@@ -201,67 +202,33 @@
       color: #100e17;
     }
   }
-  .contents {
-    margin-bottom: 10px;
-    width: 240px;
-    height: 240px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    padding: 15px;
 
+  .contents-other-session {
+    height: 50px;
+    .session-name {
+      font-size: 18px;
+    }
+  }
+
+  .contents {
+    height: 240px;
     @media only screen and (max-width: 960px), print {
-      width: 95vw;
       height: 190px;
     }
-    .session-name{
-      font-family: HiraginoSans-W6;
+    .session-name {
       font-size: 14px;
-      line-height: 1.39;
-      text-align: center;
-    }
-
-    .session-title{
-      min-height: 50px;
-    }
-
-    .session-title,
-    .person {
-      font-family: HiraginoSans-W7;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #100e17;
     }
   }
-
   .contents-ask-the-speaker {
-    margin-bottom: 10px;
-    width: 240px;
     height: 240px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    padding: 15px;
-
     @media only screen and (max-width: 960px), print {
-      width: 95vw;
       height: 50px;
     }
-    .session-name{
-    font-family: HiraginoSans-W6;
-    font-size: 18px;
-    line-height: 1.39;
-    text-align: center;
-    }
-
-    .session-title{
-      height: 80px;
-    }
-    .session-title,.person {
-      font-family: HiraginoSans-W7;
-      font-size: 14px;
-      line-height: 1.71;
-      color: #100e17;
+    .session-name {
+      font-size: 18px;
     }
   }
+
   .time {
     display: none;
     @media only screen and (max-width: 960px), print {
@@ -373,10 +340,10 @@
   }
 
   .session-time {
-      height: 250px;
-      ::after{
-        height: 175px;
-      }
+    height: 250px;
+    ::after{
+      height: 175px;
+    }
   }
   .start-time,
   .hall-a,
@@ -392,6 +359,7 @@
       height: 190px;
     }
   }
+
   .contents60min {
     height: 470px;
 
@@ -407,7 +375,6 @@
   .session-time-60min {
     height: 465px;
   }
-
 
   @media only screen and (min-width: 960px), print {
     .flexbox {
