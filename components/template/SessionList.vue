@@ -16,9 +16,10 @@
             <div class="hall-a">
               <div class="hall-title"><p class="text">HallA</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.name">
-                <p class="time">{{item.time}}</p>
+                <p class="time-sp">{{item.time}}</p>
                 <div v-bind:class="item.display">
                     <div class="session-container">
+                      <p class="time-pc">{{item.time}}</p>
                       <p class="session-name">{{item.session}}</p>
                       <!-- #TODO セッションタイトルのcss直す -->
                       <p class="session-title">{{item.title}}</p>
@@ -30,24 +31,30 @@
             <div class="hall-b">
               <div class="hall-title"><p class="text">HallB</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in hallb" :key="item.name">
-                <p class="time">{{item.time}}</p>
+                <p class="time-sp">{{item.time}}</p>
                 <div v-bind:class="item.display">
-                  <p class="session-name">{{item.session}}</p>
-                  <!-- #TODO セッションタイトルのcss直す -->
-                  <p class="session-title">{{item.title}}</p>
-                  <p class="person">{{item.post}}<br>{{item.name}}</p>
+                  <div class="session-container">
+                    <p class="time-pc">{{item.time}}</p>
+                    <p class="session-name">{{item.session}}</p>
+                    <!-- #TODO セッションタイトルのcss直す -->
+                    <p class="session-title">{{item.title}}</p>
+                    <p class="person">{{item.post}}<br>{{item.name}}</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="workshop">
               <div class="hall-title"><p class="text">Workshop</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
-                <p class="time">{{item.time}}</p>
+                <p class="time-sp">{{item.time}}</p>
                 <div v-bind:class="item.display">
-                  <p class="session-name">{{item.session}}</p>
-                  <!-- #TODO セッションタイトルのcss直す -->
-                  <p class="session-title">{{item.title}}</p>
-                  <p class="person">{{item.post}}<br>{{item.name}}</p>
+                  <div class="session-container">
+                    <p class="time-pc">{{item.time}}</p>
+                    <p class="session-name">{{item.session}}</p>
+                    <!-- #TODO セッションタイトルのcss直す -->
+                    <p class="session-title">{{item.title}}</p>
+                    <p class="person">{{item.post}}<br>{{item.name}}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,7 +125,7 @@
             { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:30-16:00',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
             { time: '16:05-16:35',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'},
-            { time: '16:40-17:10',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-other-session'},
+            { time: '16:40-17:10',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
       ],
       workshop: [
             { time: '13:20-14:40',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents contents80min'},
@@ -158,6 +165,7 @@
     @media only screen and (max-width: 960px), print {
       width: 95vw;
     }
+
     .text {
         font-family: Avenir;
         font-size: 16px;
@@ -168,6 +176,7 @@
         vertical-align: middle;
     }
   }
+
   .contents-none {
     visibility: hidden;
   }
@@ -204,23 +213,7 @@
   }
 
   .contents-other-session {
-    height: 50px;
-    .session-name {
-      font-size: 18px;
-    }
-  }
-
-  .contents {
-    height: 240px;
-    @media only screen and (max-width: 960px), print {
-      height: 190px;
-    }
-    .session-name {
-      font-size: 14px;
-    }
-  }
-  .contents-ask-the-speaker {
-    height: 240px;
+    height: 100px;
     @media only screen and (max-width: 960px), print {
       height: 50px;
     }
@@ -229,7 +222,26 @@
     }
   }
 
-  .time {
+  .contents {
+    height: 290px;
+    @media only screen and (max-width: 960px), print {
+      height: 190px;
+    }
+    .session-name {
+      font-size: 14px;
+    }
+  }
+  .contents-ask-the-speaker {
+    height: 290px;
+    @media only screen and (max-width: 960px), print {
+      height: 50px;
+    }
+    .session-name {
+      font-size: 18px;
+    }
+  }
+
+  .time-sp {
     display: none;
     @media only screen and (max-width: 960px), print {
       display: block;
@@ -242,6 +254,14 @@
     }
   }
 
+  .time-pc {
+    display: none;
+    @media only screen and (min-width: 960px), print {
+      display: block;
+      font-size: 0.9em;
+    }
+  }
+
   .hall-a {
     @media only screen and (max-width: 960px), print {
       margin: 0 auto 10px auto;
@@ -250,7 +270,7 @@
     .hall-title {
       background-color: #ff6f61;
     }
-    .session-name{
+    .session-name, .time-pc {
       color: #ff6f61;
     }
   }
@@ -261,13 +281,13 @@
     }
     .hall-title {
       background-color: #db2a7b;
-      margin-bottom: 1000px;
+      margin-bottom: 1350px;
 
       @media only screen and (max-width: 960px), print {
         margin-bottom: 10px;
       }
     }
-    .session-name{
+    .session-name, .time-pc {
       color: #ea4770;
     }
   }
@@ -278,18 +298,18 @@
     }
     .hall-title {
       background-color: #ff6f61;
-      margin-bottom: 690px;
+      margin-bottom: 940px;
 
       @media only screen and (max-width: 960px), print {
         margin-bottom: 10px;
       }
     }
-    .session-name{
+    .session-name, .time-pc {
       color: #ff6f61;
     }
   }
 
-  .timeline{
+  .timeline {
     .time-section {
       display: inline-block;
       position: relative;
@@ -305,14 +325,14 @@
     margin-right:-5px;
   }
   .timeline-right {
-    margin-top: 740px;
+    margin-top: 990px;
     padding: 0 24px 0 0;
     margin-left: -15px;
   }
 
   .start-time {
     font-size: 16px;
-    height: 57px;
+    height: 107px;
     line-height: 0;
     color: #fff;
     list-style: none;
@@ -340,7 +360,7 @@
   }
 
   .session-time {
-    height: 250px;
+    height: 300px;
     ::after{
       height: 175px;
     }
@@ -353,7 +373,7 @@
   }
 
   .contents80min {
-    height: 530px;
+    height: 660px;
 
     @media only screen and (max-width: 960px), print {
       height: 190px;
@@ -361,7 +381,7 @@
   }
 
   .contents60min {
-    height: 470px;
+    height: 560px;
 
     @media only screen and (max-width: 960px), print {
       height: 190px;
@@ -369,11 +389,11 @@
   }
 
   .session-time-80min {
-    height: 545px;
+    height: 675px;
   }
 
   .session-time-60min {
-    height: 465px;
+    height: 555px;
   }
 
   @media only screen and (min-width: 960px), print {
