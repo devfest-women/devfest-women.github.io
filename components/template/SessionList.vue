@@ -175,9 +175,11 @@
     }
 
     .session-title{
-      height: 50px;
+      min-height: 50px;
     }
-    .session-title,.person {
+
+    .session-title,
+    .person {
       font-family: HiraginoSans-W7;
       font-size: 14px;
       line-height: 1.71;
@@ -204,7 +206,7 @@
     }
 
     .session-title{
-      height: 50px;
+      min-height: 50px;
     }
 
     .session-title,
@@ -236,7 +238,7 @@
     }
 
     .session-title{
-      height: 50px;
+      height: 80px;
     }
     .session-title,.person {
       font-family: HiraginoSans-W7;
@@ -361,10 +363,6 @@
       background-color: #fff;
     }
   }
-<<<<<<< HEAD
-}
-=======
->>>>>>> タイムテーブルにワークショップを追加＆デザイン修正
 
   .session-time {
       height: 250px;
