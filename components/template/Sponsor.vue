@@ -66,9 +66,9 @@
               <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href="https://nagumo.co/"><img src="~/assets/img/sponsor/takayuki-fuwa.png" alt="不破崇行" title="不破崇行"></a>
               </v-col>
-              <!-- <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
-                <a href=""><img src="~/assets/img/sponsor/satoru-nakamura.png" alt="なかむらさとる" title="なかむらさとる"></a>
-              </v-col> -->
+              <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
+                <a href="https://twitter.com/satoluxx"><img src="~/assets/img/sponsor/satoru-nakamura.png" alt="なかむらさとる" title="なかむらさとる"></a>
+              </v-col>
               <!-- <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href=""><img src="~/assets/img/sponsor/toshihisa-osawa.png" alt="大澤敏久" title="大澤敏久"></a>
               </v-col> -->
