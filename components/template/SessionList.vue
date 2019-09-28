@@ -155,7 +155,7 @@
     display: table;
     text-align: center;
 
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       width: 95vw;
     }
     .text {
@@ -179,7 +179,7 @@
     background-color: #ffffff;
     padding: 15px;
 
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       width: 95vw;
     }
     .session-name {
@@ -209,7 +209,7 @@
     background-color: #ffffff;
     padding: 15px;
 
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       width: 95vw;
       height: 190px;
     }
@@ -241,7 +241,7 @@
     background-color: #ffffff;
     padding: 15px;
 
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       width: 95vw;
       height: 50px;
     }
@@ -264,7 +264,7 @@
   }
   .time {
     display: none;
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       display: block;
       margin-bottom: 5px;
       font-family: Avenir;
@@ -276,7 +276,7 @@
   }
 
   .hall-a {
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       margin: 0 auto 10px auto;
     }
 
@@ -289,14 +289,14 @@
   }
 
   .hall-b {
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       margin: 0 auto 10px auto;
     }
     .hall-title {
       background-color: #db2a7b;
       margin-bottom: 1000px;
 
-      @media only screen and (max-width: 900px), print {
+      @media only screen and (max-width: 960px), print {
         margin-bottom: 10px;
       }
     }
@@ -306,14 +306,14 @@
   }
 
   .workshop {
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       margin: 0 auto 10px auto;
     }
     .hall-title {
       background-color: #ff6f61;
       margin-bottom: 690px;
 
-      @media only screen and (max-width: 900px), print {
+      @media only screen and (max-width: 960px), print {
         margin-bottom: 10px;
       }
     }
@@ -328,7 +328,7 @@
       position: relative;
 
     }
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       display:none;
     }
   }
@@ -340,6 +340,7 @@
   .timeline-right {
     margin-top: 740px;
     padding: 0 24px 0 0;
+    margin-left: -15px;
   }
 
   .start-time {
@@ -387,14 +388,14 @@
   .contents80min {
     height: 530px;
 
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       height: 190px;
     }
   }
   .contents60min {
     height: 470px;
 
-    @media only screen and (max-width: 900px), print {
+    @media only screen and (max-width: 960px), print {
       height: 190px;
     }
   }
@@ -408,7 +409,7 @@
   }
 
 
-  @media only screen and (min-width: 900px), print {
+  @media only screen and (min-width: 960px), print {
     .flexbox {
       display: -webkit-flex;
       display: flex;
