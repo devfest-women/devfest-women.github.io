@@ -6,7 +6,7 @@
         <TitleGradient text="タイムテーブル"></TitleGradient>
           <div class="flexbox">
             <div class="d-none d-sm-flex">
-              <ul class="timeline timeline-left time-section">
+              <ul class="timeline timeline-session time-section">
                 <li class="start-time" v-for="item in time" :key="item.time" v-bind:class="item.display">
                   {{item.start}}
                 </li>
@@ -43,6 +43,14 @@
                 </div>
               </div>
             </div>
+            <div class="d-none d-sm-flex">
+              <ul class="timeline timeline-workshop time-section">
+                <li class="start-time" v-for="item in workshoptime" :key="item.time" v-bind:class="item.display">
+                  {{item.start}}
+                </li>
+                <li class="start-time">17:20</li>
+              </ul>
+            </div>
             <div class="workshop">
               <div class="hall-title"><p class="text">Workshop</p></div>
               <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
@@ -57,14 +65,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="d-none d-sm-flex">
-              <ul class="timeline timeline-right time-section">
-                <li class="start-time" v-for="item in workshoptime" :key="item.time" v-bind:class="item.display">
-                  {{item.start}}
-                </li>
-                <li class="start-time">17:20</li>
-              </ul>
             </div>
           </div>
         </v-col>
@@ -115,7 +115,7 @@
             { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:30-16:00',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
             { time: '16:05-16:35',session:'session4-1',title:'調整中', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
-            { time: '16:40-17:10',session:'session5-1',title:'調整中', name: 'クロエ', post: '' ,display:'contents'},
+            { time: '16:40-17:10',session:'session5-1',title:'調整中', name: '', post: '' ,display:'contents'},
             { time: '17:10-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '17:20-17:30', session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
       ],
@@ -324,15 +324,15 @@
       display:none;
     }
   }
-  .timeline-left {
+  .timeline-session {
     margin-top:70px;
     padding: 0 0 0 24px;
     margin-right:-5px;
   }
-  .timeline-right {
+  .timeline-workshop {
     margin-top: 990px;
-    padding: 0 24px 0 0;
-    margin-left: -15px;
+    padding: 0 0 0 24px;
+    margin-right:-5px;
   }
 
   .start-time {
