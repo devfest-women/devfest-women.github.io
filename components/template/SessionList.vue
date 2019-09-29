@@ -7,7 +7,7 @@
           <div class="flexbox">
             <div class="d-none d-sm-flex">
               <ul class="timeline timeline-session time-section">
-                <li class="start-time" v-for="item in time" :key="item.time" v-bind:class="item.display">
+                <li v-for="item in time" :key="item.time" :class="'start-time ' + item.display">
                   {{item.start}}
                 </li>
                 <li class="start-time">17:30</li>
@@ -15,7 +15,7 @@
             </div>
             <div class="hall-a">
               <div class="hall-title"><p class="text">HallA</p></div>
-              <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.name">
+              <div class="session" @click.stop="dialog = true" v-for="item in halla" :key="item.time">
                 <p class="time-sp">{{item.time}}</p>
                 <div v-bind:class="item.display">
                     <div class="session-container">
@@ -30,7 +30,7 @@
             </div>
             <div class="hall-b">
               <div class="hall-title"><p class="text">HallB</p></div>
-              <div class="session" @click.stop="dialog = true" v-for="item in hallb" :key="item.name">
+              <div class="session" @click.stop="dialog = true" v-for="item in hallb" :key="item.time">
                 <p class="time-sp">{{item.time}}</p>
                 <div v-bind:class="item.display">
                   <div class="session-container">
@@ -45,7 +45,7 @@
             </div>
             <div class="d-none d-sm-flex">
               <ul class="timeline timeline-workshop time-section">
-                <li class="start-time" v-for="item in workshoptime" :key="item.time" v-bind:class="item.display">
+                <li v-for="item in workshoptime" :key="item.time" :class="'start-time ' + item.display">
                   {{item.start}}
                 </li>
                 <li class="start-time">17:20</li>
@@ -53,7 +53,7 @@
             </div>
             <div class="workshop">
               <div class="hall-title"><p class="text">Workshop</p></div>
-              <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.name">
+              <div class="session" @click.stop="dialog = true" v-for="item in workshop" :key="item.time">
                 <p class="time-sp">{{item.time}}</p>
                 <div v-bind:class="item.display">
                   <div class="session-container">
@@ -117,7 +117,7 @@
             { time: '16:05-16:35',session:'session4-1',title:'調整中', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
             { time: '16:40-17:10',session:'session5-1',title:'調整中', name: '', post: '' ,display:'contents'},
             { time: '17:10-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '17:20-17:30', session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '17:20-17:30',session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
       ],
       hallb: [
             { time: '14:10-14:40',session:'session1-2', title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
