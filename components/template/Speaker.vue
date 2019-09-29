@@ -45,7 +45,7 @@
             { name: '千代田まどか (ちょまど)', account: '@chomado', account_link: 'https://twitter.com/chomado', post: 'Microsoft', img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg") },
             { name: '鈴木順子', account: '@PNSK', account_link: 'https://twitter.com/PNSK', post: 'GitHub / Enterprise Support Engineer', img_src: require("~/assets/img/speaker/junko-suzuki.jpg") },
             { name: '中村寛子', account: '', account_link: '', post: 'MASHING UP プロデューサー', img_src: require("~/assets/img/speaker/hiroko-nakamura.png") },
-            { name: 'Kinuko Yasuda (安田絹子)', account: '@kinu', account_link: 'https://twitter.com/kinu', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ', img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg") },
+            { name: 'Kinuko Yasuda (安田絹子)', account: '@kinu', account_link: 'https://twitter.com/kinu', post: 'Google Engineering Manager', img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg") },
             { name: '田中 洋一郎', account: '@yoichiro', account_link: 'https://twitter.com/yoichiro', post: 'Google Developers Expert (Assistant, Web Technology)', img_src: require("~/assets/img/speaker/yoichiro_tanaka.png") },
             { name: '中村 真由美', account: '@mayumi.park.7', account_link: 'https://www.facebook.com/mayumi.park.7', post: '', img_src: require("~/assets/img/speaker/mayumi_nakamura.png") },
             { name: 'あんざいゆき', account: '@yanzm', account_link: 'https://twitter.com/yanzm', post: '株式会社ウフィカ代表取締役', img_src: require("~/assets/img/speaker/yuki_anzai.png") }

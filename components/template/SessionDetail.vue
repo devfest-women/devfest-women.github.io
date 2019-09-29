@@ -227,7 +227,7 @@
                 'Webの標準を提案したり、たくさんコードを書いたり、国や会社を超えて仲間ができたり、インターネットを壊したり、子供を産んだり、リーダーになったり…などなどしてたらいつの間にか随分たっていました。\n' +
                 'いつまでこれをやろうかな？🤔と思ったりもしますが、私が仕事や私生活で学んだこと、世の中になにか還元できたらいいなと思ってることなどをつらつらお話しします。',
                 account_link: 'https://twitter.com/kinu',
-                post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',
+                post: 'Google Engineering Manager',
                 img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg")
             }
         ],
