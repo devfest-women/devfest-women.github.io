@@ -20,6 +20,23 @@
                   </v-col>
               </v-row>
           </v-container>
+          <TitleBlack text="ワークショップ講師"></TitleBlack>
+          <v-container class="content">
+              <v-row class="speaker-box d-flex">
+                  <v-col xs="8" sm="6" class="item" v-for="item in workshops" :key="item.name">
+                      <a :href=item.account_link target="_blank" class="d-flex justify-left">
+                          <div xs="2" md="2" class="item-left">
+                              <img :src=item.img_src :alt=item.name >
+                          </div>
+                          <div class="item-right">
+                              <p class="name">{{item.name}}</p>
+                              <p class="post">{{item.post}}</p>
+                              <p class="account">{{item.account}}</p>
+                          </div>
+                      </a>
+                  </v-col>
+              </v-row>
+          </v-container>
         </v-col>
       </v-row>
     </v-container>
@@ -49,6 +66,11 @@
             { name: '田中 洋一郎', account: '@yoichiro', account_link: 'https://twitter.com/yoichiro', post: 'Google Developers Expert (Assistant, Web Technology)', img_src: require("~/assets/img/speaker/yoichiro_tanaka.png") },
             { name: '中村 真由美', account: '@mayumi.park.7', account_link: 'https://www.facebook.com/mayumi.park.7', post: '', img_src: require("~/assets/img/speaker/mayumi_nakamura.png") },
             { name: 'あんざいゆき', account: '@yanzm', account_link: 'https://twitter.com/yanzm', post: '株式会社ウフィカ代表取締役', img_src: require("~/assets/img/speaker/yuki_anzai.png") }
+      ],
+      workshops: [
+          { name: '田中 洋一郎', account: '@yoichiro', account_link: 'https://twitter.com/yoichiro', post: 'Google Developers Expert (Assistant, Web Technology)', img_src: require("~/assets/img/speaker/yoichiro_tanaka.png") },
+          { name: '中村 真由美', account: '@mayumi.park.7', account_link: 'https://www.facebook.com/mayumi.park.7', post: '', img_src: require("~/assets/img/speaker/mayumi_nakamura.png") },
+          { name: 'あんざいゆき', account: '@yanzm', account_link: 'https://twitter.com/yanzm', post: '株式会社ウフィカ代表取締役', img_src: require("~/assets/img/speaker/yuki_anzai.png") }
       ],
       }
     }
