@@ -4,18 +4,7 @@
       <v-row justify="center" class="sponsor-row">
         <v-col sm="6">
           <TitleBlack text="スポンサー"></TitleBlack>
-          <div class="content">
-            DevFest Women Tokyo 2019 をよりよいイベントにするため、スポンサーを募集しています。ご希望の企業様は、以下よりお申し込みください。ご応募の締め切りは、2019年9月30日です。
-          </div>
-          <div class="d-flex justify-center">
-            <Button
-                    text="スポンサー申し込み"
-                    link="https://docs.google.com/forms/d/e/1FAIpQLSfwIrV6HXRztZF0L6Z0aBj4zdmV5AWtbyVWg77i0Ho25LANVA/viewform"
-                    buttonstyle="gradation"
-            ></Button>
-          </div>
           <v-container class="sponsor-logo flex-column">
-            <div class="content small">※Googleアカウントのログインが必須です。現在、G Suiteのセキュリティポリシーによっては「you don't have permission」と表示される場合があります。その際は、お手数ですが個人のアカウント等をご利用ください。その他、ご不明点等ありましたらこちらの<a href="https://forms.gle/Bc1BwwpwXwTZkA1b7">お問い合わせフォーム</a>からお気軽にお問い合わせください。</div>
             <h2 class="heading">シルバースポンサー</h2>
             <v-row sm="6" class="silver d-flex" justify="center">
               <v-col sm="12" md="12" lg="6" class="silver-logo">
