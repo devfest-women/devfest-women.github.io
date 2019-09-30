@@ -24,6 +24,9 @@
               <v-col sm="12" md="12" lg="6" class="silver-logo">
                 <a href="https://jp.corp-sansan.com/"><img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社"></a>
               </v-col>
+              <!-- <v-col sm="12" md="12" lg="6" class="silver-logo">
+                <a href="https://about.mercari.com/"><img src="~/assets/img/sponsor/mercari.png" alt="株式会社メルカリ" title="株式会社メルカリ"></a>
+              </v-col> -->
             </v-row>
             <h2 class="heading">ブロンズスポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
@@ -54,12 +57,15 @@
               <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://www.styliste.com"><img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社"></a>
               </v-col>
+              <!-- <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
+                <a href="https://cloud-ace.jp/"><img src="~/assets/img/sponsor/cloud-ace.png" alt="クラウドエース株式会社" title="クラウドエース株式会社"></a>
+              </v-col> -->
             </v-row>
             <h2 class="heading">個人スポンサー</h2>
             <v-row class="personal d-flex" justify="center">
-              <!-- <v-col xs="4" md="2" class="personal-logo">
-                <a href=""><img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一" title="谷上雄一"></a>
-              </v-col> -->
+              <v-col xs="4" md="2" class="personal-logo">
+                <a href="https://twitter.com/lunaxxsacredxx"><img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一" title="谷上雄一"></a>
+              </v-col>
               <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href="https://www.evangelism.jp"><img src="~/assets/img/sponsor/tomoharu-nagasawa.png" alt="長沢智治" title="長沢智治"></a>
               </v-col>
@@ -69,9 +75,9 @@
               <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href="https://twitter.com/satoluxx"><img src="~/assets/img/sponsor/satoru-nakamura.png" alt="なかむらさとる" title="なかむらさとる"></a>
               </v-col>
-              <!-- <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
-                <a href=""><img src="~/assets/img/sponsor/toshihisa-osawa.png" alt="大澤敏久" title="大澤敏久"></a>
-              </v-col> -->
+              <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
+                <a href="https://twitter.com/new_10413"><img src="~/assets/img/sponsor/toshihisa-osawa.png" alt="大澤敏久" title="大澤敏久"></a>
+              </v-col>
               <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href="https://twitter.com/iktakahiro"><img src="~/assets/img/sponsor/takahiro-ikeuchi.jpg" alt="池内孝啓" title="池内孝啓"></a>
               </v-col>
