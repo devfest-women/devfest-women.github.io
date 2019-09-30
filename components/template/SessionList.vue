@@ -124,7 +124,7 @@
             { time: '14:45-15:15',session:'session2-2', title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
             { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:30-16:00',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
-            { time: '16:05-16:35',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'},
+            { time: '16:05-16:35',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'Google Engineering Manager',display:'contents'},
             { time: '16:40-17:10',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
       ],
       workshop: [
