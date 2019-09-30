@@ -105,7 +105,7 @@
         halla: [
             { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
             { time: '10:30-10:40',session:'オープニング', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '10:40-11:25',session:'Keynote1', title:'調整中', name: '岩尾 エマ はるか', post: 'Google Developer Advocate',display: 'contents' },
+            { time: '10:40-11:25',session:'Keynote1', title:'小学生の夢から世界記録まで', name: '岩尾 エマ はるか', post: 'Google Developer Advocate',display: 'contents' },
             { time: '11:30-12:15',session:'Keynote2', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
             { time: '12:20-13:20',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
             { time: '13:20-13:50',session:'特別ゲスト', title:'調整中' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
