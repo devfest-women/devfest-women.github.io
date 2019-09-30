@@ -13,6 +13,12 @@
                 <a href="https://www.womentechmakers.com/"><img src="~/assets/img/sponsor/wtm.png" alt="Women Techmakers" title="Women Techmakers"></a>
               </v-col>
             </v-row>
+            <!-- <h2 class="heading">アクセシビリティパートナー</h2>
+            <v-row class="media d-flex" justify="center">
+              <v-col  xs="8" sm="8" md="6" lg="4" class="media-logo">
+                <a href="https://www.fujitsu.com/jp/group/ssl/"><img src="~/assets/img/sponsor/fujitsu-ssl.png" alt="株式会社富士通ソーシアルサイエンスラボラトリ" title="株式会社富士通ソーシアルサイエンスラボラトリ"></a>
+              </v-col>
+            </v-row> -->
             <h2 class="heading">メディアパートナー</h2>
             <v-row class="media d-flex" justify="center">
               <v-col  xs="8" sm="8" md="6" lg="4" class="media-logo">
