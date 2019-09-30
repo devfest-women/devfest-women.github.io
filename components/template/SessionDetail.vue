@@ -252,7 +252,7 @@
             },
             {
                 session_number:'Workshop3',
-                speaker: 'あんざいゆき',
+                speaker: 'あんざい ゆき',
                 title:'Kotlin Koans で Kotlin にチャレンジ！',
                 description:'Kotlin のコードを書いて問題を解いていく Kotlin Koans に実際にチャレンジするハンズオンです。Kotlin Koans はブラウザ上で試せます。\n' +
                     '問題を解きながら Kotlin の文法や標準ライブラリの使い方を学んでいきましょう。',
