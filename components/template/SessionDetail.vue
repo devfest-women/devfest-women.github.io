@@ -215,7 +215,7 @@
             { session_number:'Session4-2',
                 speaker: '鈴木 順子',
                 title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜',
-                description:'@PNSK',
+                description:'',
                 account_link: 'https://twitter.com/PNSK',
                 post: 'GitHub / Enterprise Support Engineer',
                 img_src: require("~/assets/img/speaker/junko-suzuki.jpg")
