@@ -3,7 +3,7 @@
     <v-container class="section-container">
     <v-row align="center" justify="center">
       <v-col lg="8">
-        <TitleGradient text="スケジュール"></TitleGradient>
+        <TitleGradient text="タイムテーブル"></TitleGradient>
           <div class="flexbox">
             <div class="d-none d-sm-flex">
               <ul class="timeline time-section">
@@ -87,7 +87,7 @@
         halla: [
             { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
             { time: '10:30-10:45',session:'オープンニング', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '10:50-11:35' ,session:'Keynote1', title:'調整中', name: '岩尾 エマ はるか', post: 'Developer Advocate',display: 'contents' },
+            { time: '10:50-11:35' ,session:'Keynote1', title:'小学生の夢から世界記録まで', name: '岩尾 エマ はるか', post: 'Google Developer Advocate',display: 'contents' },
             { time: '11:45-12:30',session:'Keynote2', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
             { time: '12:30-14:00',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
             { time: '14:00-14:20',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
@@ -101,9 +101,9 @@
       ],
       hallb: [
             { time: '14:20-14:50',session:'session1-2', title:'', name: '調整中', post: '',display:'contents'},
-            { time: '14:55-15:25',session:'session2-2', title:'調整中', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
+            { time: '14:55-15:25',session:'session2-2', title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '15:25-15:40',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:40-16:10',session:'session3-2', title:'調整中', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
+            { time: '15:40-16:10',session:'session3-2', title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜', name: '千代田まどか (ちょまど)', post: 'Microsoft' ,display:'contents'},
             { time: '16:15-16:45',session:'session4-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
             { time: '16:50-17:20',session:'session5-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'ソフトウェア・エンジニア／エンジニアリングマネジャ',display:'contents'},
       ],
