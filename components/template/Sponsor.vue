@@ -6,11 +6,11 @@
           <TitleBlack text="スポンサー"></TitleBlack>
           <v-container class="sponsor-logo flex-column">
             <h2 class="heading">シルバースポンサー</h2>
-            <v-row sm="6" class="silver d-flex" justify="center">
-              <v-col sm="12" md="12" lg="6" class="silver-logo">
+            <v-row class="silver d-flex" justify="center">
+              <v-col cols="6" sm="11" md="11" lg="6" class="silver-logo">
                 <a href="https://cybozu.co.jp/"><img src="~/assets/img/sponsor/cybozu.png" alt="サイボウズ株式会社" title="サイボウズ株式会社"></a>
               </v-col>
-              <v-col sm="12" md="12" lg="6" class="silver-logo">
+              <v-col cols="6" sm="11" md="11" lg="6" class="silver-logo">
                 <a href="https://jp.corp-sansan.com/"><img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社"></a>
               </v-col>
               <!-- <v-col sm="12" md="12" lg="6" class="silver-logo">
@@ -19,31 +19,33 @@
             </v-row>
             <h2 class="heading">ブロンズスポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
-              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+              <v-col cols="4" xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href="https://unity.com/ja"><img src="~/assets/img/sponsor/unity.png" alt="ユニティ・テクノロジーズ・ジャパン合同会社" title="ユニティ・テクノロジーズ・ジャパン合同会社"></a>
               </v-col>
-              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+              <v-col cols="4" xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href=""><img src="~/assets/img/sponsor/dena.png" alt="株式会社ディー・エヌ・エー" title="株式会社ディー・エヌ・エー"></a>
               </v-col>
-              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+              <v-col cols="4" xs="10" sm="10" md="10" lg="5" class="bronze-logo">
                 <a href="https://www.uphyca.com/"><img src="~/assets/img/sponsor/uphyca.png" alt="株式会社ウフィカ" title="株式会社ウフィカ"></a>
               </v-col>
             </v-row>
             <h2 class="heading">託児所スポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
-              <v-col xs="10" sm="10" md="10" lg="5" class="bronze-logo">
+              <v-spacer />
+              <v-col cols="4" xd="10" sm="10" md="10" lg="5" class="bronze-logo" >
                 <a href="https://ciandt.co.jp"><img src="~/assets/img/sponsor/ci-t.png" alt="CI＆T株式会社" title="CI＆T株式会社"></a>
               </v-col>
+              <v-spacer />
             </v-row>
             <h2 class="heading">モノスポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
-              <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
+              <v-col cols="4" xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://github.com/"><img src="~/assets/img/sponsor/github.png" alt="ギットハブ・ジャパン合同会社" title="ギットハブ・ジャパン合同会社"></a>
               </v-col>
-              <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
+              <v-col cols="4" xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://www.sketch.com/"><img src="~/assets/img/sponsor/sketch.png" alt="Sketch" title="Sketch"></a>
               </v-col>
-              <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
+              <v-col cols="4" xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://www.styliste.com"><img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社"></a>
               </v-col>
               <!-- <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
@@ -52,7 +54,7 @@
             </v-row>
             <h2 class="heading">個人スポンサー</h2>
             <v-row class="personal d-flex" justify="center">
-              <v-col xs="4" md="2" class="personal-logo">
+              <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href="https://twitter.com/lunaxxsacredxx"><img src="~/assets/img/sponsor/yuichi-yagami.png" alt="谷上雄一" title="谷上雄一"></a>
               </v-col>
               <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
