@@ -20,13 +20,12 @@
           class="menu-line"
           v-for="(item, index) in menu"
           :key="index"
-          @click=""
         >
         <nuxt-link class="menu-text" v-scroll-to="item.link" to>
           <v-list-item-title>
              {{ item.title }}
           </v-list-item-title>
-        </nuxt-link>          
+        </nuxt-link>
       </v-list-item>
     </v-list>
 
@@ -42,7 +41,6 @@
         class="menu-line"
         v-for="(item, index) in menu2"
         :key="index"
-        @click=""
       >
       <nuxt-link class="menu-text" v-bind:to="item.link">
         <v-list-item-title>
@@ -66,7 +64,6 @@
         :fixed="true"
         :clipped-right="false"
         class="l-header">
-      
       <v-container class="d-none d-sm-flex">
        <v-row class="d-flex space-between justify-center">
         <v-toolbar-items v-if="pages === 'top'">
@@ -79,7 +76,7 @@
           >
             <nuxt-link class="l-text" v-scroll-to="item.link" to> {{ item.title }} </nuxt-link>
           </v-btn>
-        </v-toolbar-items> 
+        </v-toolbar-items>
         <v-toolbar-items v-else>
           <v-btn
           min-height="60"
@@ -90,7 +87,7 @@
           >
             <nuxt-link class="l-text" v-bind:to="item.link"> {{ item.title }} </nuxt-link>
           </v-btn>
-        </v-toolbar-items> 
+        </v-toolbar-items>
 
       </v-row>
       </v-container>
@@ -98,7 +95,7 @@
       <v-container class="d-flex d-sm-none">
         <v-row class="justify-end">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white"></v-app-bar-nav-icon>
-      </v-row>    
+      </v-row>
     </v-container>
   </v-app-bar>
 </div>

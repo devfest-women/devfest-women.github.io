@@ -64,7 +64,7 @@ export default {
   }
   .text-staff {
     color: #ea4770; // #darkish-pink
-   }  
+   }
 }
 .button-join {
   background-image: linear-gradient(to left, #da297b, #ff6f61);
