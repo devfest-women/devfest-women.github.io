@@ -13,9 +13,9 @@
               <v-col cols="6" sm="11" md="11" lg="6" class="silver-logo">
                 <a href="https://jp.corp-sansan.com/"><img src="~/assets/img/sponsor/sansan.png" alt="Sansan株式会社" title="Sansan株式会社"></a>
               </v-col>
-              <!-- <v-col sm="12" md="12" lg="6" class="silver-logo">
+              <v-col sm="12" md="12" lg="6" class="silver-logo">
                 <a href="https://about.mercari.com/"><img src="~/assets/img/sponsor/mercari.png" alt="株式会社メルカリ" title="株式会社メルカリ"></a>
-              </v-col> -->
+              </v-col>
             </v-row>
             <h2 class="heading">ブロンズスポンサー</h2>
             <v-row class="bronze d-flex" justify="center">
