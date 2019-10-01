@@ -60,7 +60,7 @@
             { name: '安田クリスチーナ', account: '@christina.yasuda', account_link: 'https://www.facebook.com/christina.yasuda', post: 'InternetBar.org 理事 (Forbes 30Under30)', img_src: require("~/assets/img/speaker/kurisuti-na.png") },
             { name: '清水淳子', account: '@4mimimizu', account_link: 'https://twitter.com/4mimimizu', post: 'デザインリサーチャー / グラフィックレコーダー', img_src: require("~/assets/img/speaker/junko_shimizu.png") },
             { name: '鳥井雪', account: '@yotii23', account_link: 'https://twitter.com/yotii23', post: '株式会社万葉 プログラマー', img_src: require("~/assets/img/speaker/yuki_torii.jpg") },
-            { name: '千代田まどか (ちょまど)', account: '@chomado', account_link: 'https://twitter.com/chomado', post: 'Microsoft', img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg") },
+            { name: '千代田まどか (ちょまど)', account: '@chomado', account_link: 'https://twitter.com/chomado', post: 'Microsoft 社', img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg") },
             { name: '鈴木順子', account: '@PNSK', account_link: 'https://twitter.com/PNSK', post: 'GitHub / Enterprise Support Engineer', img_src: require("~/assets/img/speaker/junko-suzuki.jpg") },
             { name: '中村寛子', account: '', account_link: '', post: 'MASHING UP プロデューサー', img_src: require("~/assets/img/speaker/hiroko-nakamura.png") },
             { name: 'Kinuko Yasuda (安田絹子)', account: '@kinu', account_link: 'https://twitter.com/kinu', post: 'Google Engineering Manager', img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg") },
