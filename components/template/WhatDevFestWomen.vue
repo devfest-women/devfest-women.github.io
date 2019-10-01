@@ -5,7 +5,7 @@
         <v-col lg="6">
           <TitleBlack text="DevFest Women Tokyoとは"></TitleBlack>
           <div class="content">
-            DevFest Women TokyoはIT業界において、ダイバーシティとインクルージョンに興味のある方のためのテクノロジーカンファレンスです。<br>
+            DevFest Women Tokyoは、Diversity（多様性）とInclusion（認知と尊重）を強調したテクノロジーカンファレンスです。<br>
             エンジニア、デザイナー、ディレクター、プロダクトマネージャーなど様々な職種の方にとって、自分のなりたい像がみつかったり、自分の知っていることやできることを増やして明日からの自信につなげるイベントを目指しています。
           </div>
           <div class="hashtag d-flex justify-lg-center align-center">

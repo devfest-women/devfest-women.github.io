@@ -13,15 +13,6 @@
       </div>
     </div>
     <div class="hero-link">
-      <div class="l-sponsor">
-        <p class="label-text">{{ hero.sponsor.description }}</p>
-        <Button
-          v-bind:text='hero.sponsor.text'
-          v-bind:link='hero.sponsor.link'
-          textcolor='text-sponsor'
-          buttonstyle="nomal">
-        </Button>
-      </div>
       <div class="l-staff">
         <p class="label-text">{{ hero.staff.description }}</p>
         <Button
@@ -52,11 +43,6 @@ import Button from '~/components/module/Button.vue'
              text:"参加申し込み",
              link:"https://devfestwomen2019.peatix.com/view"
           },
-          sponsor:{            
-            description:'スポンサーを募集中です！',
-            text:'スポンサー申し込み',
-            link:'https://docs.google.com/forms/d/e/1FAIpQLSfwIrV6HXRztZF0L6Z0aBj4zdmV5AWtbyVWg77i0Ho25LANVA/viewform'
-          },
           staff:{            
             description:'当日スタッフを募集中です！',
             text:'当日スタッフに応募',
@@ -79,7 +65,7 @@ import Button from '~/components/module/Button.vue'
   background-position: center top;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 780px;
+  height: 680px;
   position: relative;
   left: 50%;
   right: 50%;
@@ -138,15 +124,12 @@ import Button from '~/components/module/Button.vue'
 
 .hero-link {
   width: auto;
-  height: 250px;
+  height: 150px;
   top: 145px;
   margin: 0;
   position: relative;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.2);
-}
-.l-sponsor {
-  padding-top: 15px;
 }
 .l-staff
 {
@@ -162,14 +145,8 @@ import Button from '~/components/module/Button.vue'
     overflow: hidden;
     height: 154px;
   }
-  .l-sponsor {
-    width: 30%;
-    margin-left:20vw;
-    float: left;
-  }
   .l-staff {
-    width: 30%;
-    margin-right:20vw;
+    width: 100%;
     float: right;
   }
 }
