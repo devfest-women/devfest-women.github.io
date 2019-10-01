@@ -3,10 +3,10 @@
   <div class="contents">
     <div class="hero-logo" justify-center="center">
       <img src="~/assets/img/logo_white.svg" alt="DevFest Women2019">
-      <p class="hero-days">{{ hero.days }}</p>   
+      <p class="hero-days">{{ hero.days }}</p>
       <p class="hero-place">{{ hero.place }}</p>
       <div>
-        <Button 
+        <Button
           v-bind:text='hero.join.text'
           v-bind:link='hero.join.link'
           buttonstyle="join"></Button>
@@ -39,11 +39,11 @@ import Button from '~/components/module/Button.vue'
         hero: {
           days:'2019.10.14 (Mon.)',
           place:'@御茶ノ水ソラシティカンファレンスセンター',
-          join:{       
+          join:{
              text:"参加申し込み",
              link:"https://devfestwomen2019.peatix.com/view"
           },
-          staff:{            
+          staff:{
             description:'当日スタッフを募集中です！',
             text:'当日スタッフに応募',
             link:'https://docs.google.com/forms/d/e/1FAIpQLSd3w2qG43B7RjYEyCb0d_HUI-9i2jkEeUcSm6jTMWxpTuCuow/viewform'
@@ -73,7 +73,7 @@ import Button from '~/components/module/Button.vue'
   margin-right: -50vw;
   z-index: 0;
 }
-@media screen and (max-width:1200px) { 
+@media screen and (max-width:1200px) {
   .bg-img {
     background-size:1200px auto;
   }
