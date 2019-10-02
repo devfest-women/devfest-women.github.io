@@ -119,7 +119,7 @@ import Button from '~/components/module/Button.vue'
 }
 .l-join
 {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 @media only screen and (min-width: 900px), print {
