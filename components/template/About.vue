@@ -7,7 +7,7 @@
           <div class="content">
             DevFest Women Tokyoは、Diversity（多様性）とInclusion（認知と尊重）を強調したテクノロジーカンファレンスです。<br>
             本カンファレンスの登壇者は女性アイデンティティの方に限定しています。<br>
-            DevFest Women Tokyoでは、IT業界で活躍している女性やLGBTQの方にスポットライトを当て、彼女たちの知的好奇心をそそる発表を通して、次の日からの自信につなげられるようなカンファレンスを目指しています。
+            DevFest Women Tokyoでは、IT業界で活躍している女性やLGBTQの方にスポットライトを当て、彼女たちの知的好奇心そそる発表を受け、参加した方々の次の日からの自信につなげられるようなカンファレンスを目指しています。
           </div>
           <div class="d-flex justify-center">
             <Button
