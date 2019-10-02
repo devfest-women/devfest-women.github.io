@@ -28,6 +28,15 @@
                 <a href="https://codezine.jp/"><img src="~/assets/img/sponsor/codezine.png" alt="CodeZine" title="CodeZine"></a>
               </v-col>
             </v-row>
+            <h2 class="heading">コミュニティパートナー</h2>
+            <v-row class="media d-flex" justify="center">
+              <v-col cols="5" xs="8" sm="8" md="6" lg="4" class="media-logo">
+                <a href="https://pyladiestokyo.github.io/"><img src="~/assets/img/sponsor/pyladies.png" alt="PyLadies Tokyo" title="PyLadies Tokyo"></a>
+              </v-col>
+              <v-col cols="5" xs="8" sm="8" md="6" lg="4" class="media-logo">
+                <a href="https://gdg-tokyo.connpass.com/"><img src="~/assets/img/sponsor/gdgtokyo.png" alt="GDG Tokyo" title="GDG Tokyo"></a>
+              </v-col>
+            </v-row>
           </v-container>
         </v-col>
       </v-row>
