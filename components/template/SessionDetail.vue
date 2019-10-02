@@ -34,9 +34,40 @@
                       </a>
                   </div>
               </div>
+            </div>
           </div>
+          <div class="session">
+            <div class="hall-rectangle"><p class="text">ゲスト講演</p></div>
+            <div class="session-detail-box" v-for="item in guest" :key="item.session_number">
+              <div class="header d-flex align-center">
+                  <div class="session-number">
+                      {{item.session_number}}
+                  </div>
+                  <div class="session-time">
+                      {{item.time}}
+                  </div>
+              </div>
+              <div class="session-detail-box-header">
+                  <div class="session-title">
+                      {{item.title}}
+                  </div>
+                  <div class="session-description">
+                      <p>{{item.description}}</p>
+                  </div>
+                  <div class="session-speaker">
+                      <a :href=item.account_link target="_blank" class="d-flex justify-left">
+                          <div xs="2" md="2" class="left">
+                              <img :src=item.img_src :alt=item.speaker >
+                          </div>
+                          <div class="right">
+                              <p class="name">{{item.speaker}}</p>
+                              <p class="post">{{item.post}}</p>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+            </div>
           </div>
-
           <div class="session">
             <div class="hall-rectangle"><p class="text">HallA</p></div>
             <div class="session-detail-box" v-for="item in halla" :key="item.session_number">
@@ -171,6 +202,17 @@
                 account_link: 'https://twitter.com/ayatokura',
                 post: 'IBM Sr. Developer Advocate',
                 img_src: require("~/assets/img/speaker/aya_tokura.png")
+            }
+        ],
+        guest: [
+            {
+                session_number:'ゲスト講演',
+                speaker: 'ハヤカワ五味',
+                title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史',
+                description:'エンジニアやデザイナーなど、ものづくりの仕事をしていると「女性ならではの感性で〜」と言われることもあると思います。でも、「女性ならでは」って何？なぜ、女性というだけで「女性ならでは」を求められなければいけないのだろうか、なぜそのような価値観があるのか。今までの女性の社会進出の歴史と生理について紐解いていきます。',
+                account_link: 'https://twitter.com/hayakawagomi',
+                post: '株式会社ウツワ代表取締役／起業家',
+                img_src: require("~/assets/img/speaker/gomi-hayakawa.png")
             }
         ],
         halla: [
