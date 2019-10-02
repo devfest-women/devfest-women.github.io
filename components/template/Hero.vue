@@ -6,21 +6,12 @@
       <p class="hero-days">{{ hero.days }}</p>
       <p class="hero-place">{{ hero.place }}</p>
       <div>
+      <div class="l-join">
         <Button
           v-bind:text='hero.join.text'
           v-bind:link='hero.join.link'
           buttonstyle="join"></Button>
       </div>
-    </div>
-    <div class="hero-link">
-      <div class="l-staff">
-        <p class="label-text">{{ hero.staff.description }}</p>
-        <Button
-          v-bind:text='hero.staff.text'
-          v-bind:link='hero.staff.link'
-          textcolor='text-staff'
-          buttonstyle="nomal">
-        </Button>
       </div>
     </div>
   </div>
@@ -42,12 +33,7 @@ import Button from '~/components/module/Button.vue'
           join:{
              text:"参加申し込み",
              link:"https://devfestwomen2019.peatix.com/view"
-          },
-          staff:{
-            description:'当日スタッフを募集中です！',
-            text:'当日スタッフに応募',
-            link:'https://docs.google.com/forms/d/e/1FAIpQLSd3w2qG43B7RjYEyCb0d_HUI-9i2jkEeUcSm6jTMWxpTuCuow/viewform'
-          },
+          }
         }
       }
     }
@@ -131,9 +117,9 @@ import Button from '~/components/module/Button.vue'
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.l-staff
+.l-join
 {
-  padding-top: 15px;
+  padding-top: 60px;
 }
 
 @media only screen and (min-width: 900px), print {
@@ -144,10 +130,6 @@ import Button from '~/components/module/Button.vue'
     height: 600px;
     overflow: hidden;
     height: 154px;
-  }
-  .l-staff {
-    width: 100%;
-    float: right;
   }
 }
 </style>
