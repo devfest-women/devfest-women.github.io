@@ -209,7 +209,7 @@
                 title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜',
                 description:'物理0点取ったガチガチな文系大学生のわたしがパソコンに出会い、プログラミングにハマって独学で応用情報技術者試験に合格。SIer や スタートアップ企業での技術職を経験し、日本マイクロソフトにテクニカルエバンジェリストとして入社。数年後には、日本人は私含め2人だけの本社インターナショナルチームへ異動。BLマンガ、オタク活動、プログラミング。大好きなことに没入し続けた、ちょまど流テクニカルキャリアにおける "Connecting the Dots" についてお話しさせていただきます。',
                 account_link: 'https://twitter.com/chomado',
-                post: 'Microsoft 社',
+                post: 'Microsoft 社 Cloud Developer Advocate',
                 img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg")
             },
             { session_number:'Session4-2',
