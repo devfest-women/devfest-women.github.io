@@ -6,10 +6,12 @@
       <p class="hero-days">{{ hero.days }}</p>
       <p class="hero-place">{{ hero.place }}</p>
       <div>
+      <div class="l-join">
         <Button
           v-bind:text='hero.join.text'
           v-bind:link='hero.join.link'
           buttonstyle="join"></Button>
+      </div>
       </div>
     </div>
   </div>
@@ -115,9 +117,9 @@ import Button from '~/components/module/Button.vue'
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.l-staff
+.l-join
 {
-  padding-top: 15px;
+  padding-top: 80px;
 }
 
 @media only screen and (min-width: 900px), print {
@@ -128,10 +130,6 @@ import Button from '~/components/module/Button.vue'
     height: 600px;
     overflow: hidden;
     height: 154px;
-  }
-  .l-staff {
-    width: 100%;
-    float: right;
   }
 }
 </style>
