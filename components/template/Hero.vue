@@ -12,17 +12,6 @@
           buttonstyle="join"></Button>
       </div>
     </div>
-    <div class="hero-link">
-      <div class="l-staff">
-        <p class="label-text">{{ hero.staff.description }}</p>
-        <Button
-          v-bind:text='hero.staff.text'
-          v-bind:link='hero.staff.link'
-          textcolor='text-staff'
-          buttonstyle="nomal">
-        </Button>
-      </div>
-    </div>
   </div>
 </div>
 </template>
@@ -42,12 +31,7 @@ import Button from '~/components/module/Button.vue'
           join:{
              text:"参加申し込み",
              link:"https://devfestwomen2019.peatix.com/view"
-          },
-          staff:{
-            description:'当日スタッフを募集中です！',
-            text:'当日スタッフに応募',
-            link:'https://docs.google.com/forms/d/e/1FAIpQLSd3w2qG43B7RjYEyCb0d_HUI-9i2jkEeUcSm6jTMWxpTuCuow/viewform'
-          },
+          }
         }
       }
     }
