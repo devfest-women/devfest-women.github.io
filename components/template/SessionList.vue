@@ -125,7 +125,7 @@
             { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:30-16:00',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
             { time: '16:10-16:40',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'Google Engineering Manager',display:'contents'},
-            { time: '16:45-17:10',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
+            { time: '16:45-17:15',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
       ],
       workshop: [
             { time: '13:20-14:40',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents contents80min'},
