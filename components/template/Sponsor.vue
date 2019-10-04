@@ -75,6 +75,9 @@
               <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
                 <a href="https://twitter.com/iktakahiro"><img src="~/assets/img/sponsor/takahiro-ikeuchi.jpg" alt="池内孝啓" title="池内孝啓"></a>
               </v-col>
+              <v-col xs="4" sm="3" md="3" lg="2" class="personal-logo">
+                <a href="https://twitter.com/szkn27"><img src="~/assets/img/sponsor/noriyuki-suzuki.png" alt="鈴木教之" title="鈴木教之"></a>
+              </v-col>
             </v-row>
           </v-container>
         </v-col>
