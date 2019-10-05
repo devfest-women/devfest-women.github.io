@@ -236,6 +236,14 @@
                 post: '株式会社万葉 プログラマー',
                 img_src: require("~/assets/img/speaker/yuki_torii.jpg")
             },
+            { session_number:'Session4-1',
+                speaker: '鳥井 雪',
+                title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？',
+                description: '「ダイバーシティ＆インクルージョン」と聞くと何をイメージしますか？女性の活躍、LGBTQ、障害者、海外労働者..。私が初めてこの言葉を記事から目にした時に感じた他人感。そして、なかなか進まないダイバーシティの実情を受けて、私がなぜ女性視点でデザインするダイバーシティ推進のプロジェクト「MASHING UP」を初めた理由、実情をお話しします。',
+                account_link: '',
+                post: 'MASHING UP プロデューサー',
+                img_src: require("~/assets/img/speaker/hiroko-nakamura.png")
+            },
         ],
         hallb: [
             { session_number:'Session2-2',

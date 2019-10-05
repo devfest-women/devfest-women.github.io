@@ -114,7 +114,7 @@
             { time: '14:45-15:15',session:'session2-1', title:'(タイトル未定)' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
             { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:30-16:00',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
-            { time: '16:10-16:40',session:'session4-1',title:'(タイトル未定)', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
+            { time: '16:10-16:40',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
             { time: '16:45-17:15',session:'session5-1',title:'調整中', name: '', post: '' ,display:'contents'},
             { time: '17:15-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '17:20-17:30',session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
