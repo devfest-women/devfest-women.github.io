@@ -227,6 +227,14 @@
               post: 'SHE株式会社 Co-founder/CCO',
               img_src: require("~/assets/img/speaker/eri_fukuda.jpg")
             },
+            { session_number:'Session2-1',
+              speaker: '安田クリスチーナ',
+              title:'エンジニアではない人のテクノロジーとの付き合い方',
+              description:'文系でありながらプログラミングに憧れて、シリコンバレーでPythonとAIを学んだり、独学でブロックチェーンを触ってみたりした結果、エンジニアには向いていないことを実感。しかし、リードしているプロジェクト内で「政府等一つの権威に頼らない証明書を発行する方法」を構築する上で最適な手段を選択するために、ブロックチェーンおよび従来の認証認可技術の根本的な仕組みや実装方法などを学ぶ必要性に直面した。それから、自分でプログラミングはしないけれども、成し遂げたい目的に合致したテクノロジーを徹底的に理解するというテクノロジーとの付き合い方を確立してきました。そんな私の付き合い方を今日はお話します。',
+              account_link: 'https://www.facebook.com/christina.yasuda',
+              post: 'InternetBar.org 理事 (Forbes 30Under30)',
+              img_src: require("~/assets/img/speaker/kurisuti-na.png")
+            },
             { session_number:'Session3-1',
                 speaker: '鳥井 雪',
                 title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜',

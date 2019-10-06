@@ -111,7 +111,7 @@
             { time: '13:20-13:50',session:'特別ゲスト', title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
             { time: '13:50-14:10',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
             { time: '14:10-14:40',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
-            { time: '14:45-15:15',session:'session2-1', title:'(タイトル未定)' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
+            { time: '14:45-15:15',session:'session2-1', title:'エンジニアではない人のテクノロジーとの付き合い方' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
             { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '15:30-16:00',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
             { time: '16:10-16:40',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
