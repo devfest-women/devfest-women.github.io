@@ -7,6 +7,7 @@
   <SessionList class="bg-gradient anchor" id="session"></SessionList>
   <SessionDetail class="bg-gradient anchor" id="session_detail"></SessionDetail>
   <SessionPreparation class="bg-black anchor" id="session_preparation"></SessionPreparation>
+  <AskTheSpeaker class="bg-black anchor" id="ask_the_speaker"></AskTheSpeaker>
   <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
   <Partner class="bg-black anchor" id="partner"></Partner>
   <Staff class="bg bg-black" id="staff"></Staff>
@@ -21,6 +22,7 @@ import Speaker from '~/components/template/Speaker.vue'
 import SessionList from '~/components/template/SessionList.vue'
 import SessionDetail from '~/components/template/SessionDetail.vue'
 import SessionPreparation from '~/components/template/SessionPreparation.vue'
+import AskTheSpeaker from '~/components/template/AskTheSpeaker.vue'
 import Sponsor from '~/components/template/Sponsor.vue'
 import Staff from '~/components/template/Staff.vue'
 import Partner from '~/components/template/Partner.vue'
@@ -37,6 +39,7 @@ export default {
     SessionList,
     SessionDetail,
     SessionPreparation,
+    AskTheSpeaker,
     Sponsor,
     Partner,
     Staff,
