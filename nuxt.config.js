@@ -89,6 +89,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+   transpile: ['vuetify'],
     extend(config, ctx) {
     }
   }
