@@ -5,9 +5,9 @@
   <About class="bg-black anchor" id="aboutevent"></About>
   <Speaker class="bg-black anchor" id="speaker"></Speaker>
   <SessionList class="bg-gradient anchor" id="session"></SessionList>
+  <AskTheSpeaker class="bg-gradient anchor" id="ask_the_speaker"></AskTheSpeaker>
   <SessionDetail class="bg-gradient anchor" id="session_detail"></SessionDetail>
   <SessionPreparation class="bg-black anchor" id="session_preparation"></SessionPreparation>
-  <AskTheSpeaker class="bg-black anchor" id="ask_the_speaker"></AskTheSpeaker>
   <Sponsor class="bg-black anchor" id="sponsor"></Sponsor>
   <Partner class="bg-black anchor" id="partner"></Partner>
   <Staff class="bg bg-black" id="staff"></Staff>

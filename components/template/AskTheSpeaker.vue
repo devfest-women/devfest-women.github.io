@@ -2,11 +2,10 @@
   <div class="bg">
     <v-container class="section-container d-flex flex-column justify-center align-center">
       <v-row justify="center">
-        <v-col sm="10">
-          <TitleBlack text="Ask The Speakerについて"></TitleBlack>
+        <v-col sm="8">
+          <TitleGradient text="Ask the Speakerについて"></TitleGradient>
           <div class="content">
-            <p>Ask the Speaker はセッション終了後に来場者が気軽にスピーカーにお話したり、質問できるコーナーです。</p>
-            <p>スポンサーブースがあるエスカレーターを上がったエリアにAsk the Speaker コーナーを設置しています。</p>
+            <p>エスカレーターを上って左手にAsk the Speakerコーナーを設置します。ここでは、セッション終了後にスピーカーの方へ気軽に質問したりお話したりできます。</p>
             <p>下記の休憩時間が各セッションのAsk the Speakerの時間になります。</p>
             <ul class="ask-the-speaker-list">
               <li>13:50-14:10  岩尾 エマ はるかさん・戸倉彩さん</li>
@@ -25,10 +24,10 @@
 </template>
 
 <script>
-  import TitleBlack from '~/components/module/TitleBlack.vue'
+  import TitleGradient from '~/components/module/TitleGradient.vue'
   export default {
     components: {
-      TitleBlack
+      TitleGradient
     },
     data() {
       return {
