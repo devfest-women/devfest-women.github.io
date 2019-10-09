@@ -239,7 +239,7 @@
                 speaker: '鳥井 雪',
                 title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜',
                 description: '‪プログラマー歴10年と少し、その間にカンファレンスに登壇したり託児所制度を導入したり、Rails Girls の日本でのコミュニティ化をがんばったりプログラミング絵本を翻訳したり子どもを2人目産んだりしました。‬\n' +
-                            '‪その都度、「プログラマーとしての生き方」なんて立派なことはさっぱり考えずに「わたしが好きな場所で好きなことをして成長もして、ついでにその場所をより良い場所にするにはどうすればいいんだろう？」と自分勝手にやってきた、そのわたしの好きなITの世界の良さと可能性、そこに「あなた」があなたの都合で加わることの大切さをお話しできたらいいなと思っています。‬',
+                             '‪その都度、「プログラマーとしての生き方」なんて立派なことはさっぱり考えずに「わたしが好きな場所で好きなことをして成長もして、ついでにその場所をより良い場所にするにはどうすればいいんだろう？」と自分勝手にやってきた、そのわたしの好きなITの世界の良さと可能性、そこに「あなた」があなたの都合で加わることの大切さをお話しできたらいいなと思っています。‬',
                 account_link: 'https://twitter.com/yotii23',
                 post: '株式会社万葉 プログラマー',
                 img_src: require("~/assets/img/speaker/yuki_torii.jpg")
@@ -254,7 +254,7 @@
             },
         ],
         hallb: [
-            { session_number:'Session2-2',
+            { session_number:'Session1-2',
                 speaker: '清水 淳子',
                 title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー',
                 description:'グラフィックレコーディングとは、リアルタイムで話し合いを整理して記録することで、参加者の気づきを促進する手法です。近年、ビジネス会議や市民活動の場で注目を集めています。このセッションでは清水が自分のノートをグラフィックレコーダーという職業に発展させるまでの約10年間の舞台裏をご紹介します。',
@@ -262,7 +262,7 @@
                 post: 'デザインリサーチャー / グラフィックレコーダー',
                 img_src: require("~/assets/img/speaker/junko_shimizu.png")
             },
-            { session_number:'Session3-2',
+            { session_number:'Session2-2',
                 speaker: '千代田 まどか (ちょまど)',
                 title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜',
                 description:'物理0点取ったガチガチな文系大学生のわたしがパソコンに出会い、プログラミングにハマって独学で応用情報技術者試験に合格。SIer や スタートアップ企業での技術職を経験し、日本マイクロソフトにテクニカルエバンジェリストとして入社。数年後には、日本人は私含め2人だけの本社インターナショナルチームへ異動。BLマンガ、オタク活動、プログラミング。大好きなことに没入し続けた、ちょまど流テクニカルキャリアにおける "Connecting the Dots" についてお話しさせていただきます。',
@@ -270,15 +270,18 @@
                 post: 'Microsoft 社 Cloud Developer Advocate',
                 img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg")
             },
-            { session_number:'Session4-2',
+            { session_number:'Session3-2',
                 speaker: '鈴木 順子',
                 title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜',
-                description:'',
+                description:'GitHubは場所にとらわれることなく、世界中の開発者が繋がるプラットフォームです。これからも、世界中の開発者にとって最適なプラットフォームを構築しつづけていくためには、\n' +
+                            '私達GitHub自身がそういう世界を反映する会社であるべきだと考えています。本セッションの前半では、GitHubのDiversity, Inclusion & Belongings についての取り組みを紹介します。\n' +
+                            'また後半は、私自身の約10年におよぶエンジニア人生を振り返り、何を考えてどう行動してきたかについてお話しします。\n' +
+                            '大それたものは何もありません。いかに、何もこだわらずに、わがままに好き勝手に、エンジニアやってきたかを話します。',
                 account_link: 'https://twitter.com/PNSK',
                 post: 'GitHub / Enterprise Support Engineer',
                 img_src: require("~/assets/img/speaker/junko-suzuki.jpg")
             },
-            { session_number:'Session5-2',
+            { session_number:'Session4-2',
                 speaker: 'Kinuko Yasuda (安田絹子)',
                 title:'私のエンジニアとしての10年、そしてダイバーシティのこととか',
                 description:'Google で Chrome というブラウザを開発することなんと約10年😲\n' +

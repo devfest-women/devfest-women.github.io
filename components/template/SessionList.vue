@@ -94,11 +94,14 @@
             { start: '13:20',display:'session-time'},
             { start: '13:50',display:''},
             { start: '14:10',display:'session-time'},
-            { start: '14:45',display:'session-time'},
-            { start: '15:15',display:''},
-            { start: '15:30',display:'session-time'},
-            { start: '16:10',display:'session-time'},
-            { start: '16:45',display:'session-time'},
+            { start: '14:40',display:''},
+            { start: '14:50',display:'session-time'},
+            { start: '15:20',display:''},
+            { start: '15:35',display:'session-time'},
+            { start: '16:05',display:''},
+            { start: '16:15',display:'session-time'},
+            { start: '16:45',display:''},
+            { start: '16:55',display:'session-time'},
             { start: '17:15',display:''},
             { start: '17:20',display:''},
         ],
@@ -111,35 +114,41 @@
             { time: '13:20-13:50',session:'特別ゲスト', title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
             { time: '13:50-14:10',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
             { time: '14:10-14:40',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
-            { time: '14:45-15:15',session:'session2-1', title:'エンジニアではない人のテクノロジーとの付き合い方' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
-            { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:30-16:00',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
-            { time: '16:10-16:40',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
-            { time: '16:45-17:15',session:'session5-1',title:'調整中', name: '', post: '' ,display:'contents'},
+            { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
+            { time: '14:50-15:20',session:'session2-1', title:'エンジニアではない人のテクノロジーとの付き合い方' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
+            { time: '15:20-15:35',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '15:35-16:05',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
+            { time: '16:05-16:15',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '16:15-16:45',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
+            { time: '16:45-16:55',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '16:55-17:15',session:'session5-1',title:'調整中', name: '', post: '' ,display:'contents'},
             { time: '17:15-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '17:20-17:30',session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
       ],
       hallb: [
             { time: '14:10-14:40',session:'session1-2', title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
-            { time: '14:45-15:15',session:'session2-2', title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜', name: '千代田まどか (ちょまど)', post: 'Microsoft 社 Cloud Developer Advocate' ,display:'contents'},
-            { time: '15:15-15:30',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:30-16:00',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
-            { time: '16:10-16:40',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'Google Engineering Manager',display:'contents'},
-            { time: '16:45-17:15',session:'Ask the Speaker', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
+            { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
+            { time: '14:50-15:20',session:'session2-2', title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜', name: '千代田まどか (ちょまど)', post: 'Microsoft 社 Cloud Developer Advocate' ,display:'contents'},
+            { time: '15:20-15:35',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '15:35-16:05',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
+            { time: '16:05-16:15',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '16:15-16:45',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'Google Engineering Manager',display:'contents'},
+            { time: '16:45-16:55',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '16:55-17:15',session:'スポンサーパネルセッション', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
       ],
       workshop: [
-            { time: '13:20-14:40',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents contents80min'},
+            { time: '13:20-14:40',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents contents-workshop1'},
             { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '', display:'contents-other-session'},
-            { time: '14:50-16:10',session:'Workshop2', title:'Google Colaboratory で Python をはじめてみよう', name: '講師：中村 真由美', post: '', display:'contents contents80min'},
+            { time: '14:50-16:10',session:'Workshop2', title:'Google Colaboratory で Python をはじめてみよう', name: '講師：中村 真由美', post: '', display:'contents contents-workshop2'},
             { time: '16:10-16:20',session:'休憩', title:'', name: '', post: '', display:'contents-other-session'},
-            { time: '16:20-17:20',session:'Workshop3', title:'Kotlin Koans で Kotlin にチャレンジ！', name: '講師：あんざいゆき', post: '株式会社ウフィカ代表取締役', display:'contents contents60min'},
+            { time: '16:20-17:20',session:'Workshop3', title:'Kotlin Koans で Kotlin にチャレンジ！', name: '講師：あんざいゆき', post: '株式会社ウフィカ代表取締役', display:'contents contents-workshop3'},
       ],
       workshoptime: [
-        { start: '13:20',display:'session-time session-time-80min'},
+        { start: '13:20',display:'session-time workshop-time1'},
         { start: '14:40',display:''},
-        { start: '14:50',display:'session-time session-time-80min'},
+        { start: '14:50',display:'session-time workshop-time2'},
         { start: '16:10',display:''},
-        { start: '16:20',display:'session-time session-time-60min'},
+        { start: '16:20',display:'session-time workshop-time3'},
       ],
       dialog: false
       }
@@ -330,14 +339,14 @@
     margin-right:-5px;
   }
   .timeline-workshop {
-    margin-top: 990px;
+    margin-top: 1000px;
     padding: 0 0 0 24px;
     margin-right:-5px;
   }
 
   .start-time {
     font-size: 16px;
-    height: 107px;
+    height: 109px;
     line-height: 0;
     color: #fff;
     list-style: none;
@@ -377,28 +386,40 @@
     padding: 2%;
   }
 
-  .contents80min {
-    height: 660px;
+  .contents-workshop1 {
+    height: 700px;
 
     @media only screen and (max-width: 960px), print {
       height: 190px;
     }
   }
 
-  .contents60min {
-    height: 560px;
+  .contents-workshop2 {
+    height: 760px;
 
     @media only screen and (max-width: 960px), print {
       height: 190px;
     }
   }
 
-  .session-time-80min {
-    height: 675px;
+  .contents-workshop3 {
+    height: 750px;
+
+    @media only screen and (max-width: 960px), print {
+      height: 190px;
+    }
   }
 
-  .session-time-60min {
-    height: 555px;
+  .workshop-time1 {
+    height: 705px;
+  }
+
+  .workshop-time2 {
+    height: 775px;
+  }
+
+  .workshop-time3 {
+    height: 755px;
   }
 
   @media only screen and (min-width: 960px), print {
