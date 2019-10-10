@@ -121,7 +121,7 @@
                       <div class="session-speaker">
                           <a :href=item.account_link target="_blank" class="d-flex justify-left">
                               <div xs="2" md="2" class="left">
-                                  <img :src=item.img_src :alt=item.speaker >
+                                  <img v-if="item.img_src" :src=item.img_src :alt=item.speaker >
                               </div>
                               <div class="right">
                                   <p class="name">{{item.speaker}}</p>
@@ -302,10 +302,10 @@
                 img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg")
             },
             { session_number:'Session5-2',
-                speaker: '',
-                title:'DevFestWomenスポンサー企業に聞く〜ダイバーシティに取り組む企業のパネルディスカッション〜',
-                description:'参加者からのアンケートで多く寄せられた『女性の働き方』についてスポンサー企業の方々をパネラーとして迎え、実際に社内ではどのような取り組みをしていて、どのようなキャリアパスがあるのかなどについてディスカッションただきます！\n' +
-                    'トピック\n' +
+                speaker: '田村ななみ(サイボウズ株式会社)\n横井羽衣子(日本マイクロソフト株式会社)\n調整中(Sansan株式会社)\n坂本結衣(株式会社メルカリ)',
+                title:'DevFest Womenスポンサー企業に聞く〜ダイバーシティに取り組む企業のパネルディスカッション〜',
+                description:'参加者からのアンケートで多く寄せられた『女性の働き方』についてスポンサー企業の方々をパネラーとして迎え、実際に社内ではどのような取り組みをしていて、どのようなキャリアパスがあるのかなどについてディスカッションしていただきます！\n' +
+                    'ディスカッション予定のトピック\n' +
                     '* ダイバーシティな環境づくり(女性の働き方、アクセシビリティな社内環境の取り組み)\n' +
                     '* 多様性のある働き方、キャリアパス\n' +
                     '* IT業界が今抱えている課題はなにか、解決への取り組み',
@@ -438,6 +438,7 @@
 
         .session-speaker a {
             text-decoration: none;
+            white-space: pre-wrap;
 
             img {
                 max-width: 66px;
