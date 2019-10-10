@@ -290,6 +290,18 @@
                 account_link: 'https://twitter.com/kinu',
                 post: 'Google Engineering Manager',
                 img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg")
+            },
+            { session_number:'Session5-2',
+                speaker: '',
+                title:'DevFestWomenスポンサー企業に聞く〜ダイバーシティに取り組む企業のパネルディスカッション〜',
+                description:'参加者からのアンケートで多く寄せられた『女性の働き方』についてスポンサー企業の方々をパネラーとして迎え、実際に社内ではどのような取り組みをしていて、どのようなキャリアパスがあるのかなどについてディスカッションただきます！\n' +
+                    'トピック\n' +
+                    '* ダイバーシティな環境づくり(女性の働き方、アクセシビリティな社内環境の取り組み)\n' +
+                    '* 多様性のある働き方、キャリアパス\n' +
+                    '* IT業界が今抱えている課題はなにか、解決への取り組み',
+                account_link: '',
+                post: '',
+                img_src: ''
             }
         ],
         workshop: [

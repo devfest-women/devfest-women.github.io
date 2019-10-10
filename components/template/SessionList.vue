@@ -134,7 +134,7 @@
             { time: '16:05-16:15',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '16:15-16:45',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'Google Engineering Manager',display:'contents'},
             { time: '16:45-16:55',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '16:55-17:15',session:'スポンサーパネルセッション', title:'', name: '', post: '',display:'contents-ask-the-speaker'},
+            { time: '16:55-17:15',session:'Session5-2', title:'DevFestWomenスポンサー企業に聞く〜ダイバーシティに取り組む企業のパネルディスカッション〜', name: '', post: '',display:'contents'},
       ],
       workshop: [
             { time: '13:20-14:40',session:'Workshop1', title:'初めてのGoogleアシスタント向けアクションの開発', name: '講師：田中 洋一郎', post: 'Google Developers Expert (Assistant, Web Technology)', display:'contents contents-workshop1'},
