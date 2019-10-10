@@ -252,7 +252,17 @@
                 post: 'MASHING UP プロデューサー',
                 img_src: require("~/assets/img/speaker/hiroko-nakamura.png")
             },
-        ],
+            { session_number:'Session5-1',
+                speaker: '清水舞子(しみこ)',
+                title:'性別は本当に関係ないの？社会の狭間で共に戦う仲間の見つけ方',
+                description: '「性差ではなく個人差！」\n' +
+                             'metoo運動以降、バイアスから解放され着実により良い方向に動きだした社会。しかし、明日すべてのバイアスが消えてなくなるのでしょうか？答えはNO。まだまだ社会はジェンダーギャップに溢れかえっています。\n' +
+                             'そんな中、フリーランス事業主、そして起業-被投資まで「会社と会社の狭間」を経験した自分が、理想の社会と現実の社会のギャップを埋めるために強力な味方となる「最強の仲間集め」の方法をお伝え致します。',
+                account_link: 'https://twitter.com/shimiko1031',
+                post: '株式会社祭　代表',
+                img_src: require("~/assets/img/speaker/shimizu_maiko.jpg")
+            },
+],
         hallb: [
             { session_number:'Session1-2',
                 speaker: '清水 淳子',
