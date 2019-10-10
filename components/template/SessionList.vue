@@ -121,7 +121,7 @@
             { time: '16:05-16:15',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '16:15-16:45',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
             { time: '16:45-16:55',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '16:55-17:15',session:'session5-1',title:'調整中', name: '', post: '' ,display:'contents'},
+            { time: '16:55-17:15',session:'session5-1',title:'性別は本当に関係ないの？社会の狭間で共に戦う仲間の見つけ方', name: '清水舞子(しみこ)', post: '株式会社祭　代表', display:'contents'},
             { time: '17:15-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '17:20-17:30',session:'クロージング', title:'', name: '', post: '' ,display:'contents-other-session'},
       ],
