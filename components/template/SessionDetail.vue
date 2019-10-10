@@ -302,7 +302,7 @@
                 img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg")
             },
             { session_number:'Session5-2',
-                speaker: '田村ななみ(サイボウズ株式会社),　横井羽衣子(日本マイクロソフト株式会社),　調整中(Sansan株式会社),　調整中(株式会社メルカリ)',
+                speaker: '田村ななみ(サイボウズ株式会社)\n横井羽衣子(日本マイクロソフト株式会社)\n調整中(Sansan株式会社)\n調整中(株式会社メルカリ)',
                 title:'DevFestWomenスポンサー企業に聞く〜ダイバーシティに取り組む企業のパネルディスカッション〜',
                 description:'参加者からのアンケートで多く寄せられた『女性の働き方』についてスポンサー企業の方々をパネラーとして迎え、実際に社内ではどのような取り組みをしていて、どのようなキャリアパスがあるのかなどについてディスカッションしていただきます！\n' +
                     'ディスカッション予定のトピック\n' +
@@ -438,6 +438,7 @@
 
         .session-speaker a {
             text-decoration: none;
+            white-space: pre-wrap;
 
             img {
                 max-width: 66px;
