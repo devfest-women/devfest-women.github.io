@@ -121,7 +121,7 @@
                       <div class="session-speaker">
                           <a :href=item.account_link target="_blank" class="d-flex justify-left">
                               <div xs="2" md="2" class="left">
-                                  <img :src=item.img_src :alt=item.speaker >
+                                  <img v-if="item.img_src" :src=item.img_src :alt=item.speaker >
                               </div>
                               <div class="right">
                                   <p class="name">{{item.speaker}}</p>
