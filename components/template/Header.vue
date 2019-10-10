@@ -64,7 +64,7 @@
         :fixed="true"
         :clipped-right="false"
         class="l-header">
-      <v-container class="d-none d-sm-flex">
+      <v-container class="d-none d-md-flex">
        <v-row class="d-flex space-between justify-center">
         <v-toolbar-items v-if="pages === 'top'">
           <v-btn
@@ -92,7 +92,7 @@
       </v-row>
       </v-container>
 
-      <v-container class="d-flex d-sm-none">
+      <v-container class="d-flex d-md-none">
         <v-row class="justify-end">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white"></v-app-bar-nav-icon>
       </v-row>
@@ -128,6 +128,14 @@ export default {
 }
 </script>
 <style scoped>
+@media (max-width:1200px) {
+  .v-btn:not(.v-btn--round).v-size--default {
+    padding: 0 12px;
+  }
+  .v-btn {
+    font-size: 0.5rem;
+  }
+}
 .l-header {
   background-image: linear-gradient(to left,rgba(218,41,123,1), rgba(255,111,97,1));
 }
