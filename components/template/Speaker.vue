@@ -68,6 +68,7 @@
             { name: '田村ななみ', account: '', account_link: '', post: 'サイボウズ株式会社 開発本部', img_src: require("~/assets/img/speaker/tamura_nanami.png") },
             { name: '横井羽衣子', account: '@uikou', account_link: 'https://www.linkedin.com/in/uikou/', post: '日本マイクロソフト株式会社 シニアプロダクトマネージャー', img_src: require("~/assets/img/speaker/uiko_yokoi.jpg") },
             { name: '我妻小夜子', account: '@wagatsumasayoko', account_link: 'https://8card.net/p/wagatsumasayoko', post: 'Sansan株式会社 人事部 Employee Success Group マネジャー', img_src: require("~/assets/img/speaker/sayoko_wagatuma.jpg") },
+            { name: '坂本結衣', account: '@yui_tang', account_link: 'https://twitter.com/yui_tang', post: 'メルカリ株式会社 Web Platform Team Software Engineer', img_src: require("~/assets/img/speaker/yui_sakamoto.JPG") },
       ],
       workshops: [
           { name: '田中 洋一郎', account: '@yoichiro', account_link: 'https://twitter.com/yoichiro', post: 'Google Developers Expert (Assistant, Web Technology)', img_src: require("~/assets/img/speaker/yoichiro_tanaka.png") },
