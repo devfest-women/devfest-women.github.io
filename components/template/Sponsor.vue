@@ -51,9 +51,9 @@
               <v-col cols="4" xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://www.styliste.com"><img src="~/assets/img/sponsor/styliste.png" alt="ファッションパートナー株式会社" title="ファッションパートナー株式会社"></a>
               </v-col>
-              <!-- <v-col xs="8" sm="8" md="8" lg="4" class="bronze-logo">
+              <v-col cols="4" xs="8" sm="8" md="8" lg="4" class="bronze-logo">
                 <a href="https://cloud-ace.jp/"><img src="~/assets/img/sponsor/cloud-ace.png" alt="クラウドエース株式会社" title="クラウドエース株式会社"></a>
-              </v-col> -->
+              </v-col>
             </v-row>
             <h2 class="heading">個人スポンサー</h2>
             <v-row class="personal d-flex" justify="center">
