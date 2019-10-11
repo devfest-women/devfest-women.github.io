@@ -66,7 +66,7 @@
             { name: 'Kinuko Yasuda (安田絹子)', account: '@kinu', account_link: 'https://twitter.com/kinu', post: 'Google Engineering Manager', img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg") },
             { name: '清水舞子(しみこ)', account: '@shimiko1031', account_link: 'https://twitter.com/shimiko1031', post: '株式会社祭　代表', img_src: require("~/assets/img/speaker/shimizu_maiko.jpg") },
             { name: '田村ななみ', account: '', account_link: '', post: 'サイボウズ株式会社 開発本部', img_src: require("~/assets/img/speaker/tamura_nanami.png") },
-            { name: '横井羽衣子', account: '@uikou', account_link: 'https://www.linkedin.com/in/uikou/', post: 'シニアプロダクトマネージャー', img_src: require("~/assets/img/speaker/uiko_yokoi.jpg") },
+            { name: '横井羽衣子', account: '@uikou', account_link: 'https://www.linkedin.com/in/uikou/', post: '日本マイクロソフト株式会社 シニアプロダクトマネージャー', img_src: require("~/assets/img/speaker/uiko_yokoi.jpg") },
             { name: '我妻小夜子', account: '@wagatsumasayoko', account_link: 'https://8card.net/p/wagatsumasayoko', post: 'Sansan株式会社 人事部 Employee Success Group マネジャー', img_src: require("~/assets/img/speaker/sayoko_wagatuma.jpg") },
       ],
       workshops: [
