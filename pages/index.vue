@@ -2,6 +2,7 @@
 <div class="text-xs-center">
   <Hero class="bg-layout"></Hero>
   <WhatDevFestWomen class="bg-black anchor" id="aboutdevfestwomen"></WhatDevFestWomen>
+  <Typhoon class="bg-black anchor" id="typhoon"></Typhoon>
   <About class="bg-black anchor" id="aboutevent"></About>
   <Speaker class="bg-black anchor" id="speaker"></Speaker>
   <SessionList class="bg-gradient anchor" id="session"></SessionList>
@@ -26,12 +27,14 @@ import AskTheSpeaker from '~/components/template/AskTheSpeaker.vue'
 import Sponsor from '~/components/template/Sponsor.vue'
 import Staff from '~/components/template/Staff.vue'
 import Partner from '~/components/template/Partner.vue'
+import Typhoon from "../components/template/Typhoon";
 
 export default {
   layout (context) {
     return 'top'
   },
   components: {
+    Typhoon,
     Hero,
     WhatDevFestWomen,
     About,
