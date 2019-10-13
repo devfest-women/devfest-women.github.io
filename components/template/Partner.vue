@@ -28,6 +28,12 @@
                 <a href="https://codezine.jp/"><img src="~/assets/img/sponsor/codezine.png" alt="CodeZine" title="CodeZine"></a>
               </v-col>
             </v-row>
+            <h2 class="heading">装飾パートナー</h2>
+            <v-row class="media d-flex" justify="center">
+              <v-col cols="5" xs="8" sm="8" md="6" lg="4" class="media-logo">
+                <a href="https://www.instagram.com/amikitkat/"><img src="~/assets/img/sponsor/amikitkat.jpg" alt="@amikitkat" title="@amikitkat"></a>
+              </v-col>
+            </v-row>
             <h2 class="heading">コミュニティパートナー</h2>
             <v-row class="media d-flex" justify="center">
               <v-col cols="5" xs="8" sm="8" md="6" lg="4" class="media-logo">
