@@ -65,7 +65,7 @@
             { name: '鈴木順子', account: '@PNSK', account_link: 'https://twitter.com/PNSK', post: 'GitHub / Enterprise Support Engineer', img_src: require("~/assets/img/speaker/junko-suzuki.jpg") },
             { name: '中村寛子', account: '', account_link: '', post: 'MASHING UP プロデューサー', img_src: require("~/assets/img/speaker/hiroko-nakamura.png") },
             { name: 'Kinuko Yasuda (安田絹子)', account: '@kinu', account_link: 'https://twitter.com/kinu', post: 'Google Engineering Manager', img_src: require("~/assets/img/speaker/kinuko_yasuda.jpg") },
-            { name: '小倉 一葉', account: '@sakekazuha', account_link: 'https://twitter.com/sakekazuha', post: 'プリズムテック 代表・コミュニティマネージャー', img_src: require("~/assets/img/speaker/kazuha_ogura.png") },
+            { name: '小倉 一葉', account: '@sakekazuha', account_link: 'https://twitter.com/sakekazuha', post: 'プリズムテック 代表・コミュニティマネージャー', img_src: require("~/assets/img/speaker/kazuha_ogura.JPG") },
             { name: '清水舞子(しみこ)', account: '@shimiko1031', account_link: 'https://twitter.com/shimiko1031', post: '株式会社祭　代表', img_src: require("~/assets/img/speaker/shimizu_maiko.jpg") },
             { name: '田村ななみ', account: '', account_link: '', post: 'サイボウズ株式会社 開発本部', img_src: require("~/assets/img/speaker/tamura_nanami.png") },
             { name: '横井羽衣子', account: '@uikou', account_link: 'https://www.linkedin.com/in/uikou/', post: '日本マイクロソフト株式会社 シニアプロダクトマネージャー', img_src: require("~/assets/img/speaker/uiko_yokoi.jpg") },
