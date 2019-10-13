@@ -88,10 +88,10 @@
         time: [
             { start: '10:00',display:''},
             { start: '10:30',display:''},
-            { start: '10:40',display:'session-time'},
-            { start: '11:30',display:'session-time'},
-            { start: '12:20',display:''},
-            { start: '13:20',display:'session-time'},
+            { start: '10:50',display:'session-time'},
+            { start: '11:40',display:'session-time'},
+            { start: '12:10',display:''},
+            { start: '13:10',display:'session-time'},
             { start: '13:50',display:''},
             { start: '14:10',display:'session-time'},
             { start: '14:40',display:''},
@@ -107,11 +107,11 @@
         ],
         halla: [
             { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
-            { time: '10:30-10:40',session:'オープニング', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '10:40-11:25',session:'Keynote1', title:'小学生の夢から世界記録まで', name: '岩尾 エマ はるか', post: 'Google Developer Advocate',display: 'contents' },
-            { time: '11:30-12:15',session:'Keynote2', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
-            { time: '12:20-13:20',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
-            { time: '13:20-13:50',session:'特別ゲスト', title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
+            { time: '10:30-10:45',session:'オープニング', title:'', name: '', post: '' ,display:'contents-other-session'},
+            { time: '10:50-11:35',session:'Keynote', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
+            { time: '11:40-12:10',session:'特別ゲスト', title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
+            { time: '12:10-13:10',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
+            { time: '13:10-13:50',session:'Special Talk', title:'How to create a great community', name: 'Jen Looper（通訳：安田クリスチーナ）', post: 'Google Developer Expert / Cloud Developer Advocate Lead at Microsoft',display:'contents' },
             { time: '13:50-14:10',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
             { time: '14:10-14:40',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
             { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
@@ -312,7 +312,7 @@
     }
     .hall-title {
       background-color: #ff6f61;
-      margin-bottom: 940px;
+      margin-bottom: 1000px;
 
       @media only screen and (max-width: 960px), print {
         margin-bottom: 10px;
@@ -339,7 +339,7 @@
     margin-right:-5px;
   }
   .timeline-workshop {
-    margin-top: 1000px;
+    margin-top: 1060px;
     padding: 0 0 0 24px;
     margin-right:-5px;
   }
@@ -387,7 +387,7 @@
   }
 
   .contents-workshop1 {
-    height: 700px;
+    height: 640px;
 
     @media only screen and (max-width: 960px), print {
       height: 190px;
@@ -411,7 +411,7 @@
   }
 
   .workshop-time1 {
-    height: 705px;
+    height: 645px;
   }
 
   .workshop-time2 {

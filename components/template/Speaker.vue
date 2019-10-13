@@ -56,7 +56,7 @@
             { name: '岩尾 エマ はるか', account: '@Yuryu', account_link: 'https://twitter.com/Yuryu', post: 'Google Developer Advocate', img_src: require("~/assets/img/speaker/emma.jpg") },
             { name: '戸倉彩', account: '@ayatokura', account_link: 'https://twitter.com/ayatokura', post: 'IBM Sr. Developer Advocate', img_src: require("~/assets/img/speaker/aya_tokura.png") },
             { name: 'ハヤカワ五味', account: '@hayakawagomi', account_link: 'https://twitter.com/hayakawagomi', post: '株式会社ウツワ代表取締役／起業家', img_src: require("~/assets/img/speaker/gomi-hayakawa.png") },
-            { name: 'Jen Looper', account: '@jenlooper', account_link: 'https://twitter.com/jenlooper', post: 'Vue Vixens 創設者兼 CEO', img_src: require("~/assets/img/speaker/jen-looper.png") },
+            { name: 'Jen Looper', account: '@jenlooper', account_link: 'https://twitter.com/jenlooper', post: 'Google Developer Expert / Cloud Developer Advocate Lead at Microsoft', img_src: require("~/assets/img/speaker/jen-looper.png") },
             { name: '福田恵里', account: '@eri_razapii', account_link: 'https://twitter.com/eri_razapii', post: 'SHE株式会社 Co-founder/CCO', img_src: require("~/assets/img/speaker/eri_fukuda.jpg") },
             { name: '安田クリスチーナ', account: '@christina.yasuda', account_link: 'https://www.facebook.com/christina.yasuda', post: 'InternetBar.org 理事 (Forbes 30Under30)', img_src: require("~/assets/img/speaker/kurisuti-na.png") },
             { name: '清水淳子', account: '@4mimimizu', account_link: 'https://twitter.com/4mimimizu', post: 'デザインリサーチャー / グラフィックレコーダー', img_src: require("~/assets/img/speaker/junko_shimizu.png") },
