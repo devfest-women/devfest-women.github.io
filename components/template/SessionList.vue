@@ -111,7 +111,7 @@
             { time: '10:50-11:35',session:'Keynote', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
             { time: '11:40-12:10',session:'特別ゲスト', title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
             { time: '12:10-13:10',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
-            { time: '13:10-13:50',session:'特別ゲスト', title:'How to create a great community', name: 'Jen Looper（通訳：安田クリスチーナ）', post: 'Google Developer Expert / Cloud Developer Advocate Lead at Microsoft',display:'contents' },
+            { time: '13:10-13:50',session:'Special Talk', title:'How to create a great community', name: 'Jen Looper（通訳：安田クリスチーナ）', post: 'Google Developer Expert / Cloud Developer Advocate Lead at Microsoft',display:'contents' },
             { time: '13:50-14:10',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
             { time: '14:10-14:40',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
             { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
