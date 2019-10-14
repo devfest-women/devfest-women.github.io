@@ -9,14 +9,6 @@
             本カンファレンスの登壇者は女性アイデンティティの方に限定しています。<br>
             DevFest Women Tokyoでは、IT業界で活躍している女性やLGBTQの方にスポットライトを当て、彼女たちの知的好奇心そそる発表を受け、参加した方々の次の日からの自信につなげられるようなカンファレンスを目指しています。
           </div>
-          <div class="d-flex justify-center">
-            <Button
-             text="参加申し込み"
-             link="https://devfestwomen2019.peatix.com/view"
-             buttonstyle="join"
-            ></Button>
-          </div>
-
           <v-container class="conference-info">
             <v-row class="conference-row" v-for="item in items" :key="item.title">
               <v-col sm="2" class="info-title">
