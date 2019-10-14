@@ -7,10 +7,8 @@
       <p class="hero-place">{{ hero.place }}</p>
       <div>
       <div class="l-join">
-        <Button
-          v-bind:text='hero.join.text'
-          v-bind:link='hero.join.link'
-          buttonstyle="join"></Button>
+        <p>開催終了いたしました。</p>
+        <p>ご来場いただき誠にありがとうございました！</p>
       </div>
       </div>
     </div>
@@ -120,6 +118,8 @@ import Button from '~/components/module/Button.vue'
 .l-join
 {
   padding-top: 60px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 900px), print {
