@@ -370,7 +370,7 @@
 
 <style lang="scss" scoped>
 .video-link {
-  color: tomato;
+  color: #da297b;
 }
 .section-container{
   padding: 45px 0px 45px 0px;
