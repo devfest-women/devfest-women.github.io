@@ -18,6 +18,9 @@
               <div class="session-detail-box-header">
                   <div class="session-title">
                       {{item.title}}
+                      <a class="video-link" v-if="item.video_link" :href="item.video_link" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                      </a>
                   </div>
                   <div class="session-description">
                       <p>{{item.description}}</p>
@@ -50,6 +53,9 @@
               <div class="session-detail-box-header">
                   <div class="session-title">
                       {{item.title}}
+                      <a class="video-link" v-if="item.video_link" :href="item.video_link" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                      </a>
                   </div>
                   <div class="session-description">
                       <p>{{item.description}}</p>
@@ -82,6 +88,9 @@
             <div class="session-detail-box-header">
               <div class="session-title">
                 {{item.title}}
+                <a class="video-link" v-if="item.video_link" :href="item.video_link" target="_blank" rel="noopener">
+                  <i class="fab fa-youtube"></i>
+                </a>
               </div>
               <div class="session-description">
                 <p>{{item.description}}</p>
@@ -114,6 +123,9 @@
                   <div class="session-detail-box-header">
                       <div class="session-title">
                           {{item.title}}
+                          <a class="video-link" v-if="item.video_link" :href="item.video_link" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                          </a>
                       </div>
                       <div class="session-description">
                           <p>{{item.description}}</p>
@@ -201,7 +213,8 @@
                 description:'女性活躍推進法の施行から約4年。職場におけるジェンダーやフェミニズムの平等を求める動きは社会現象となっています。給料や待遇の格差に関するメディア報道にはじまり、管理職に女性を登用する動きも強まっています。しかし、国内のIT業界では未だに女性エンジニアの比率はさほど変化しておらず、依然として男女間の格差が大きいことがうかがえます。今回は、私自身の経験談を交えながら、皆さんと一緒に「ダイバーシティ&インクルージョン」について考え、今後、女性を取り巻く未来の環境の変化に備えるためにできることについてご紹介いたします。',
                 account_link: 'https://twitter.com/ayatokura',
                 post: 'IBM Sr. Developer Advocate',
-                img_src: require("~/assets/img/speaker/aya_tokura.png")
+                img_src: require("~/assets/img/speaker/aya_tokura.png"),
+                video_link: 'https://youtu.be/r_k1ARGoMnc'
             }
         ],
         guest: [
@@ -225,7 +238,8 @@
                           'このスピーチでは、私個人が実際に経験した、女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法についてお話させていただきます。',
               account_link: 'https://twitter.com/eri_razapii',
               post: 'SHE株式会社 Co-founder/CCO',
-              img_src: require("~/assets/img/speaker/eri_fukuda.jpg")
+              img_src: require("~/assets/img/speaker/eri_fukuda.jpg"),
+              video_link: 'https://youtu.be/8R7H5iF4PI4'
             },
             { session_number:'Session2-1',
               speaker: '安田クリスチーナ',
@@ -233,7 +247,8 @@
               description:'文系でありながらプログラミングに憧れて、シリコンバレーでPythonとAIを学んだり、独学でブロックチェーンを触ってみたりした結果、エンジニアには向いていないことを実感。しかし、リードしているプロジェクト内で「政府等一つの権威に頼らない証明書を発行する方法」を構築する上で最適な手段を選択するために、ブロックチェーンおよび従来の認証認可技術の根本的な仕組みや実装方法などを学ぶ必要性に直面した。それから、自分でプログラミングはしないけれども、成し遂げたい目的に合致したテクノロジーを徹底的に理解するというテクノロジーとの付き合い方を確立してきました。そんな私の付き合い方を今日はお話します。',
               account_link: 'https://www.facebook.com/christina.yasuda',
               post: 'InternetBar.org 理事 (Forbes 30Under30)',
-              img_src: require("~/assets/img/speaker/kurisuti-na.png")
+              img_src: require("~/assets/img/speaker/kurisuti-na.png"),
+              video_link: 'https://youtu.be/0yWsEi2NpXI'
             },
             { session_number:'Session3-1',
                 speaker: '鳥井 雪',
@@ -242,7 +257,8 @@
                              '‪その都度、「プログラマーとしての生き方」なんて立派なことはさっぱり考えずに「わたしが好きな場所で好きなことをして成長もして、ついでにその場所をより良い場所にするにはどうすればいいんだろう？」と自分勝手にやってきた、そのわたしの好きなITの世界の良さと可能性、そこに「あなた」があなたの都合で加わることの大切さをお話しできたらいいなと思っています。‬',
                 account_link: 'https://twitter.com/yotii23',
                 post: '株式会社万葉 プログラマー',
-                img_src: require("~/assets/img/speaker/yuki_torii.jpg")
+                img_src: require("~/assets/img/speaker/yuki_torii.jpg"),
+                video_link: 'https://youtu.be/6AcFxxkqcPc'
             },
             { session_number:'Session4-1',
                 speaker: '中村 寛子',
@@ -250,7 +266,8 @@
                 description: '「ダイバーシティ＆インクルージョン」と聞くと何をイメージしますか？女性の活躍、LGBTQ、障害者、海外労働者..。私が初めてこの言葉を記事から目にした時に感じた他人感。そして、なかなか進まないダイバーシティの実情を受けて、私がなぜ女性視点でデザインするダイバーシティ推進のプロジェクト「MASHING UP」を初めた理由、実情をお話しします。',
                 account_link: '',
                 post: 'MASHING UP プロデューサー',
-                img_src: require("~/assets/img/speaker/hiroko-nakamura.png")
+                img_src: require("~/assets/img/speaker/hiroko-nakamura.png"),
+                video_link: 'https://youtu.be/MO71AnFLdpQ'
             },
             { session_number:'Session5-1',
                 speaker: '清水舞子(しみこ)',
@@ -278,7 +295,8 @@
                 description:'物理0点取ったガチガチな文系大学生のわたしがパソコンに出会い、プログラミングにハマって独学で応用情報技術者試験に合格。SIer や スタートアップ企業での技術職を経験し、日本マイクロソフトにテクニカルエバンジェリストとして入社。数年後には、日本人は私含め2人だけの本社インターナショナルチームへ異動。BLマンガ、オタク活動、プログラミング。大好きなことに没入し続けた、ちょまど流テクニカルキャリアにおける "Connecting the Dots" についてお話しさせていただきます。',
                 account_link: 'https://twitter.com/chomado',
                 post: 'Microsoft 社 Cloud Developer Advocate',
-                img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg")
+                img_src: require("~/assets/img/speaker/madoka_chiyoda.jpeg"),
+                video_link: 'https://youtu.be/XABYxT0iXtY'
             },
             { session_number:'Session3-2',
                 speaker: '鈴木 順子',
@@ -289,7 +307,8 @@
                             '大それたものは何もありません。いかに、何もこだわらずに、わがままに好き勝手に、エンジニアやってきたかを話します。',
                 account_link: 'https://twitter.com/PNSK',
                 post: 'GitHub / Enterprise Support Engineer',
-                img_src: require("~/assets/img/speaker/junko-suzuki.jpg")
+                img_src: require("~/assets/img/speaker/junko-suzuki.jpg"),
+                video_link: 'https://youtu.be/cLxmqKIjUtM'
             },
             { session_number:'Session4-2',
                 speaker: 'Kinuko Yasuda (安田絹子)',
@@ -350,6 +369,9 @@
 </script>
 
 <style lang="scss" scoped>
+.video-link {
+  color: #da297b;
+}
 .section-container{
   padding: 45px 0px 45px 0px;
 
