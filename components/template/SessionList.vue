@@ -22,11 +22,7 @@
                       <p class="time-pc">{{item.time}}</p>
                       <p class="session-name">{{item.session}}</p>
                       <!-- #TODO セッションタイトルのcss直す -->
-                      <p class="session-title">{{item.title}}
-                        <a v-if="item.video_link" :href="item.video_link" class="video-link" target="_blank" rel="noopener">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                      </p>
+                      <p class="session-title">{{item.title}}</p>
                       <p class="person">{{item.post}}<br>{{item.name}}</p>
                     </div>
                 </div>
@@ -41,11 +37,7 @@
                     <p class="time-pc">{{item.time}}</p>
                     <p class="session-name">{{item.session}}</p>
                     <!-- #TODO セッションタイトルのcss直す -->
-                    <p class="session-title">{{item.title}}
-                      <a v-if="item.video_link" :href="item.video_link" class="video-link" target="_blank" rel="noopener">
-                        <i class="fab fa-youtube"></i>
-                      </a>
-                    </p>
+                    <p class="session-title">{{item.title}}</p>
                     <p class="person">{{item.post}}<br>{{item.name}}</p>
                   </div>
                 </div>
@@ -116,18 +108,18 @@
         halla: [
             { time: '10:00-10:30',session:'受付', title:'', name: '', post: '',display:'contents-other-session'},
             { time: '10:30-10:45',session:'オープニング', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '10:50-11:35',session:'Keynote', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents', video_link: 'https://youtu.be/r_k1ARGoMnc' },
+            { time: '10:50-11:35',session:'Keynote', title:'私の行動宣言 #BeEqual' , name: '戸倉彩', post: 'IBM Sr. Developer Advocate',display: 'contents' },
             { time: '11:40-12:10',session:'特別ゲスト', title:'"女性ならではの"って何？ 生理と女性の社会進出の歴史' , name: 'ハヤカワ五味', post: '株式会社ウツワ代表取締役／起業家',display: 'contents' },
             { time: '12:10-13:10',session:'ランチ懇親会', title:'' , name: '', post: '',display: 'contents-other-session' },
             { time: '13:10-13:50',session:'Special Talk', title:'How to create a great community', name: 'Jen Looper（通訳：安田クリスチーナ）', post: 'Google Developer Expert / Cloud Developer Advocate Lead at Microsoft',display:'contents' },
             { time: '13:50-14:10',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
-            { time: '14:10-14:40',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents', video_link: 'https://youtu.be/8R7H5iF4PI4' },
+            { time: '14:10-14:40',session:'session1-1',title:'起業も結婚も出産も。女性のライフイベントをポジティブな力に変えながら、自分らしく働く方法', name: '福田恵里', post: 'SHE株式会社 Co-founder/CCO' ,display:'contents'},
             { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
-            { time: '14:50-15:20',session:'session2-1', title:'エンジニアではない人のテクノロジーとの付き合い方' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents', video_link: 'https://youtu.be/0yWsEi2NpXI' },
+            { time: '14:50-15:20',session:'session2-1', title:'エンジニアではない人のテクノロジーとの付き合い方' ,name: '安田クリスチーナ',  post: 'InternetBar.org 理事 (Forbes 30Under30)' ,display:'contents'},
             { time: '15:20-15:35',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:35-16:05',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents', video_link: 'https://youtu.be/6AcFxxkqcPc' },
+            { time: '15:35-16:05',session:'session3-1',title:'「わたし」をふくむと世界はひろがる〜ITの世界であなたらしく生きる〜', name: '鳥井雪', post: '株式会社万葉 プログラマー' ,display:'contents'},
             { time: '16:05-16:15',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '16:15-16:45',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents', video_link: 'https://youtu.be/MO71AnFLdpQ' },
+            { time: '16:15-16:45',session:'session4-1',title:'ダイバーシティ＆インクルージョンが当たり前になるのは不可能なのか？', name: '中村寛子', post: 'MASHING UP プロデューサー',display:'contents' },
             { time: '16:45-16:55',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '16:55-17:15',session:'session5-1',title:'性別は本当に関係ないの？社会の狭間で共に戦う仲間の見つけ方', name: '清水舞子(しみこ)', post: '株式会社祭　代表', display:'contents'},
             { time: '17:15-17:20',session:'休憩',title:'', name: '', post: '' ,display:'contents-other-session'},
@@ -136,9 +128,9 @@
       hallb: [
             { time: '14:10-14:40',session:'session1-2', title:'グラフィックレコーディングが仕事になるまでの舞台裏 ー視覚表現を言語として使う世界を目指してー', name: '清水淳子', post: 'デザインリサーチャー/グラフィックレコーダー', display:'contents' },
             { time: '14:40-14:50',session:'休憩', title:'', name: '', post: '',display:'contents-other-session' },
-            { time: '14:50-15:20',session:'session2-2', title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜', name: '千代田まどか (ちょまど)', post: 'Microsoft 社 Cloud Developer Advocate' ,display:'contents', video_link: 'https://youtu.be/XABYxT0iXtY' },
+            { time: '14:50-15:20',session:'session2-2', title:'オタクな私の拡がる世界 　〜BL同人作家から IT エンジニア、Microsoft のインターナショナルチームに〜', name: '千代田まどか (ちょまど)', post: 'Microsoft 社 Cloud Developer Advocate' ,display:'contents'},
             { time: '15:20-15:35',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
-            { time: '15:35-16:05',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents', video_link: 'https://youtu.be/cLxmqKIjUtM' },
+            { time: '15:35-16:05',session:'session3-2', title:'よそはよそ、うちはうち 〜自分のものさしで、好きにエンジニアやる〜', name: '鈴木 順子', post: 'GitHub / Enterprise Support Engineer' ,display:'contents'},
             { time: '16:05-16:15',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
             { time: '16:15-16:45',session:'session4-2', title:'私のエンジニアとしての10年、そしてダイバーシティのこととか', name: 'Kinuko Yasuda (安田絹子)', post: 'Google Engineering Manager',display:'contents'},
             { time: '16:45-16:55',session:'休憩', title:'', name: '', post: '' ,display:'contents-other-session'},
@@ -165,9 +157,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .video-link {
-    color: #da297b;
-  }
   .section-container{
     padding: 45px 0px 45px 0px;
 
