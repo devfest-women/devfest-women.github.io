@@ -24,12 +24,9 @@ export default {
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@wtmtokyo' },
     ],
-    script: [
-      { src: 'https://kit.fontawesome.com/bcc2c77051.js', crossorigin: 'anonymous' }
-    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
-    ,
+,
       {
         rel: 'stylesheet',
         href:
